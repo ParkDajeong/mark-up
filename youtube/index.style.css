@@ -66,6 +66,10 @@ a.nav-default-style {
   display: block;
 }
 
+.logo a i {
+  display: none;
+}
+
 .header-left-box .logo .country-code {
   margin-left: 2px;
   font-size: 13px;
@@ -137,7 +141,7 @@ a.nav-default-style {
 .content-container {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
 }
 
 /* Nav */
@@ -303,6 +307,35 @@ a.nav-default-style {
 }
 
 @media screen and (max-width: 512px) {
+  /* Header - left box */
+  .header-left-box .guide-button {
+    margin-right: 10px;
+  }
+
+  .header-left-box .logo {
+    width: auto;
+  }
+
+  .logo a svg {
+    display: none !important;
+  }
+
+  .logo a i {
+    display: block;
+    color: #f00;
+    font-size: 30px;
+  }
+
+  /* Header - right box */
+  .header-right-box button.create,
+  .header-right-box button.apps {
+    display: none;
+  }
+
+  .header-right-box button.default-style {
+    margin-right: 5px;
+  }
+
   .content {
     width: 100%;
   }
