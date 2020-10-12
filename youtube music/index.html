@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
+    <title>YouTube Music</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="ytmusic-header">
+      <h1 class="logo">
+        <a href="#" title="YouTube Music 홈">
+          <!-- <picture> 브라우저 호환성 관련 : https://caniuse.com/?search=picture -->
+          <picture>
+            <source media="(max-width: 615px)" srcset="./assets/ytmusic_logo_S.svg" />
+            <source media="(min-width: 616px)" srcset="./assets/ytmusic_logo_M.svg" />
+            <img src="./assets/ytmusic_logo_L.svg" alt="YouTube Music 로고" />
+          </picture>
+        </a>
+      </h1>
+      <nav class="ytmusic-nav">
+        <a class="default-button" href="#" title="홈">
+          <i class="fas fa-home"></i>
+          <span>홈</span>
+        </a>
+        <a class="default-button" href="#" title="둘러보기">
+          <i class="fas fa-compass"></i>
+          <span>둘러보기</span>
+        </a>
+        <a class="default-button" href="#" title="보관함">
+          <i class="fas fa-archive"></i>
+          <span>보관함</span>
+        </a>
+        <button class="default-button" type="button" aria-label="검색하기">
+          <i class="fas fa-search"></i>
+        </button>
+      </nav>
+      <div class="user-profile">
+        <button type="button" aria-label="유저 메뉴 열기">
+          <img src="./assets/user-profile.jpg" alt="유저 프로필 사진" />
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="ytmusic-player-page">
+      <div class="main-pannel">
+        <div class="player">
+          <div class="song-image">
+            <img
+              src="https://lh3.googleusercontent.com/-jaWr9K7U0bJoqMv50tihlvf1QXe_y-dmvw_z_40gA9bPj4PhfRPobOdQndQIoCxsFDWRyEoP0Rben8=w544-h544-l90-rj"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="side-pannel">
+        <div class="panner-tabs">
+          <div class="tab-container">
+            <button class="tab" type="button">다음 트랙</button>
+            <button class="tab" type="button">가사</button>
+          </div>
+          <div class="selection-bar"></div>
+        </div>
+        <ul class="play-list">
+          <li class="play-list-item">
+            <div class="thumbnail">
+              <img
+                src="https://lh3.googleusercontent.com/mpwfaudYwWC0-wwHuWScyKltcOjX5yLncFLFpwiOo_Ek44WvkgsJQ8EQillYjN_ZS9mZCzgYC7nSFeWj=w60-h60-l90-rj"
+                alt=""
+              />
+            </div>
+            <div class="song-info">
+              <strong aria-label="노래 제목">betty (Live from the 2020 Academy of Country Music Awards)</strong>
+              <span aria-label="가수">Taylor Swift</span>
+            </div>
+            <div class="right">
+              <span class="play-time">5:13</span>
+              <!-- <button class="menu"></button> -->
+            </div>
+          </li>
+          <li class="play-list-item">
+            <div class="thumbnail">
+              <img
+                src="https://lh3.googleusercontent.com/mpwfaudYwWC0-wwHuWScyKltcOjX5yLncFLFpwiOo_Ek44WvkgsJQ8EQillYjN_ZS9mZCzgYC7nSFeWj=w60-h60-l90-rj"
+                alt=""
+              />
+            </div>
+            <div class="song-info">
+              <strong aria-label="노래 제목">betty (Live from the 2020 Academy of Country Music Awards)</strong>
+              <span aria-label="가수">Taylor Swift</span>
+            </div>
+            <div class="right">
+              <span class="play-time">5:13</span>
+              <!-- <button class="menu"></button> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Music Player Bar -->
+    <section></section>
+  </body>
+</html>

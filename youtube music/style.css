@@ -1,0 +1,263 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+/* Common CSS */
+.default-button {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin: 0 14px;
+}
+
+.default-button:hover {
+  color: #fff;
+}
+
+.default-button i {
+  display: block;
+}
+
+.default-button span {
+  display: none;
+}
+
+.tab {
+  display: block;
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+}
+
+/* Header */
+#ytmusic-header {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  width: 100%;
+  height: 64px;
+}
+
+#ytmusic-header .logo a picture {
+  display: flex;
+}
+
+/* Header - Nav Bar */
+#ytmusic-header .ytmusic-nav {
+  display: flex;
+}
+
+/* Header - User Profile */
+#ytmusic-header .user-profile {
+  width: 26px;
+  height: 26px;
+}
+
+#ytmusic-header .user-profile button {
+  width: 100%;
+  height: 100%;
+}
+
+#ytmusic-header .user-profile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Main Content */
+#ytmusic-player-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px - 72px);
+  padding-top: 24px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Main Content - Main Pannel */
+#ytmusic-player-page .main-pannel {
+  max-width: 800px;
+  height: calc(9 / 16 * 100vw);
+}
+
+#ytmusic-player-page .main-pannel .player {
+  height: 100%;
+}
+
+#ytmusic-player-page .main-pannel .player .song-image {
+  height: 100%;
+}
+
+#ytmusic-player-page .main-pannel .player .song-image img {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Main Content - Side Pannel */
+.side-pannel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-top: 32px;
+}
+
+.side-pannel .panner-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-pannel .panner-tabs .tab-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-pannel .panner-tabs .selection-bar {
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.side-pannel .play-list-item {
+  display: flex;
+  align-items: center;
+  height: 57px;
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.side-pannel .play-list-item .thumbnail {
+  margin-right: 16px;
+}
+
+.side-pannel .play-list-item .thumbnail img {
+  width: 32px;
+  border-radius: 2px;
+}
+
+.side-pannel .play-list-item .song-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 1px;
+  margin-right: 18px;
+  font-size: 13.5px;
+}
+
+.side-pannel .play-list-item .song-info strong {
+  display: block;
+  margin-bottom: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.side-pannel .play-list-item .right {
+  margin-right: 5px;
+  margin-left: auto;
+}
+
+.side-pannel .play-list-item .right .play-time {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Player */
+section {
+  height: 72px;
+  background-color: #eee;
+}
+
+@media (min-width: 615px) {
+  /* Common CSS */
+  .default-button {
+    margin: 0 20px;
+  }
+
+  /* Header */
+  #ytmusic-header {
+    padding: 8px 20px;
+  }
+
+  /* Main Content */
+  #ytmusic-player-page {
+    padding: 16px 32px 0;
+  }
+
+  /* Main Content - Side Pannel */
+  .side-pannel {
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 935px) {
+  /* Common CSS */
+  a.default-button i {
+    display: none;
+  }
+
+  a.default-button span {
+    display: block;
+  }
+
+  /* Main Content */
+  #ytmusic-player-page {
+    padding: 3.5% 7% 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Main Content - Main Pannel */
+  #ytmusic-player-page .main-pannel {
+    flex: 1;
+    height: 100%;
+  }
+
+  #ytmusic-player-page .main-pannel .player {
+    height: auto;
+  }
+
+  #ytmusic-player-page .main-pannel .player .song-image {
+    display: flex;
+  }
+
+  #ytmusic-player-page .main-pannel .player .song-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Main Content - Side Pannel */
+  .side-pannel {
+    flex: 0;
+    margin-top: 0;
+    margin-left: 5%;
+    width: 40%;
+  }
+}
