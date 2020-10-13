@@ -291,24 +291,24 @@ main .main-content .section-left {
   width: 704px;
 }
 
-main .section-left .column {
+main .main-content .column {
   border-bottom: 1px solid #eceef2;
 }
 
-main .section-left .column .section-title {
+main .main-content .column .section-title {
   margin-bottom: 18px;
 }
 
-main .section-left .column .section-title h3 {
+main .main-content .column .section-title h3 {
   font-size: 18px;
   font-weight: 500;
 }
 
-main .section-left .column .section-title h3 a {
+main .main-content .section-left .column .section-title h3 a {
   display: block;
 }
 
-main .section-left .list li a {
+main .main-content .section-left .list li a {
   display: block;
 }
 
@@ -384,4 +384,131 @@ main .section-left .col-service .list li img {
   display: block;
   width: 340px;
   height: 200px;
+}
+
+/* Main - Main Content - Section Right */
+main .main-content .section-right {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  border-left: 1px solid #eceef2;
+  padding-left: 40px;
+}
+
+/* column login */
+main .section-right .col-login .section-title {
+  margin-bottom: 14px;
+}
+
+main .section-right .col-login .btn {
+  display: block;
+  width: 100%;
+  padding: 22px 0;
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid #1a7cff;
+  background-color: #1a7cff;
+}
+
+main .section-right .col-login .join-links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 0 33px;
+}
+
+main .section-right .col-login .join-links li {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+main .section-right .col-login .join-links li a {
+  color: #8e929f;
+}
+
+/* column mart goods */
+main .section-right .col-mart-goods {
+  padding: 31px 0;
+}
+
+main .section-right .col-mart-goods .list {
+  display: flex;
+}
+
+main .section-right .col-mart-goods .mart-goods-item {
+  display: flex;
+  flex-direction: column;
+}
+
+main .section-right .col-mart-goods .mart-goods-item strong {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.2857142;
+  letter-spacing: -0.1px;
+}
+
+main .section-right .col-mart-goods .mart-goods-item .desc {
+  color: #8e929f;
+  font-size: 11px;
+  line-height: 1.63636363;
+  letter-spacing: -0.5px;
+}
+
+main .section-right .col-mart-goods .mart-goods-item .price {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.125;
+  letter-spacing: -0.1px;
+}
+
+main .section-right .col-mart-goods img {
+  width: calc(330px / 3 - 16px / 2);
+  height: calc(330px / 3 - 16px / 2);
+}
+
+/* column banner */
+main .section-right .col-banner {
+  padding: 31px 0;
+}
+
+main .section-right .col-banner img {
+  width: 330px;
+  height: 100px;
+}
+
+/* column guide */
+main .section-right .col-guide {
+  padding-top: 31px;
+}
+
+main .section-right .col-guide .list {
+  display: flex;
+}
+
+main .section-right .col-guide .link-talk {
+  position: relative;
+  display: block;
+  width: 160px;
+  height: 71px;
+}
+
+main .section-right .col-guide .list li:first-child::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 1px;
+  height: 56px;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+  background-color: #eceef2;
+}
+
+main .section-right .col-guide img {
+  width: 100%;
 }
