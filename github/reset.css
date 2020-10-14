@@ -1,0 +1,58 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+i {
+  display: block;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+/* Default CSS */
+.hidden {
+  display: none;
+}
+
+.fill-w-btn {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 13px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+}
+
+.red {
+  background-color: #e34c26 !important;
+}
+
+@media (min-width: 768px) {
+  .m-only {
+    display: none;
+  }
+}

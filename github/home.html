@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./home.style.css">
+  <link rel="stylesheet" href="./globalNav.style.css">
+  <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
+  <script src="./app.js" defer></script>
+  <title>Githube</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header-item logo">
+      <a href="#" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </h1>
+    <div class="header-item mobile-btn">
+      <button class="btn-menu" type="button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="header-item gnb-wrapper hidden">
+      <form class="search-form" action="">
+        <input type="search" name="" id="" placeholder="Search or jump to...">
+      </form>
+      <nav class="global-nav">
+        <ul class="nav-list">
+          <li class="m-only">
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <a href="#">Pull <span class="m-only">requests</span></a>
+          </li>
+          <li>
+            <a href="#">lssues</a>
+          </li>
+          <li>
+            <a href="#">Marketplace</a>
+          </li>
+          <li>
+            <a href="#">Explore</a>
+          </li>
+          <li class="link-user m-only">
+            <a href="#">
+              <img class="avatar avatar-user" src="https://avatars2.githubusercontent.com/u/43628429?s=40&amp;v=4" width="20" height="20" alt="@ParkDajeong">
+              <span>ParkDajeong</span>
+            </a>
+          </li>
+          <li class="m-only">
+            <a href="#">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Sign out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-item header-right">
+      <a class="notification" href="#">
+        <i class="far fa-bell"></i>
+      </a>
+      <button class="btn-more" type="button">
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-caret-down"></i>
+      </button>
+      <button class="btn-account" type="button">
+        <img class="avatar avatar-user" src="https://avatars2.githubusercontent.com/u/43628429?s=40&amp;v=4" width="20" height="20" alt="@ParkDajeong">      </button>
+        <i class="fas fa-caret-down"></i>
+      </button>
+    </div>
+  </header>
+</body>
+</html>
