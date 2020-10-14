@@ -548,7 +548,7 @@ main .content .contribution-wrapper .text-gray a {
     position: relative;
     top: -40px;
     width: 25%;
-    padding: 0 8px;
+    padding: 0 16px 0 24px;
     padding-left: 24px;
     margin-bottom: 0;
   }
@@ -608,7 +608,7 @@ main .content .contribution-wrapper .text-gray a {
   /* Main - User Git Info */
   main .user-git-info {
     width: 75%;
-    padding-right: 24px;
+    padding: 0 24px 0 16px;
   }
 
   main .user-git-info .m-user-nav {
