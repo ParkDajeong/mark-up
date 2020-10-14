@@ -362,6 +362,11 @@ main .content .contribution-wrapper .activiy-timeline .activiy-item {
   padding: 24px;
   padding-right: 0;
   margin-left: 16px;
+  border-bottom: 1px solid #eaecef;
+}
+
+main .content .contribution-wrapper .activiy-timeline .activiy-item:last-child {
+  border: none;
 }
 
 main .content .contribution-wrapper .activiy-timeline .activiy-item .discussion-item-icon {
@@ -383,6 +388,7 @@ main .content .contribution-wrapper .activiy-timeline .activiy-item button {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  text-align: left;
 }
 
 main .content .contribution-wrapper .more-activity {
