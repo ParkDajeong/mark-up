@@ -1,0 +1,650 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+i {
+  display: block;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+/* Default CSS */
+.hidden {
+  display: none;
+}
+
+.fill-w-btn {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 13px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+}
+
+.red {
+  background-color: #e34c26 !important;
+}
+
+/* Header */
+.header {
+  background-color: #24292e;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 14px;
+}
+
+.header-item {
+  flex: auto;
+}
+
+.header .logo {
+  order: 1;
+  text-align: center;
+}
+
+.header .logo a {
+  font-size: 32px;
+}
+
+.header .mobile-btn .btn-menu {
+  color: #fff;
+  font-size: 24px;
+}
+
+.header .gnb-wrapper {
+  order: 2;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.header .gnb-wrapper .search-form {
+  margin-bottom: 16px;
+}
+
+.header .gnb-wrapper .search-form input {
+  background-color: hsla(0, 0%, 100%, 0.125);
+  width: 100%;
+  min-height: 28px;
+  padding: 5px 12px;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.header .gnb-wrapper .search-form input::placeholder {
+  color: #eee;
+}
+
+.header .gnb-wrapper .global-nav {
+  line-height: 1.5;
+}
+
+.header .gnb-wrapper .global-nav .nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .gnb-wrapper .global-nav .nav-list li {
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #fff;
+  white-space: nowrap;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+}
+
+.header .gnb-wrapper .global-nav .nav-list .link-user a {
+  display: flex;
+}
+
+.header .gnb-wrapper .global-nav .nav-list .link-user img {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.header .header-right {
+  order: 1;
+  text-align: right;
+}
+
+.header .header-right .notification {
+  font-size: 24px;
+}
+
+.header .header-right button {
+  display: none;
+}
+
+/* Main */
+main {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto 64px;
+}
+
+main .user-info {
+  margin-bottom: 24px;
+  padding: 8px 8px 0;
+}
+
+/* Main - PC User Nav */
+main .pc-user-nav {
+  display: none;
+}
+
+main .pc-user-nav .user-account {
+  width: 25%;
+  padding: 0 8px;
+  visibility: hidden;
+}
+
+main .pc-user-nav .user-account a {
+  display: flex;
+  align-items: center;
+}
+
+main .pc-user-nav .user-account img {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+main .pc-user-nav .user-account strong {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+main .pc-user-nav .user-git-nav {
+  width: 75%;
+}
+
+main .user-git-nav {
+  display: flex;
+}
+
+main .user-git-nav a {
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  color: #1b1f23;
+  font-size: 14px;
+  line-height: 2.1428571;
+}
+
+main .user-git-nav a:first-of-type {
+  font-weight: 600;
+  border-bottom: 2px solid #f9826c;
+}
+
+/* Main - User Info */
+main .user-info .user-profile {
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+main .user-info .user-profile .user-img {
+  width: 16.66667%;
+  margin-right: 16px;
+}
+
+main .user-info .user-profile .user-img img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+main .user-info .user-profile .user-name {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+main .user-info .user-status {
+  margin-bottom: 8px;
+}
+
+main .user-info .user-status .fill-w-btn {
+  color: #586069;
+  text-align: left;
+}
+
+main .user-info .user-status button .user-status-emoji {
+  margin-right: 3px;
+  font-size: 16px;
+}
+
+main .user-info .user-edit .fill-w-btn {
+  background-color: #fafbfc;
+  margin-bottom: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+
+main .user-info .user-edit .user-etc {
+  color: #586069;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+
+main .user-info .highlights {
+  display: none;
+}
+
+/* Main - User Git Info */
+main .user-git-info .m-user-nav {
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0 16px;
+  margin-bottom: 24px;
+  z-index: 3;
+  border-bottom: 1px solid #d1d5da;
+  overflow: scroll;
+}
+
+/* Main - Content */
+main .content .content-sec-title {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 24px 0 8px;
+}
+
+main .content .popular-repository {
+  margin-bottom: 48px;
+}
+
+main .content .popular-repository .repo-item {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+main .content .popular-repository .repo-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+}
+
+main .content .popular-repository .repo-item .repo-name {
+  display: block;
+  margin-bottom: 12px;
+  color: #0366d6;
+  font-size: 13px;
+}
+
+main .content .popular-repository .repo-item .repo-desc {
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+main .content .popular-repository .repo-item .repo-language {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+main .content .popular-repository .repo-item .repo-language-color {
+  background-color: #f1e05a;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+main .content .contribution-wrapper .contribution .box {
+  width: 100%;
+  height: 180px;
+  border: 1px solid #e1e4e8;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+main .content .contribution-wrapper .activiy-timeline {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+main .content .contribution-wrapper .activiy-timeline::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  width: 2px;
+  content: "";
+  background-color: #eaecef;
+}
+
+main .content .contribution-wrapper .activiy-timeline .timeline {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 8px 4px 0;
+  background-color: #fff;
+}
+
+main .content .contribution-wrapper .activiy-timeline .activiy-item {
+  padding: 24px;
+  padding-right: 0;
+  margin-left: 16px;
+}
+
+main .content .contribution-wrapper .activiy-timeline .activiy-item .discussion-item-icon {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-top: -8px;
+  margin-left: -39px;
+  color: #24292e;
+  background-color: #e1e4e8;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+main .content .contribution-wrapper .activiy-timeline .activiy-item button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main .content .contribution-wrapper .more-activity {
+  height: 38px;
+  margin-bottom: 24px;
+  color: #0366d6;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+main .content .contribution-wrapper .text-gray {
+  font-size: 12px;
+  color: #586069;
+}
+
+main .content .contribution-wrapper .text-gray a {
+  color: #0366d6;
+}
+
+/* Footer */
+.footer {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e1e4e8;
+}
+
+.footer .footer-wrapper .link-git-home {
+  display: none;
+}
+
+.footer ul {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  font-size: 13px;
+}
+
+.footer ul li {
+  margin-right: 16px;
+}
+
+.footer ul li:first-of-type {
+  color: #586069;
+}
+
+.footer ul li a {
+  color: #0366d6;
+  line-height: 1.8;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .m-only {
+    display: none;
+  }
+
+  /* Header */
+  .header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 16px 24px;
+  }
+
+  .header .header-item {
+    flex: none;
+  }
+
+  .header .logo {
+    order: 0;
+    text-align: left;
+  }
+
+  .header .mobile-btn {
+    display: none;
+  }
+
+  .header .gnb-wrapper {
+    display: flex !important;
+    flex: 1;
+    order: 0;
+    margin: 0 16px;
+    width: auto;
+  }
+
+  .header .gnb-wrapper .search-form {
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+
+  .header .gnb-wrapper .search-form input {
+    min-width: 270px;
+    height: 100%;
+  }
+
+  .header .gnb-wrapper .global-nav .nav-list {
+    flex-direction: row;
+  }
+
+  .header .gnb-wrapper .global-nav .nav-list li {
+    margin-right: 16px;
+    border: none;
+  }
+
+  .header .header-right {
+    order: 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+  .header .header-right .notification {
+    margin-right: 24px;
+    font-size: 16px;
+  }
+
+  .header .header-right button {
+    display: block;
+  }
+
+  .header .header-right .btn-more {
+    margin-right: 16px;
+  }
+
+  .header .header-right .btn-account img {
+    border-radius: 50%;
+  }
+
+  /* Main */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  /* Main - PC User Nav */
+  main .pc-user-nav {
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px;
+    margin-top: 24px;
+    border-bottom: 1px solid #d1d5da;
+  }
+
+  /* Main - User Info */
+  main .user-info {
+    position: relative;
+    top: -40px;
+    width: 25%;
+    padding: 0 8px;
+    padding-left: 24px;
+    margin-bottom: 0;
+  }
+
+  main .user-info .user-profile {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  main .user-info .user-profile .user-img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  main .user-info .user-profile .user-name {
+    width: 100%;
+    padding: 16px 0;
+    text-align: left;
+  }
+
+  main .user-info .user-status {
+    display: none;
+  }
+
+  main .user-info .user-edit {
+    margin-bottom: 16px;
+  }
+
+  main .user-info .highlights {
+    display: block;
+    padding-top: 16px;
+    font-size: 13px;
+    border-top: 1px solid #e1e4e8;
+  }
+
+  main .user-info .highlights h2 {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  main .user-info .highlights a {
+    display: flex;
+    align-items: center;
+    color: #24292e;
+  }
+
+  main .user-info .highlights a span {
+    margin-right: 5px;
+  }
+
+  main .user-info .highlights a span svg {
+    display: block;
+    width: 14px;
+  }
+
+  /* Main - User Git Info */
+  main .user-git-info {
+    width: 75%;
+    padding-right: 24px;
+  }
+
+  main .user-git-info .m-user-nav {
+    display: none;
+  }
+
+  main .content .popular-repository .repo-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main .content .popular-repository .repo-item {
+    width: 50%;
+    padding: 0 8px;
+  }
+
+  main .content .popular-repository .repo-item a {
+    height: 115px;
+  }
+
+  /* Footer */
+  .footer .footer-wrapper .link-git-home {
+    display: block;
+    width: 50px;
+    font-size: 24px;
+    color: #c6cbd1;
+  }
+
+  .footer ul {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 543px) {
+  /* Main - PC User Nav  */
+  main .user-git-nav a i {
+    display: none;
+  }
+}

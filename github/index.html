@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="./app.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <title>GitHub</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="header-item logo">
+      <a href="#" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </h1>
+    <div class="header-item mobile-btn">
+      <button class="btn-menu" type="button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="header-item gnb-wrapper hidden">
+      <form class="search-form" action="">
+        <input type="search" name="" id="" placeholder="Search or jump to...">
+      </form>
+      <nav class="global-nav">
+        <ul class="nav-list">
+          <li class="m-only">
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <a href="#">Pull <span class="m-only">requests</span></a>
+          </li>
+          <li>
+            <a href="#">lssues</a>
+          </li>
+          <li>
+            <a href="#">Marketplace</a>
+          </li>
+          <li>
+            <a href="#">Explore</a>
+          </li>
+          <li class="link-user m-only">
+            <a href="#">
+              <img class="avatar avatar-user" src="https://avatars2.githubusercontent.com/u/43628429?s=40&amp;v=4" width="20" height="20" alt="@ParkDajeong">
+              <span>ParkDajeong</span>
+            </a>
+          </li>
+          <li class="m-only">
+            <a href="#">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Sign out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-item header-right">
+      <a class="notification" href="#">
+        <i class="far fa-bell"></i>
+      </a>
+      <button class="btn-more" type="button">
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-caret-down"></i>
+      </button>
+      <button class="btn-account" type="button">
+        <img class="avatar avatar-user" src="https://avatars2.githubusercontent.com/u/43628429?s=40&amp;v=4" width="20" height="20" alt="@ParkDajeong">      </button>
+        <i class="fas fa-caret-down"></i>
+      </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- User Git Nav - PC -->
+    <div class="pc-user-nav">
+      <div class="user-account">
+        <a href="#">
+          <img class="rounded-1 avatar-user" height="32" width="32" alt="@ParkDajeong" src="https://avatars1.githubusercontent.com/u/43628429?s=88&amp;u=f87d96e73f7dc7eded60b149066c00ac76bd0ec1&amp;v=4">
+          <strong>ParkDajeong</strong>
+        </a>
+      </div>
+      <nav class="user-git-nav">
+        <a href="#">
+          <i class="fas fa-book-open"></i>
+          Overview
+        </a>
+        <a href="#">
+          <i class="fas fa-book"></i>
+          Repositories
+        </a>
+        <a href="#">
+          <i class="far fa-chart-bar"></i>
+          Projects
+        </a>
+        <a href="#">
+          <i class="fas fa-box"></i>
+          Packages
+        </a>
+      </nav>
+    </div>
+    <!-- User Info -->
+    <section class="user-info">
+      <div class="user-profile">
+        <div class="user-img">
+          <img style="height:auto;" alt="" width="260" height="260" class="avatar avatar-user width-full border bg-white" src="https://avatars3.githubusercontent.com/u/43628429?s=460&amp;u=f87d96e73f7dc7eded60b149066c00ac76bd0ec1&amp;v=4">
+        </div>
+        <strong class="user-name">ParkDajeong</strong>
+      </div>
+      <div class="user-status">
+        <button class="fill-w-btn" type="button">
+          <span class="user-status-emoji">
+            <i class="far fa-smile"></i>
+          </span>
+          Set status
+        </button>
+      </div>
+      <div class="user-edit">
+        <button class="fill-w-btn" type="button">Eidt profile</button>
+        <div class="user-etc">
+          <a href="#">
+            <i class="fas fa-user-friends"></i>
+            0 followers
+          </a>
+          ·
+          <a href="#">following</a>
+          ·
+          <a href="#">
+            <i class="far fa-star"></i>
+            2
+          </a>
+        </div>
+      </div>
+      <div class="highlights">
+        <h2>Highlights</h2>
+        <a>
+          <span>
+            <svg class="octicon octicon-north-star text-gray-light mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"></path></svg>
+          </span>
+          Arctic Code Vault Contributor
+        </a>
+      </div>
+    </section>
+    <!-- User Git Info -->
+    <section class="user-git-info">
+      <div class="m-user-nav">
+        <nav class="user-git-nav">
+          <a href="#">
+            <i class="fas fa-book-open"></i>
+            Overview
+          </a>
+          <a href="#">
+            <i class="fas fa-book"></i>
+            Repositories
+          </a>
+          <a href="#">
+            <i class="far fa-chart-bar"></i>
+            Projects
+          </a>
+          <a href="#">
+            <i class="fas fa-box"></i>
+            Packages
+          </a>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="popular-repository">
+          <h3 class="content-sec-title">Popular Repository</h3>
+          <ol class="repo-list">
+            <li class="repo-item">
+              <a href="#">
+                <strong class="repo-name">portfolio</strong>
+                <p class="repo-desc">2019 웹 포트폴리오</p>
+                <p class="repo-language">
+                  <span class="repo-language-color"></span>
+                  <span class="programing-language">JavaScript</span>
+                </p>
+              </a>
+            </li>
+            <li class="repo-item">
+              <a href="#">
+                <strong class="repo-name">HaPo-community</strong>
+                <p class="repo-desc"></p>
+                <p class="repo-language">
+                  <span class="repo-language-color"></span>
+                  <span class="programing-language">JavaScript</span>
+                </p>
+              </a>
+            </li>
+            <li class="repo-item">
+              <a href="#">
+                <strong class="repo-name">practice</strong>
+                <p class="repo-desc"></p>
+                <p class="repo-language">
+                  <span class="repo-language-color red"></span>
+                  <span class="programing-language">HTML</span>
+                </p>
+              </a>
+            </li>
+            <li class="repo-item">
+              <a href="#">
+                <strong class="repo-name">movie</strong>
+                <p class="repo-desc">Movie Application</p>
+                <p class="repo-language">
+                  <span class="repo-language-color"></span>
+                  <span class="programing-language">JavaScript</span>
+                </p>
+              </a>
+            </li>
+            <li class="repo-item">
+              <a href="#">
+                <strong class="repo-name">inflearn-react</strong>
+                <p class="repo-desc"></p>
+                <p class="repo-language">
+                  <span class="repo-language-color"></span>
+                  <span class="programing-language">JavaScript</span>
+                </p>
+              </a>
+            </li>
+            <li class="repo-item">
+              <a href="#">
+                <strong class="repo-name">CSS_Flex-Grid</strong>
+                <p class="repo-desc">인프런 - CSS Flex와 Grid 제대로 익히기 강의</p>
+                <p class="repo-language">
+                  <span class="repo-language-color red"></span>
+                  <span class="programing-language">HTML</span>
+                </p>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div class="contribution-wrapper">
+          <div class="contribution">
+            <h3 class="content-sec-title">199 contributions in the last year</h3>
+            <div class="box"></div>
+          </div>
+          <div class="contribution-activity">
+            <h3 class="content-sec-title">Contribution activity</h3>
+            <div class="activiy-timeline">
+              <h3 class="timeline">October 2020</h3>
+              <div class="activiy-item">
+                <span class="discussion-item-icon">
+                  <svg class="octicon octicon-repo-push" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z"></path></svg>
+                </span>
+                <button type="button">
+                  <span>Created 23commits in 3 repositories</span>
+                  <span>
+                    <svg class="octicon octicon-unfold" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.177.677l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25a.75.75 0 01-1.5 0V4H5.104a.25.25 0 01-.177-.427L7.823.677a.25.25 0 01.354 0zM7.25 10.75a.75.75 0 011.5 0V12h2.146a.25.25 0 01.177.427l-2.896 2.896a.25.25 0 01-.354 0l-2.896-2.896A.25.25 0 015.104 12H7.25v-1.25zm-5-2a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <div class="activiy-item">
+                <span class="discussion-item-icon">
+                  <svg class="octicon octicon-repo-push" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z"></path></svg>
+                </span>
+                <button type="button">
+                  <span>Created 23commits in 3 repositories</span>
+                  <span>
+                    <svg class="octicon octicon-unfold" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.177.677l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25a.75.75 0 01-1.5 0V4H5.104a.25.25 0 01-.177-.427L7.823.677a.25.25 0 01.354 0zM7.25 10.75a.75.75 0 011.5 0V12h2.146a.25.25 0 01.177.427l-2.896 2.896a.25.25 0 01-.354 0l-2.896-2.896A.25.25 0 015.104 12H7.25v-1.25zm-5-2a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"></path></svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <button class="fill-w-btn more-activity" type="button">Show more activity</button>
+            <p class="text-gray">
+              Seeing something unexpected? Take a look at the
+              <a href="#">GitHub profile guide</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <a class="link-git-home" href="#">
+        <i class="fab fa-github"></i>
+      </a>
+      <ul>
+        <li>© 2020 GitHub, Inc.</li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact GitHub</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
