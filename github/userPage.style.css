@@ -153,33 +153,6 @@ main .content .popular-repository .repo-item a {
   border-radius: 6px;
 }
 
-main .content .popular-repository .repo-item .repo-name {
-  display: block;
-  margin-bottom: 12px;
-  color: #0366d6;
-  font-size: 13px;
-}
-
-main .content .popular-repository .repo-item .repo-desc {
-  margin-bottom: 16px;
-  font-size: 12px;
-}
-
-main .content .popular-repository .repo-item .repo-language {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-}
-
-main .content .popular-repository .repo-item .repo-language-color {
-  background-color: #f1e05a;
-  display: block;
-  width: 12px;
-  height: 12px;
-  margin-right: 5px;
-  border-radius: 50%;
-}
-
 main .content .contribution-wrapper .contribution .box {
   width: 100%;
   height: 180px;

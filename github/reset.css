@@ -38,6 +38,16 @@ input {
   display: none;
 }
 
+.fill-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  font-size: 13px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+}
+
 .fill-w-btn {
   display: block;
   width: 100%;
@@ -47,8 +57,39 @@ input {
   border-radius: 6px;
 }
 
+.repo-name {
+  display: block;
+  margin-bottom: 12px;
+  color: #0366d6;
+  font-size: 13px;
+}
+
+.repo-desc {
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.repo-language {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.repo-language-color {
+  background-color: #f1e05a;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
 .red {
   background-color: #e34c26 !important;
+}
+
+.blue {
+  background-color: #2b7489 !important;
 }
 
 @media (min-width: 768px) {
