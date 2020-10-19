@@ -23,6 +23,19 @@ a {
   color: #000;
 }
 
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Default CSS */
 .link-icon {
   display: block;
@@ -85,6 +98,7 @@ a {
 
 /* Header */
 #header {
+  margin-bottom: 30px;
 }
 
 /* Header - Header Top */
@@ -167,8 +181,58 @@ a {
 
 /* Main */
 #main {
-  height: 3000px;
+  height: 1000px;
   background-color: aliceblue;
+}
+
+/* Main - Slider */
+#main .slider-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#main .slider-wrap .slider {
+  display: flex;
+  width: 100%;
+}
+
+#main .slider-wrap .slider .slider-item {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+#main .slider-wrap .slider .slider-item a {
+  display: block;
+}
+
+#main .slider-wrap .slider-pagination {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  display: flex;
+}
+
+#main .slider-wrap .slider-pagination .bullet {
+  margin-right: 7px;
+}
+
+#main .slider-wrap .slider-pagination .bullet button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+}
+
+#main .slider-wrap .slider-pagination .bullet button.active {
+  background-color: #6d6e71;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  height: 30px;
 }
 
 @media screen and (min-width: 769px) {
@@ -184,6 +248,11 @@ a {
 
   .link-text-medium {
     font-size: 1.9rem;
+  }
+
+  /* Header */
+  #header {
+    margin-bottom: 60px;
   }
 
   /* Header - Header Top */
@@ -245,17 +314,13 @@ a {
   /* Header */
   #header {
     width: 30%;
+    margin-bottom: 0;
   }
 
   #main {
-    overflow: scroll;
     width: 70%;
     max-height: calc(100vh - 42px - 30px);
-  }
-
-  #footer {
-    width: 100%;
-    height: 30px;
+    overflow-y: scroll;
   }
 
   /* Header - Header Top */
@@ -288,5 +353,52 @@ a {
   /* Header - Mobile Menu Dropdown */
   #header .mobile-menu-dropdown {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  /* Default CSS */
+  .link-text-large {
+    font-size: 5.4rem;
+  }
+
+  /* Header - Category (global navbar) */
+  #header .global-navbar .btn-circle {
+    width: 75px;
+    height: 75px;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  /* Default CSS */
+  .link-text-large {
+    font-size: 8.2rem;
+  }
+
+  /* Header */
+  #header {
+    width: 35%;
+  }
+
+  #main {
+    width: 65%;
+  }
+
+  /* Header - Header Top */
+  #header .header-top {
+    margin-bottom: 30px;
+  }
+
+  #header .header-top .link-logo {
+    width: 20px;
+    margin-left: 15px;
+  }
+
+  /* Header - Category (global navbar) */
+  #header .global-navbar .btn-circle {
+    width: 116px;
+    height: 116px;
+    font-size: 1.5rem;
   }
 }
