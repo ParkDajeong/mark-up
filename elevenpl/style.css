@@ -24,6 +24,7 @@ a {
 }
 
 button {
+  background: none;
   padding: 0;
   border: none;
   outline: none;
@@ -41,6 +42,10 @@ img {
   display: block;
   width: 24px;
   margin-left: 14px;
+}
+
+button.link-icon {
+  display: flex;
 }
 
 .link-text-large {
@@ -504,6 +509,7 @@ img {
 
   #footer .footer-right .footer-desc {
     color: #898989;
+    font-size: 1.3rem;
     font-weight: 700;
   }
 
