@@ -67,3 +67,4 @@ btnMenu.addEventListener("click", openDropdownMenu);
 btnClose.addEventListener("click", closeDropdownMenu);
 
 sliderPagination.addEventListener("click", clickSliderPagination);
+
