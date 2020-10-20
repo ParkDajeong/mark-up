@@ -127,11 +127,6 @@ button.link-icon {
   height: 100%;
 }
 
-/* margin */
-.mb-8 {
-  margin-bottom: 8px;
-}
-
 /* Wrapper */
 #wrapper {
   position: relative;
