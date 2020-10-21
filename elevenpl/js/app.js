@@ -48,7 +48,7 @@ function roopSlider() {
         moveSliderImages(0);
       }, 200)
     }
-  }, 4000);
+  }, 3000);
 }
 
 function clickSliderPagination(e) {
