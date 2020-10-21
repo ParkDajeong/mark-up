@@ -1,16 +1,16 @@
-const btnMenu = document.querySelector(".btn-menu");
-const btnClose = document.querySelector(".btn-close");
-const mobileDropdownMenu = document.querySelector(".mobile-menu-dropdown");
+const btnMenu = document.querySelector(".mobile-menu__item--menu");
+const btnClose = document.querySelector(".mobile-dropdown-menu__button--close");
+const mobileDropdownMenu = document.querySelector(".mobile-dropdown-menu");
 // Slider Image
 const slider = document.querySelector(".slider");
-const sliderItems = document.querySelectorAll(".slider-item");
+const sliderItems = document.querySelectorAll(".slider__item");
 const sliderLen = sliderItems.length;
 let currentIdx = 1;
 const sliderSpeed = 300;
 let sliderWidth = slider.offsetWidth;
 // Slider Pagination
 const sliderPagination = document.querySelector(".slider-pagination");
-const sliderBullets = document.querySelectorAll(".slider-pagination .bullet button");
+const sliderBullets = document.querySelectorAll(".slider-pagination__bullet button");
 
 // Mobile Dropdown Menu
 function openDropdownMenu() {
