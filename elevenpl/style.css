@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* Wrapper */
 #wrapper {
   position: relative;
@@ -99,61 +101,61 @@
 }
 
 /* Main */
-#main {
+.main {
   padding-bottom: 60px;
 }
 
 /* Main - Slider */
-#main .slider-wrap {
+.main__slider-wrap {
   position: relative;
   width: 100%;
   margin-bottom: 60px;
   overflow: hidden;
 }
 
-#main .slider-wrap .slider {
+/* ----슬라이더 */
+.slider {
   display: flex;
   width: 100%;
 }
 
-#main .slider-wrap .slider .slider-item {
+.slider__item {
   flex-shrink: 0;
   width: 100%;
 }
 
-#main .slider-wrap .slider .slider-item a {
+.slider__link {
   display: block;
 }
 
-#main .slider-wrap .slider-pagination {
+/* ----슬라이더 페이지네이션 */
+.slider-pagination {
   position: absolute;
   right: 15px;
   bottom: 20px;
   display: flex;
 }
 
-#main .slider-wrap .slider-pagination .bullet {
+.slider-pagination__bullet {
   margin-right: 7px;
 }
 
-#main .slider-wrap .slider-pagination .bullet button {
-  display: block;
+.slider-pagination__bullet .link-icon--circle {
+  background-color: #e6e6e6;
   width: 10px;
   height: 10px;
-  background-color: #e6e6e6;
-  border-radius: 50%;
 }
 
-#main .slider-wrap .slider-pagination .bullet button.active {
+.slider-pagination__bullet .link-icon--circle.active {
   background-color: #6d6e71;
 }
 
 /* Main - Content */
-#main .content .grid-col {
+.main__content .grid-col {
   display: flex;
 }
 
-#main .content .grid-col .img-fix img {
+.main__content .grid-col .img-fix img {
   height: 100%;
 }
 
@@ -265,13 +267,6 @@
     margin-bottom: 0;
   }
 
-  /* ***************뜬금 메인?? Main */
-  #main {
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-  }
-
   /* Header - Header Top */
   .header__top {
     height: auto;
@@ -310,12 +305,15 @@
   }
 
   /* Main */
-  #main {
+  .main {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
     margin-bottom: 60px;
   }
 
   /* Main - Slider */
-  #main .slider-wrap {
+  .main__slider-wrap {
     margin-bottom: 200px;
   }
 
@@ -395,11 +393,6 @@
     width: 35%;
   }
 
-  /* ***************뜬금 메인?? Main */
-  #main {
-    width: 65%;
-  }
-
   /* Header - Header Top */
   .header__top {
     margin-bottom: 30px;
@@ -416,5 +409,10 @@
     width: 116px;
     height: 116px;
     font-size: 1.5rem;
+  }
+
+  /* Main */
+  .main {
+    width: 65%;
   }
 }
