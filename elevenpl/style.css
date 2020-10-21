@@ -150,12 +150,53 @@
   background-color: #6d6e71;
 }
 
-/* Main - Content */
-.main__content .grid-col {
+/* Main - Grid */
+.main__content {
+  overflow: hidden;
+}
+
+.main__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  gap: 5px;
+}
+
+.main__grid-item {
   display: flex;
 }
 
-.main__content .grid-col .img-fix img {
+.main__grid-top {
+  grid-template-rows: repeat(4, auto);
+  margin-bottom: 5px;
+}
+
+.main__grid-top .main__grid-item:nth-child(1),
+.main__grid-top .main__grid-item:nth-child(5) {
+  grid-column: 1 / span 2;
+}
+
+.main__grid-top .main__grid-item:nth-child(3) {
+  display: none;
+}
+
+.main__grid-top .main__grid-item:nth-child(4) {
+  grid-row: 2 / span 2;
+}
+
+.main__grid-bottom {
+  grid-template-rows: repeat(3, auto);
+}
+
+.main__grid-bottom .main__grid-item:nth-child(5) {
+  grid-column: 1 / span 2;
+}
+
+.main__grid-link {
+  display: block;
+}
+
+.main__grid-link img {
   height: 100%;
 }
 
@@ -196,6 +237,47 @@
 }
 
 /* ========== 반 응 형 ========== */
+@media screen and (min-width: 481px) {
+  /* Main - Grid */
+  .main__grid {
+    grid-auto-flow: row;
+  }
+
+  .main__grid-top {
+    grid-template-columns: 66.4% 33.4%;
+  }
+
+  .main__grid-top .main__grid-item:nth-child(1) {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+  }
+
+  .main__grid-top .main__grid-item:nth-child(3) {
+    display: flex;
+  }
+
+  .main__grid-top .main__grid-item:nth-child(4) {
+    grid-row: 2 / span 2;
+  }
+
+  .main__grid-top .main__grid-item:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .main__grid-bottom {
+    grid-template-columns: 33.4% 66.4%;
+  }
+
+  .main__grid-bottom .main__grid-item:nth-child(2) {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+  }
+
+  .main__grid-bottom .main__grid-item:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
 @media screen and (min-width: 769px) {
   /* Header */
   .header {
