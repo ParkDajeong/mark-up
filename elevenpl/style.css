@@ -1,132 +1,3 @@
-/* Reset CSS */
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-html,
-body {
-  font-family: "Roboto", "맑은 고딕", sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.2px;
-  -webkit-text-size-adjust: none;
-}
-
-ul,
-ol {
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  background: none;
-  padding: 0;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Default CSS */
-.link-icon {
-  display: block;
-  width: 24px;
-  margin-left: 14px;
-}
-
-button.link-icon {
-  display: flex;
-}
-
-.link-text-large {
-  font-size: 4.4rem;
-  font-weight: 700;
-  letter-spacing: -0.09rem;
-}
-
-.link-text-medium {
-  display: block;
-  font-size: 1.7rem;
-  font-weight: 700;
-  letter-spacing: -0.05rem;
-}
-
-.link-text-small {
-  display: block;
-  color: #898989;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.icon {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.category-item {
-  line-height: 0.9;
-}
-
-.hidden-text {
-  position: relative;
-  background: url(./assets/decobar.png) repeat-x;
-  background-position: 0 0.5em;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  color: transparent;
-}
-
-.hidden-text::after {
-  background-color: #e6e6e6;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-.btn-circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-weight: 700;
-  border-radius: 50%;
-}
-
-.link-product {
-  display: block;
-  padding: 3px;
-}
-
-.grid-big {
-  width: 66.4%;
-}
-
-.grid-small {
-  width: 33.4%;
-}
-
-.img-fix {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 /* Wrapper */
 #wrapper {
   position: relative;
@@ -135,53 +6,58 @@ button.link-icon {
 }
 
 /* Header */
-#header {
+.header {
   margin-bottom: 30px;
 }
 
 /* Header - Header Top */
-#header .header-top {
+.header__top {
   display: flex;
   justify-content: space-between;
   height: 35px;
   margin-bottom: 15px;
 }
-
-#header .header-top .link-logo {
+/* ----로고 */
+.logo__link {
   display: block;
   width: 16px;
   margin-left: 5px;
 }
 
-#header .header-top .mobile-menu {
+/* ---- 모바일 메뉴 */
+.mobile-menu {
   display: flex;
 }
 
-#header .header-top .mobile-menu .btn-cart {
+.mobile-menu__item--cart {
   background-color: #b5b5b6;
   height: 24px;
   font-size: 1.3rem;
 }
 
-#header .header-top .mobile-menu .btn-store {
+.mobile-menu__item--store {
   width: 26px;
 }
 
-/* Header - Category (global navbar) */
-#header .global-navbar .category {
+/* ----글로벌 네비게이션 */
+.global-nav__category {
   min-height: 200px;
   margin-bottom: 20px;
 }
 
-#header .global-navbar .category .category-item:hover {
+.global-nav__category-item {
+  line-height: 0.9;
+}
+
+.global-nav__category-item:hover {
   color: #e6e6e6;
 }
 
-#header .global-navbar .category .category-item:hover .hidden-text {
+.global-nav__category-item:hover .hidden-text {
   opacity: 0.1;
 }
 
-#header .global-navbar .btn-circle {
+.global-nav__container .link-icon--circle {
   background-color: #ff5000;
   width: 65px;
   height: 65px;
@@ -189,8 +65,8 @@ button.link-icon {
   text-transform: uppercase;
 }
 
-/* Header - Mobile Menu Dropdown */
-#header .mobile-menu-dropdown {
+/* ----모바일 드롭다운 메뉴 */
+.mobile-dropdown-menu {
   background-color: #fff;
   position: absolute;
   top: 0;
@@ -202,20 +78,20 @@ button.link-icon {
   transition: max-height 250ms ease-in-out;
 }
 
-#header .mobile-menu-dropdown .menu-list {
+.mobile-dropdown-menu__list {
   padding: 23px;
 }
 
-#header .mobile-menu-dropdown .menu-list li {
+.mobile-dropdown-menu__item {
   border-bottom: 1px solid #b5b5b5;
 }
 
-#header .mobile-menu-dropdown .menu-list .link-text-medium {
+.mobile-dropdown-menu__item .link-text--medium {
   padding: 10px 0;
   color: #666;
 }
 
-#header .mobile-menu-dropdown .btn-close {
+.mobile-dropdown-menu__button--close {
   position: absolute;
   top: 23px;
   right: 25px;
@@ -317,59 +193,48 @@ button.link-icon {
   font-weight: 700;
 }
 
+/* ========== 반 응 형 ========== */
 @media screen and (min-width: 769px) {
-  /* Default CSS */
-  .link-icon {
-    width: 28px;
-    margin-left: 18px;
-  }
-
-  .link-text-large {
-    font-size: 8rem;
-  }
-
-  .link-text-medium {
-    font-size: 1.9rem;
-  }
-
   /* Header */
-  #header {
+  .header {
     margin-bottom: 60px;
   }
 
   /* Header - Header Top */
-  #header .header-top {
+  .header__top {
     height: 45px;
     margin-bottom: 23px;
   }
 
-  #header .header-top .link-logo {
+  /* ----로고 */
+  .logo__link {
     width: 20px;
     margin-left: 15px;
   }
 
-  #header .header-top .mobile-menu .btn-cart {
+  /* ----모바일 메뉴 */
+  .mobile-menu__item--cart {
     height: 28px;
     font-size: 1.6rem;
   }
 
-  #header .header-top .mobile-menu .btn-store {
+  .mobile-menu__item--store {
     width: 30px;
   }
 
-  /* Header - Category (global navbar) */
-  #header .global-navbar .category {
+  /* ----글로벌 네비게이션 */
+  .global-nav__category {
     margin-bottom: 30px;
   }
 
-  #header .global-navbar .btn-circle {
+  .global-nav__container .link-icon--circle {
     width: 112px;
     height: 112px;
     font-size: 1.5rem;
   }
 
-  /* Header - Mobile Menu Dropdown */
-  #header .mobile-menu-dropdown .menu-list .link-text-medium {
+  /* ----모바일 드롭다운 메뉴 */
+  .mobile-dropdown-menu__item .link-text--medium {
     padding: 16px 0;
   }
 
@@ -385,15 +250,6 @@ button.link-icon {
 }
 
 @media screen and (min-width: 1001px) {
-  /* Default CSS */
-  .link-text-large {
-    font-size: 4.2rem;
-  }
-
-  .category-item {
-    margin: 0;
-  }
-
   /* Wrapper */
   #wrapper {
     display: flex;
@@ -403,12 +259,13 @@ button.link-icon {
   }
 
   /* Header */
-  #header {
+  .header {
     position: fixed;
     width: 30%;
     margin-bottom: 0;
   }
 
+  /* ***************뜬금 메인?? Main */
   #main {
     width: 70%;
     height: auto;
@@ -416,34 +273,39 @@ button.link-icon {
   }
 
   /* Header - Header Top */
-  #header .header-top {
+  .header__top {
     height: auto;
   }
 
-  #header .header-top .link-logo {
+  /* ----로고 */
+  .logo__link {
     width: 14px;
     margin-left: 5px;
   }
 
-  /* Header - Header Top */
-  #header .header-top .mobile-menu {
+  /* ---- 모바일 메뉴 */
+  .mobile-menu {
     display: none;
   }
 
-  /* Header - Category (global navbar) */
-  #header .global-navbar .category {
+  /* ----글로벌 네비게이션 */
+  .global-nav__category {
     min-height: 160px;
     margin-bottom: 30px;
   }
 
-  #header .global-navbar .btn-circle {
+  .global-nav__category-item {
+    margin: 0;
+  }
+
+  .global-nav__container .link-icon--circle {
     width: 60px;
     height: 60px;
     font-size: 1rem;
   }
 
-  /* Header - Mobile Menu Dropdown */
-  #header .mobile-menu-dropdown {
+  /* ----모바일 드롭다운 메뉴 */
+  .mobile-dropdown-menu {
     display: none;
   }
 
@@ -519,13 +381,8 @@ button.link-icon {
 }
 
 @media screen and (min-width: 1201px) {
-  /* Default CSS */
-  .link-text-large {
-    font-size: 5.4rem;
-  }
-
-  /* Header - Category (global navbar) */
-  #header .global-navbar .btn-circle {
+  /* ----글로벌 네비게이션 */
+  .global-nav__container .link-icon--circle {
     width: 75px;
     height: 75px;
     font-size: 1.4rem;
@@ -533,32 +390,29 @@ button.link-icon {
 }
 
 @media screen and (min-width: 1601px) {
-  /* Default CSS */
-  .link-text-large {
-    font-size: 8.2rem;
-  }
-
   /* Header */
-  #header {
+  .header {
     width: 35%;
   }
 
+  /* ***************뜬금 메인?? Main */
   #main {
     width: 65%;
   }
 
   /* Header - Header Top */
-  #header .header-top {
+  .header__top {
     margin-bottom: 30px;
   }
 
-  #header .header-top .link-logo {
+  /* ----로고 */
+  .logo__link {
     width: 20px;
     margin-left: 15px;
   }
 
-  /* Header - Category (global navbar) */
-  #header .global-navbar .btn-circle {
+  /* ----글로벌 네비게이션 */
+  .global-nav__container .link-icon--circle {
     width: 116px;
     height: 116px;
     font-size: 1.5rem;

@@ -13,21 +13,21 @@ const sliderPagination = document.querySelector(".slider-pagination");
 const sliderBullets = document.querySelectorAll(".slider-pagination .bullet button");
 
 // Mobile Dropdown Menu
-const openDropdownMenu = () => {
+function openDropdownMenu() {
   mobileDropdownMenu.style.maxHeight = "500px";
 }
 
-const closeDropdownMenu = () => {
+function closeDropdownMenu() {
   mobileDropdownMenu.style.maxHeight = "0";
 }
 
 // Slider
-const moveSliderImages = (speed) => {
+function moveSliderImages(speed) {
   slider.style.transition = `${speed}ms`;
   slider.style.transform = `translateX(${-(sliderWidth * (currentIdx++))}px)`;
 }
 
-const moveSliderPagination = () => {
+function moveSliderPagination() {
   sliderBullets.forEach((bullet) => bullet.classList.remove("active"));
   if(currentIdx >= sliderLen - 1) {
     sliderBullets[0].classList.add("active");
@@ -36,7 +36,7 @@ const moveSliderPagination = () => {
   }
 }
 
-const roopSlider = () => {
+function roopSlider() {
   setInterval(() => {
     moveSliderPagination();
     moveSliderImages(sliderSpeed);
@@ -51,7 +51,7 @@ const roopSlider = () => {
   }, 4000);
 }
 
-const clickSliderPagination = (e) => {
+function clickSliderPagination(e) {
   const clickedEl = e.target;
   if(clickedEl.tagName !== "BUTTON") return;
 

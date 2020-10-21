@@ -4,74 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./global.css">
   <link rel="stylesheet" href="./style.css">
   <title>Elevenplus | Official Site</title>
 </head>
 <body>
   <div id="wrapper">
     <!-- Header -->
-    <header id="header">
-      <div class="header-top">
+    <header class="header">
+      <div class="header__top">
         <h1 class="logo">
-          <a class="link-logo" href="#" title="ElevenPlus">
-            <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/pin.png" alt="ElevenPlus">
+          <a class="logo__link" href="#" title="ElevenPlus">
+            <img class="logo__img" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/pin.png" alt="ElevenPlus">
           </a>
         </h1>
         <div class="mobile-menu">
-          <a class="link-icon btn-circle btn-cart" href="#" aria-label="장바구니">0</a>
-          <a class="link-icon btn-store" href="#" aria-label="스토어">
+          <a class="link-icon link-icon--circle mobile-menu__item--cart" href="#" aria-label="장바구니">0</a>
+          <a class="link-icon mobile-menu__item--store" href="#" aria-label="스토어">
             <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/btn/mobile_shop.png" alt="shop">
           </a>
-          <button class="link-icon btn-menu" href="#" aria-label="메뉴">
+          <button class="link-icon mobile-menu__item--menu" href="#" aria-label="메뉴">
             <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/btn/mobile_menu.png" alt="메뉴">
           </button>
         </div>
       </div>
-      <nav class="global-navbar">
-        <div class="gnb-wrap">
-          <ul class="category">
-            <li class="category-item">
-              <a class="link-text-large" href="#">
+      <!-- Header - Global Navigation -->
+      <nav class="global-nav">
+        <div class="global-nav__container">
+          <ul class="global-nav__category">
+            <li class="global-nav__category-item">
+              <a class="link-text link-text--large" href="#">
                 <span class="hidden-text"></span>electronic
               </a>
             </li>
-            <li class="category-item">
-              <a class="link-text-large" href="#">
+            <li class="global-nav__category-item">
+              <a class="link-text link-text--large" href="#">
                 <span class="hidden-text">ele</span>case
               </a>
             </li>
-            <li class="category-item">
-              <a class="link-text-large" href="#">
+            <li class="global-nav__category-item">
+              <a class="link-text link-text--large" href="#">
                 <span class="hidden-text">l</span>accessories
               </a>
             </li>
-            <li class="category-item">
-              <a class="link-text-large" href="#">
+            <li class="global-nav__category-item">
+              <a class="link-text link-text--large" href="#">
                 <span class="hidden-text">lacces</span>all
               </a>
             </li>
           </ul>
-          <a class="btn-circle" href="#">about</a>
+          <a class="link-icon--circle" href="#">about</a>
         </div>
       </nav>
-      <div class="mobile-menu-dropdown">
-        <ul class="menu-list">
-          <li>
-            <a class="link-text-medium" href="#">Destination</a>
+      <!-- Header - Mobile Dropdown Menu -->
+      <div class="mobile-dropdown-menu">
+        <ul class="mobile-dropdown-menu__list">
+          <li class="mobile-dropdown-menu__item">
+            <a class="link-text link-text--medium" href="#">Destination</a>
           </li>
-          <li>
-            <a class="link-text-medium" href="#">Store Location</a>
+          <li class="mobile-dropdown-menu__item">
+            <a class="link-text link-text--medium" href="#">Store Location</a>
           </li>
-          <li>
-            <a class="link-text-medium" href="#">News</a>
+          <li class="mobile-dropdown-menu__item">
+            <a class="link-text link-text--medium" href="#">News</a>
           </li>
-          <li>
-            <a class="link-text-medium" href="#">Help</a>
+          <li class="mobile-dropdown-menu__item">
+            <a class="link-text link-text--medium" href="#">Help</a>
           </li>
         </ul>
-        <button class="link-icon btn-close" href="#">
-          <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/btn/mobile_menu_close.png" alt="모바일 메뉴 닫기">
-        </button>
+        <div class="mobile-dropdown-menu__button--close">
+          <button class="link-icon" href="#">
+            <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/btn/mobile_menu_close.png" alt="모바일 메뉴 닫기">
+          </button>
+        </div>
       </div>
     </header>
     <!-- Main -->

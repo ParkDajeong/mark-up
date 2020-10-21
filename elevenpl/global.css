@@ -1,0 +1,119 @@
+/* Link 관련 */
+.link-icon {
+  display: block;
+  width: 24px;
+  margin-left: 14px;
+}
+
+button.link-icon {
+  display: flex;
+}
+
+.link-icon--circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.link-text {
+  display: block;
+  font-weight: 700;
+}
+
+.link-text--large {
+  font-size: 4.4rem;
+  letter-spacing: -0.09rem;
+}
+
+.link-text--medium {
+  font-size: 1.7rem;
+  letter-spacing: -0.05rem;
+}
+
+.link-text--small {
+  color: #898989;
+  font-size: 1.3rem;
+}
+
+.icon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hidden-text {
+  position: relative;
+  background: url(./assets/decobar.png) repeat-x;
+  background-position: 0 0.5em;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  color: transparent;
+}
+
+.hidden-text::after {
+  background-color: #e6e6e6;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.link-product {
+  display: block;
+  padding: 3px;
+}
+
+.grid-big {
+  width: 66.4%;
+}
+
+.grid-small {
+  width: 33.4%;
+}
+
+.img-fix {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ========== 반 응 형 ========== */
+@media screen and (min-width: 769px) {
+  .link-icon {
+    width: 28px;
+    margin-left: 18px;
+  }
+
+  .link-text--large {
+    font-size: 8rem;
+  }
+
+  .link-text--medium {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .link-text--large {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .link-text--large {
+    font-size: 5.4rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .link-text--large {
+    font-size: 8.2rem;
+  }
+}
