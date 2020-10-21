@@ -48,7 +48,7 @@ button.link-icon {
 
 .hidden-text {
   position: relative;
-  background: url(./assets/decobar.png) repeat-x;
+  background: url(../assets/decobar.png) repeat-x;
   background-position: 0 0.5em;
   display: inline-block;
   padding: 0;

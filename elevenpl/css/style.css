@@ -417,7 +417,7 @@
   }
 
   .footer__section-left .link-text--small {
-    margin-right: 23px;
+    margin-right: 20px;
   }
 
   .footer__section-left .link-text--small.cart {
@@ -433,6 +433,7 @@
     width: 15px;
     height: 15px;
     min-width: 8px;
+    margin-left: 5px;
     font-size: 1.2rem;
   }
 
@@ -472,11 +473,6 @@
 }
 
 @media screen and (min-width: 1601px) {
-  /* Header */
-  .header {
-    width: 35%;
-  }
-
   /* Header - Header Top */
   .header__top {
     margin-bottom: 30px;
@@ -497,6 +493,11 @@
 
   /* Main */
   .main {
-    width: 65%;
+    width: 66%;
+  }
+
+  /* Footer */
+  .footer__section-left {
+    width: 36%;
   }
 }
