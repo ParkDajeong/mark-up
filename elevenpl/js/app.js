@@ -23,12 +23,14 @@ function closeDropdownMenu() {
 
 // Slider
 function moveSliderImages(speed) {
-  slider.style.transition = `${speed}ms`;
-  slider.style.transform = `translateX(${-(sliderWidth * (currentIdx++))}px)`;
+  slider.style.transition = speed + "ms";
+  slider.style.transform = "translateX(" + (-(sliderWidth * currentIdx++)) + "px)";
 }
 
 function moveSliderPagination() {
-  sliderBullets.forEach((bullet) => bullet.classList.remove("active"));
+  for(let i=0; i<sliderBullets.length; i++) {
+    sliderBullets[i].classList.remove("active");
+  }
   if(currentIdx >= sliderLen - 1) {
     sliderBullets[0].classList.add("active");
   } else {
@@ -37,12 +39,12 @@ function moveSliderPagination() {
 }
 
 function roopSlider() {
-  setInterval(() => {
+  setInterval(function() {
     moveSliderPagination();
     moveSliderImages(sliderSpeed);
     
     if(currentIdx === sliderLen) {
-      setTimeout(() => {
+      setTimeout(function() {
         currentIdx = 0;
         moveSliderPagination();
         moveSliderImages(0);
@@ -60,7 +62,9 @@ function clickSliderPagination(e) {
   moveSliderImages(0);
 }
 
-window.addEventListener("resize", () => sliderWidth = slider.offsetWidth);
+window.addEventListener("resize", function() {
+  sliderWidth = slider.offsetWidth;
+});
 window.addEventListener("load", roopSlider);
 
 btnMenu.addEventListener("click", openDropdownMenu);
