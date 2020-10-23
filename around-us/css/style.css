@@ -1,0 +1,133 @@
+/* Header */
+.header {
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo */
+.header__inner .logo {
+  padding: 20px 60px 20px 20px;
+}
+
+.logo {
+}
+
+.logo__link {
+  display: block;
+  width: 96px;
+  height: 40px;
+  font-size: 0;
+  background: url(../assets/logo_bk.svg) no-repeat center;
+}
+
+/* Global Nav */
+.global-nav {
+  display: none;
+}
+
+/* Header - Search */
+.header__search-box {
+  display: none;
+}
+
+/* Header - Mobile Menu Button */
+.header__btn-mobile-menu {
+  padding: 24px 20px 0 0;
+}
+
+.header__btn-mobile-menu .btn-icon {
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background: url(../assets/icon_mobile_menu_bk.svg) no-repeat center;
+}
+
+/* Mobile Nav */
+.mobile-nav {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+/* ============= 반응형 ============= */
+@media screen and (min-width: 921px) {
+  /* Header */
+  .header__inner {
+    justify-content: flex-start;
+  }
+
+  /* Logo */
+  .header__inner .logo {
+    padding: 30px 60px 32px 30px;
+  }
+
+  /* Global Nav */
+  .global-nav {
+    display: flex;
+  }
+
+  .global-nav__menu-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .global-nav__menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+  }
+
+  .global-nav__menu-item > a {
+    padding: 42px 10px;
+    font-weight: 500;
+  }
+
+  .global-nav__menu-item:hover .global-nav__submenu {
+    display: block;
+  }
+
+  .global-nav__submenu {
+    background-color: lavender;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+  }
+
+  .global-nav__submenu-list {
+    display: flex;
+    width: 500px;
+  }
+
+  .global-nav__submenu-item {
+    flex: 0 0 auto;
+  }
+
+  .global-nav__submenu-item > a {
+    display: block;
+    padding: 22px 18px;
+    font-weight: 500;
+  }
+
+  /* Header - Search */
+  .header__search-box {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* Header - Mobile Menu Button */
+  .header__btn-mobile-menu {
+    display: none;
+  }
+}

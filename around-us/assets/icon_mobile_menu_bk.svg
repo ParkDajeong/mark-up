@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <path id="prefix__a" d="M25 21v2H11v-2h14zm0-6v2H11v-2h14zm0-6v2H7V9h18z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0H32V32H0z"/>
+        <path d="M8 8H24V24H8z"/>
+        <use fill="#000" xlink:href="#prefix__a"/>
+    </g>
+</svg>
