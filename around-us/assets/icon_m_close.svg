@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Component_93_3" width="32" height="32" data-name="Component 93 – 3" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Mask" d="M6.53 7.592l-5.469 5.469L0 12l5.469-5.47L0 1.061 1.061 0 6.53 5.469 12 0l1.061 1.061L7.592 6.53 13.061 12 12 13.061z" transform="translate(9.47 9.47)"/>
+        </clipPath>
+        <style>
+            .prefix__cls-1{fill:none}
+        </style>
+    </defs>
+    <path id="prefix___32" d="M0 0H32V32H0z" class="prefix__cls-1" data-name="32"/>
+    <path id="prefix___16" d="M0 0H16V16H0z" class="prefix__cls-1" data-name="16" transform="translate(8 8)"/>
+    <g id="prefix__Group_2" data-name="Group 2">
+        <path id="prefix__Mask-2" d="M6.53 7.592l-5.469 5.469L0 12l5.469-5.47L0 1.061 1.061 0 6.53 5.469 12 0l1.061 1.061L7.592 6.53 13.061 12 12 13.061z" data-name="Mask" transform="translate(9.47 9.47)"/>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background-position: center cneter;
+  background-repeat: no-repeat;
+}
+
+.btn-close .btn-icon {
+  background-image: url(../assets/icon_m_close.svg);
+}

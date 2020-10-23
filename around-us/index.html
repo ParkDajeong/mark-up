@@ -120,9 +120,20 @@
             </li>
           </ul>
         </nav>
-        <div class="header__search-box">
-          <!-- 일단 보류 -->
-          <span>검색창</span>
+        <div class="header__search-wrap">
+          <div class="header__btn-search">
+            <button type="button">Search</button>
+          </div>
+          <div class="header__search-box">
+            <form class="search-form" action="">
+              <div class="search-input">
+                <input type="text" placeholder="검색어를 입력하세요.">
+              </div>
+            </form>
+          </div>
+          <div class="btn-close">
+            <button class="btn-icon" type="button">검색창 닫기</button>
+          </div>
         </div>
         <!-- Only Mobile -->
         <div class="header__btn-mobile-menu">
@@ -137,7 +148,7 @@
           <h1 class="logo">
             <a class="logo__link" href="/">around us</a>
           </h1>
-          <div class="header__btn-mobile-menu">
+          <div class="btn-close">
             <button class="btn-icon" type="button">닫기</button>
           </div>
         </div>
@@ -151,7 +162,7 @@
         <div class="mobile-nav__menu">
           <ul class="mobile-nav__menu-list">
             <li class="mobile-nav__menu-item">
-              <a href="#">About Around US</a>
+              <a class="mobile-nav__menu-link" href="#">About Around US</a>
               <div class="mobile-nav__submenu">
                 <ul class="mobile-nav__submenu-list">
                   <li class="mobile-nav__submenu-item">
@@ -167,7 +178,7 @@
               </div>
             </li>
             <li class="mobile-nav__menu-item">
-              <a href="#">HIGHLIGHT</a>
+              <a class="mobile-nav__menu-link" href="#">HIGHLIGHT</a>
               <div class="mobile-nav__submenu">
                 <ul class="mobile-nav__submenu-list">
                   <li class="mobile-nav__submenu-item">
@@ -189,7 +200,7 @@
               </div>
             </li>
             <li class="mobile-nav__menu-item">
-              <a href="#">Announce</a>
+              <a class="mobile-nav__menu-link" href="#">Announce</a>
               <div class="mobile-nav__submenu">
                 <ul class="mobile-nav__submenu-list">
                   <li class="mobile-nav__submenu-item">
@@ -202,7 +213,7 @@
               </div>
             </li>
             <li class="mobile-nav__menu-item">
-              <a href="#">Audition</a>
+              <a class="mobile-nav__menu-link" href="#">Audition</a>
               <div class="mobile-nav__submenu">
                 <ul class="mobile-nav__submenu-list">
                   <li class="mobile-nav__submenu-item">
