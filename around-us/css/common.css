@@ -2,12 +2,20 @@
   width: 32px;
   height: 32px;
   font-size: 0;
-  background-position: center cneter;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
-.btn-close .btn-icon {
+.btn-icon--close {
   background-image: url(../assets/icon_m_close.svg);
+}
+
+.btn-icon--menu {
+  background-image: url(../assets/icon_mobile_menu_bk.svg);
+}
+
+.btn-icon--more {
+  background-image: url(../assets/icon_plus.svg);
 }
 
 .text-effect--underline {
@@ -23,5 +31,5 @@
   width: 0;
   height: 1px;
   margin: 0 auto;
-  transition: width 250ms ease-in;
+  transition: width 400ms ease-out;
 }
