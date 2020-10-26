@@ -168,7 +168,7 @@ body {
 .slider__desc {
   position: relative;
   padding: 30px 0 8px;
-  animation: slider-text 700ms ease-out;
+  animation: right-to-left 700ms ease-out;
 }
 
 .slider__subject {
@@ -177,13 +177,13 @@ body {
   padding-bottom: 28px;
   font-size: 20px;
   line-height: 1.5;
-  animation: slider-text 800ms ease-out;
+  animation: right-to-left 800ms ease-out;
 }
 
 .slider__link {
   position: relative;
   display: block;
-  animation: slider-text 900ms ease-out;
+  animation: right-to-left 900ms ease-out;
 }
 
 /* Main - Content */
@@ -305,7 +305,7 @@ body {
 }
 
 /* ============= 애니메이션 ============= */
-@keyframes slider-text {
+@keyframes right-to-left {
   from {
     opacity: 0;
     right: -80%;
@@ -404,6 +404,7 @@ body {
     align-items: center;
     /* width: 125px; */
     padding: 30px 30px 30px 0;
+    overflow: hidden;
   }
 
   .header__btn-search {
@@ -424,10 +425,10 @@ body {
   .header__search-box {
     position: relative;
     display: none;
-    width: 80%;
+    /* width: 80%; */
     padding: 0 30px;
     /* transition: all 250ms ease-in-out; */
-    /* animation: slider-text 700ms ease-out; */
+    animation: right-to-left 700ms ease-out;
   }
 
   .header__search-box .search-input {
@@ -449,7 +450,7 @@ body {
   }
 
   .header__search-wrap .btn-close {
-    position: absolute;
+    position: fixed;
     display: none;
     top: 28px;
     right: 30px;
