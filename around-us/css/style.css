@@ -145,6 +145,7 @@ body {
 
 /* Main */
 .main {
+  padding-bottom: 160px;
 }
 
 .main__container {
@@ -259,6 +260,34 @@ body {
 
 .content__board-link dd {
   padding: 5px 0 3px 0;
+}
+
+/* 소셜 임시!!!! */
+.main__section .content-sns {
+  width: 100%;
+}
+
+.content-sns .content__slider {
+  width: 100%;
+  height: 200px;
+  background-color: lightsteelblue;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  width: 100%;
+  padding: 80px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer__copyright {
+  padding-bottom: 10px;
+}
+
+.footer__made {
+  opacity: 0.3;
 }
 
 /* ============= 애니메이션 ============= */
@@ -501,11 +530,8 @@ body {
     padding: 0 80px;
   }
 
-  .main__section .content {
-    width: 33.333333%;
-  }
-
   .content {
+    width: 33.333333%;
     padding-right: 40px;
   }
 
