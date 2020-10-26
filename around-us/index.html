@@ -3,10 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/common.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <script src="./js/app.js" defer></script>
+  <!-- Slick -->
+  <script src="http://code.jquery.com/jquery-latest.min.js" defer></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+  <script src="./js/nav.js" defer></script>
+  <script src="./js/slider.js" defer></script>
   <title>Around US ENTERTAINMENT</title>
 </head>
 <body>
@@ -233,12 +240,75 @@
     <main class="main">
       <div class="main__container">
         <div class="slider">
-          <div class="slider__item">
+          <div class="slider__item slider__item01">
             <div class="slider__left-text">
               <p class="slider__desc">YOON DU JUN THE 1st MINI ALBUM</p>
               <strong class="slider__subject">[Daybreak]</strong>
               <a class="slider__link" href="#">
                 <span class="text-effect--underline">▶ HIGHLIGHT MEDLEY</span>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item slider__item02">
+            <div class="slider__left-text">
+              <p class="slider__desc">YOON DU JUN THE 1st MINI ALBUM</p>
+              <strong class="slider__subject">[Daybreak]</strong>
+              <a class="slider__link" href="#">
+                <span class="text-effect--underline">▶ TRACK LIST</span>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item slider__item03">
+            <div class="slider__left-text">
+              <p class="slider__desc">YOON DU JUN THE 1st MINI ALBUM</p>
+              <strong class="slider__subject">[Daybreak]</strong>
+              <a class="slider__link" href="#">
+                <span class="text-effect--underline">▶ CONCEPT PHOTO -2-</span>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item slider__item04">
+            <div class="slider__left-text">
+              <p class="slider__desc">YOON DU JUN THE 1st MINI ALBUM</p>
+              <strong class="slider__subject">[Daybreak]</strong>
+              <a class="slider__link" href="#">
+                <span class="text-effect--underline">▶ CONCEPT PHOTO -1-</span>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item slider__item05">
+            <div class="slider__left-text">
+              <p class="slider__desc">YOON DU JUN THE 1st MINI ALBUM</p>
+              <strong class="slider__subject">[Daybreak]</strong>
+              <a class="slider__link" href="#">
+                <span class="text-effect--underline">▶ ALBUM PREVIEW</span>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item slider__item06">
+            <div class="slider__left-text">
+              <p class="slider__desc">YOON DU JUN THE 1st MINI ALBUM</p>
+              <strong class="slider__subject">[Daybreak]</strong>
+              <a class="slider__link" href="#">
+                <span class="text-effect--underline">▶ SCHEDULE PLAN</span>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item slider__item07">
+            <div class="slider__left-text">
+              <p class="slider__desc"></p>
+              <strong class="slider__subject"></strong>
+              <a class="slider__link" href="#">
+                <span class="text-effect--underline"></span>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item slider__item08">
+            <div class="slider__left-text">
+              <p class="slider__desc"></p>
+              <strong class="slider__subject"></strong>
+              <a class="slider__link" href="#">
+                <span class="text-effect--underline"></span>
               </a>
             </div>
           </div>
@@ -250,7 +320,7 @@
               <h2 class="content__title">Video</h2>
             </div>
             <div class="content__slider">
-              <div class="content__slider-item">
+              <div class="content__slider-item content__slider-item01">
                 <a class="content__slider-link" href="#">
                   <div class="content__left-text">
                     <strong class="content__subject text-effect--underline">
@@ -258,6 +328,54 @@
                     </strong>
                     <span class="content__sub-text text-effect--underline">
                       윤두준
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="content__slider-item content__slider-item02">
+                <a class="content__slider-link" href="#">
+                  <div class="content__left-text">
+                    <strong class="content__subject text-effect--underline">
+                      [Teaser2] 윤두준 (YOON DU JUN) - Lonely Night
+                    </strong>
+                    <span class="content__sub-text text-effect--underline">
+                      윤두준
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="content__slider-item content__slider-item03">
+                <a class="content__slider-link" href="#">
+                  <div class="content__left-text">
+                    <strong class="content__subject text-effect--underline">
+                      [Teaser1] 윤두준 (YOON DU JUN) - Lonely Night
+                    </strong>
+                    <span class="content__sub-text text-effect--underline">
+                      윤두준
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="content__slider-item content__slider-item04">
+                <a class="content__slider-link" href="#">
+                  <div class="content__left-text">
+                    <strong class="content__subject text-effect--underline">
+                      [MV] 손동운(SON DONGWOON) - 편해지자
+                    </strong>
+                    <span class="content__sub-text text-effect--underline">
+                      손동운
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="content__slider-item content__slider-item05">
+                <a class="content__slider-link" href="#">
+                  <div class="content__left-text">
+                    <strong class="content__subject text-effect--underline">
+                      [Teaser] 손동운(SON DONGWOON) - 편해지자
+                    </strong>
+                    <span class="content__sub-text text-effect--underline">
+                      손동운
                     </span>
                   </div>
                 </a>
@@ -273,14 +391,62 @@
               </div>
             </div>
             <div class="content__slider">
-              <div class="content__slider-item">
+              <div class="content__slider-item content__slider-item01">
                 <a class="content__slider-link" href="#">
                   <div class="content__left-text">
                     <strong class="content__subject text-effect--underline">
-                      [MV] 윤두준 (YOON DU JUN) - Lonely Night
+                      ‘식샤님 컴백’ 윤두준, M2 손잡고 신개념 먹방 '배부른 소리' 론칭 [공식]
                     </strong>
                     <span class="content__sub-text text-effect--underline">
-                      윤두준
+                      스포츠동아
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="content__slider-item content__slider-item02">
+                <a class="content__slider-link" href="#">
+                  <div class="content__left-text">
+                    <strong class="content__subject text-effect--underline">
+                      [스타포커스] 하이라이트, 노력과 성장의 11년
+                    </strong>
+                    <span class="content__sub-text text-effect--underline">
+                      톱스타뉴스
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="content__slider-item content__slider-item03">
+                <a class="content__slider-link" href="#">
+                  <div class="content__left-text">
+                    <strong class="content__subject text-effect--underline">
+                      이기광 측 "김근태 명예훼손 고소 승소, 항소해도 끝까지 최선 다할 것" [전문]
+                    </strong>
+                    <span class="content__sub-text text-effect--underline">
+                      엑스포츠뉴스
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="content__slider-item content__slider-item04">
+                <a class="content__slider-link" href="#">
+                  <div class="content__left-text">
+                    <strong class="content__subject text-effect--underline">
+                      '땅만 빌리지' 윤두준 "전역 후 강원도 자연 그리워져, 스스럼 없이 참여"
+                    </strong>
+                    <span class="content__sub-text text-effect--underline">
+                      한국일보
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="content__slider-item content__slider-item05">
+                <a class="content__slider-link" href="#">
+                  <div class="content__left-text">
+                    <strong class="content__subject text-effect--underline">
+                      뮤지컬 '그날들' 11월 개막, 유준상·정성화·양요섭·인성 출연
+                    </strong>
+                    <span class="content__sub-text text-effect--underline">
+                      뉴데일리
                     </span>
                   </div>
                 </a>
