@@ -14,8 +14,8 @@ $(function() {
     fade: true,
   });
 
-  // Content - Video
-  $(".content__slider").slick({
+  // Content - Video, News
+  $(".content-video .content__slider, .content-news .content__slider").slick({
     slide: "div",
     infinite: true,
     slidesToShow: 1, 
@@ -26,4 +26,17 @@ $(function() {
     nextArrow: "<button class='btn-icon slider__btn-arrow slider__btn-next'>Next</button>",
     swipe: true,
   });
+
+  // Content - SNS
+  // $(".content-sns .content__slider").slick({
+  //   slide: "div",
+  //   infinite: true,
+  //   slidesToShow: 6, 
+  //   slidesToScroll: 4,
+  //   speed: 500,
+  //   arrows: true,
+  //   prevArrow: "<button class='btn-icon slider__btn-arrow slider__btn-prev'>Previous</button>",
+  //   nextArrow: "<button class='btn-icon slider__btn-arrow slider__btn-next'>Next</button>",
+  //   swipeToSlide: true,
+  // });
 });
