@@ -47,11 +47,13 @@ function toggleMobileNavList(e) {
 }
 
 function openMobileNav() {
+  document.body.style.overflow = "hidden";
   m_nav.style.left = "0";
   m_nav.style.opacity = "1";
 }
 
 function closeMobileNav() {
+  document.body.style.overflow = "auto";
   m_nav.style.left = "-100%";
   m_nav.style.opacity = "0";
 }
