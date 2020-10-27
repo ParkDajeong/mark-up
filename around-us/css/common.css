@@ -18,6 +18,14 @@
   background-image: url(../assets/icon_plus.svg);
 }
 
+.btn-icon--prev {
+  background: url(../assets/icon_prev.svg);
+}
+
+.btn-icon--next {
+  background: url(../assets/icon_next.svg);
+}
+
 .text-effect--underline {
   position: relative;
 }
@@ -32,4 +40,21 @@
   height: 1px;
   margin: 0 auto;
   transition: width 500ms ease-out;
+}
+
+.icon-sns {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 50px 0 0 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-sns--twitter {
+  background-image: url(../assets/icon_tw_bk2.svg);
+}
+
+.icon-sns--instagram {
+  background-image: url(../assets/icon_is_bk.svg);
 }
