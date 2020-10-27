@@ -14,6 +14,17 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header.header--fixed .header__inner {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 0 30px;
+  animation: to-bottom 250ms cubic-bezier(1, -0.29, 0, 0.99) alternate;
 }
 
 /* Logo */
@@ -21,7 +32,9 @@ body {
   padding: 20px 60px 20px 20px;
 }
 
-.logo {
+.header.header--fixed .logo {
+  padding: 0;
+  padding-right: 60px;
 }
 
 .logo__link {
@@ -45,6 +58,10 @@ body {
 /* Header - Mobile Menu Button */
 .header__btn-mobile-menu {
   padding: 24px 20px 0 0;
+}
+
+.header.header--fixed .header__btn-mobile-menu {
+  padding: 0;
 }
 
 /* Mobile Nav */
@@ -137,9 +154,6 @@ body {
 /* Main */
 .main {
   padding-bottom: 160px;
-}
-
-.main__container {
 }
 
 /* Slider */
@@ -581,6 +595,18 @@ body {
   }
 }
 
+@keyframes to-bottom {
+  from {
+    opacity: 0;
+    top: -100%;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
 /* ============= 반응형 ============= */
 @media screen and (min-width: 921px) {
   /* Header */
@@ -602,6 +628,10 @@ body {
     height: 0;
     visibility: hidden;
     transition: all 200ms ease-in-out;
+  }
+
+  .header.header--fixed .header__submenu-bg {
+    top: 60px;
   }
 
   /* Global Nav */
@@ -626,6 +656,10 @@ body {
     padding: 42px 20px;
   }
 
+  .header.header--fixed .global-nav__menu-link {
+    padding: 22px 20px;
+  }
+
   .global-nav__menu-item.on .global-nav__menu-link .text-effect--underline::after {
     width: 100%;
   }
@@ -639,6 +673,10 @@ body {
     position: absolute;
     top: 100px;
     left: 0;
+  }
+
+  .header.header--fixed .global-nav__submenu {
+    top: 60px;
   }
 
   .global-nav__submenu-list {
@@ -671,7 +709,10 @@ body {
     overflow: hidden;
   }
 
-  .header__btn-search {
+  .header.header--fixed .header__search-wrap {
+    top: auto;
+    padding: 0;
+    padding-right: 30px;
   }
 
   .header__btn-search button {

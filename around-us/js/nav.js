@@ -1,4 +1,42 @@
-const header = document.querySelector(".header__inner");
+const header = document.querySelector(".header");
+const headerInner = document.querySelector(".header__inner");
+
+// ============== header fix ==============
+const headerHeight = header.offsetHeight;
+const delta = 5;
+let didScroll = false;
+let lastScrollTop = 0;
+
+function hasScrolled() {
+  let currentScrollTop = window.scrollY;
+
+  if(Math.abs(lastScrollTop - currentScrollTop) <= delta) return;
+
+  if(currentScrollTop > lastScrollTop && currentScrollTop > headerHeight) {
+    header.classList.remove("header--fixed");
+  } else {
+    if(currentScrollTop === 0) {
+      header.classList.remove("header--fixed");
+    } else if(currentScrollTop + window.innerHeight  < document.documentElement.offsetHeight ) {
+      header.classList.add("header--fixed");
+    }
+  }
+
+  lastScrollTop = currentScrollTop;
+}
+
+function onScroll() {
+  didScroll = true;
+}
+
+setInterval(function() {
+  if(didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);
+
+window.addEventListener("scroll", onScroll);
 
 // ============== pc navigation ==============
 const gnb = document.querySelector(".global-nav__menu-list");
@@ -13,8 +51,8 @@ function onGnbMouseOver(e) {
     item.classList.remove("on");
   });
   current_gnbItem.classList.add("on");
-  header.style.backgroundColor = "#fff";
-  header.style.transition = "background-color 250ms ease-in";
+  headerInner.style.backgroundColor = "#fff";
+  headerInner.style.transition = "background-color 250ms ease-in";
   submenuBg.style.visibility = "visible";
   submenuBg.style.height = "60px";
 }
@@ -23,7 +61,9 @@ function onGnbMouseLeave() {
   gnbItems.forEach(function(item) {
     item.classList.remove("on");
   });
-  header.style.backgroundColor = "transparent";
+  if(!header.classList.contains("header--fixed")) {
+    headerInner.style.backgroundColor = "transparent";
+  }
   submenuBg.style.visibility = "hidden";
   submenuBg.style.height = "0";
 }
@@ -68,12 +108,12 @@ const btnSearchClose = document.querySelector(".header__search-wrap .btn-close b
 const inputSearch = document.querySelector(".header__search-box .search-input input");
 
 function openSearchForm() {
-  header.classList.add("search--active");
+  headerInner.classList.add("search--active");
   inputSearch.focus();
 }
 
 function closeSearchForm() {
-  header.classList.remove("search--active");
+  headerInner.classList.remove("search--active");
 }
 
 btnSearch.addEventListener("click", openSearchForm);
