@@ -12,6 +12,17 @@ $(function() {
     autoplaySpeed: 3000,
     swipe: true,
     fade: true,
+    customPaging:  function(slider, i) {
+      return "<span class='slider-dot'></span>"
+    },
+    responsive: [
+      {
+        breakpoint: 921,
+        settings: {
+          dots: false,
+        }
+      }
+    ]
   });
 
   // Content - Video, News
