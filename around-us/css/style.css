@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body {
   height: 100%;
 }
@@ -14,7 +16,6 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
 }
 
@@ -37,6 +38,8 @@ body {
 }
 
 .header.fixed .logo {
+  display: flex;
+  align-items: center;
   padding: 0;
   padding-right: 60px;
 }
@@ -61,6 +64,8 @@ body {
 
 /* Header - Mobile Menu Button */
 .header__btn-mobile-menu {
+  display: flex;
+  align-items: center;
   padding-right: 20px;
   /* padding: 24px 20px 0 0; */
 }
@@ -157,13 +162,14 @@ body {
 }
 
 /* Main */
-.main {
+/* .main {
   padding-bottom: 160px;
-}
+} */
 
 /* Slider */
-.slider {
+.main .slider {
   position: relative;
+  margin-bottom: 0;
   /* overflow: hidden; */
 }
 
@@ -316,6 +322,7 @@ body {
   width: 100%;
   height: 100%;
   color: #fff;
+  overflow: hidden;
 }
 
 .content__slider-link::after {
@@ -329,7 +336,7 @@ body {
 }
 
 .content__slider-link:hover .content__img-cover {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(0.001deg);
 }
 
 .content__img-cover {
@@ -458,6 +465,10 @@ body {
   width: 100%;
   height: 283px;
   overflow: scroll;
+  /* firefox */
+  scrollbar-width: none;
+  /* ie */
+  -ms-overflow-style: none;
 }
 
 .content__swiper::-webkit-scrollbar {
@@ -531,6 +542,9 @@ body {
   word-break: break-all;
   opacity: 0;
   transition: all 250ms ease-out;
+  /* firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #3b3b3b #c1c1c1;
 }
 
 .content__swiper-link::-webkit-scrollbar {
@@ -575,6 +589,7 @@ body {
   background-color: #000;
   width: 100%;
   padding: 80px 0;
+  margin-top: 160px;
   text-align: center;
   color: #fff;
 }
@@ -600,15 +615,14 @@ body {
   }
 }
 
-@keyframes to-bottom {
-  from {
-    opacity: 0;
-    margin-top: -100px;
+/* ============= IE만 적용 ============= */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .content__swiper {
+    height: 288px;
   }
 
-  to {
-    opacity: 1;
-    margin-top: 0;
+  .content__swiper-link--mobile .content__sns-content {
+    height: 4.8em;
   }
 }
 
@@ -716,7 +730,7 @@ body {
 
   .header.fixed .header__search-wrap {
     top: auto;
-    padding: 0;
+    height: 100%;
     padding: 0 30px;
   }
 
@@ -885,7 +899,7 @@ body {
 
   /* social slider */
   .content__swiper {
-    height: 100%;
+    height: 200px;
   }
 
   .content__swiper-link:hover {

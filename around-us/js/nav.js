@@ -46,9 +46,9 @@ function onGnbMouseOver(e) {
   if(!e.target.classList.contains("global-nav__menu-link")) return;
   const current_gnbItem = e.target.parentNode;
 
-  gnbItems.forEach(function(item) {
-    item.classList.remove("on");
-  });
+  for(let i=0; i<gnbItems.length; i++) {
+    gnbItems[i].classList.remove("on");
+  }
   current_gnbItem.classList.add("on");
   headerInner.style.backgroundColor = "#fff";
   submenuBg.style.visibility = "visible";
@@ -56,9 +56,9 @@ function onGnbMouseOver(e) {
 }
 
 function onGnbMouseLeave() {
-  gnbItems.forEach(function(item) {
-    item.classList.remove("on");
-  });
+  for(let i=0; i<gnbItems.length; i++) {
+    gnbItems[i].classList.remove("on");
+  }
   headerInner.style.backgroundColor = null;
   submenuBg.style.visibility = "hidden";
   submenuBg.style.height = "0";
