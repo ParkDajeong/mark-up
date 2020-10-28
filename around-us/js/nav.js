@@ -2,24 +2,23 @@ const header = document.querySelector(".header");
 const headerInner = document.querySelector(".header__inner");
 
 // ============== header fix ==============
-const headerHeight = header.offsetHeight;
+const headerHeight = headerInner.offsetHeight;
 const delta = 5;
 let didScroll = false;
 let lastScrollTop = 0;
 
 function hasScrolled() {
-  let currentScrollTop = window.scrollY;
-
+  const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
   if(Math.abs(lastScrollTop - currentScrollTop) <= delta) return;
 
-  if(currentScrollTop > lastScrollTop && currentScrollTop > headerHeight) {
-    header.classList.remove("header--fixed");
-  } else {
-    if(currentScrollTop === 0) {
-      header.classList.remove("header--fixed");
-    } else if(currentScrollTop + window.innerHeight  < document.documentElement.offsetHeight ) {
-      header.classList.add("header--fixed");
-    }
+  if(currentScrollTop < headerHeight) {
+    header.classList.remove("fixed");
+    header.classList.remove("scroll");
+  } else if(currentScrollTop > lastScrollTop && currentScrollTop > headerHeight) {
+    header.classList.add("fixed");
+    header.classList.remove("scroll");
+  } else if(currentScrollTop + window.innerHeight < document.body.offsetHeight) {
+    header.classList.add("scroll");
   }
 
   lastScrollTop = currentScrollTop;
@@ -52,7 +51,6 @@ function onGnbMouseOver(e) {
   });
   current_gnbItem.classList.add("on");
   headerInner.style.backgroundColor = "#fff";
-  headerInner.style.transition = "background-color 250ms ease-in";
   submenuBg.style.visibility = "visible";
   submenuBg.style.height = "60px";
 }
@@ -61,9 +59,7 @@ function onGnbMouseLeave() {
   gnbItems.forEach(function(item) {
     item.classList.remove("on");
   });
-  if(!header.classList.contains("header--fixed")) {
-    headerInner.style.backgroundColor = "transparent";
-  }
+  headerInner.style.backgroundColor = null;
   submenuBg.style.visibility = "hidden";
   submenuBg.style.height = "0";
 }
