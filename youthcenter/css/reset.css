@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+}
+
+html,
+body {
+  font-size: 14px;
+  line-height: 1.2;
+  -webkit-text-size-adjust: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+button {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  color: #666;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

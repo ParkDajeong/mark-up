@@ -1,0 +1,19 @@
+.btn-icon {
+  box-sizing: content-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px;
+}
+
+/* Logo */
+.logo {
+}
+
+.logo__link {
+  background: url(../assets/logo_m.jpg) no-repeat center;
+  background-size: 100%;
+  display: block;
+  width: 116px;
+  height: 45px;
+  text-indent: -9999px;
+}

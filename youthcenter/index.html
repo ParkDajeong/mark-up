@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link type="text/css" rel="stylesheet" href="./css/reset.css">
+  <link type="text/css" rel="stylesheet" href="./css/common.css">
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+  <!-- JS -->
+  <script src="./js/app.js" defer></script>
+  <title>온라인청년센터</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <button class="btn-icon header__btn-search" type="button">검색영역 펼치기</button>
+        <h1 class="logo">
+          <a class="logo__link" href="#">온라인 청년센터</a>
+        </h1>
+        <button class="btn-icon header__btn-m-menu" type="button">메뉴 열기</button>
+        <!-- Header - Search -->
+        <div class="header__search-wrap">
+          <form class="search-form" action="">
+            <input type="text" title="검색어 입력" placeholder="청년정책, 청년공간 검색을 해보자!">
+            <button class="btn-icon search-form__btn-search" type="button">검색하기</button>
+          </form>
+          <button class="btn-icon search-wrap__btn-close" type="button">검색영역 닫기</button>
+        </div>
+        <!-- Header - Util -->
+        <ul class="header__util-list">
+          <li class="header__util">
+            <a href="#">로그인</a>
+          </li>
+          <li class="header__util">
+            <a href="#">회원가입</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Header - PC Nav -->
+      <div class="header__gnb-pc">
+        <div class="header__gnb-pc-wrap">
+          <nav class="gnb-pc">
+            <ul class="gnb-pc__menu-list">
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년정책</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년정책통합검색</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">주요정책비교</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">쉬운정책풀이</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- PC 메뉴 리스트 나중에 더 추가해야함 -->
+            </ul>
+            <div class="gnb-pc__btn-menu-wrap">
+              <button class="gnb-pc__btn-menu" type="button">전체 메뉴 열기</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Header - Mobile Nav -->
+      <div class="header__gnb-mobile">
+        <div class="header__gnb-mobile-wrap">
+          <nav class="gnb-mobile">
+            <div class="gnb-mobile__header">
+              <a class="gnb-mobile__link-login" href="#">로그인</a>
+              <a class="gnb-mobile__link-join" href="#">회원가입</a>
+              <button class="btn-icon gnb-mobile__btn-close" type="button">메뉴 닫기</button>
+            </div>
+            <ul class="gnb-mobile__menu-list">
+              <li class="gnb-mobile__menu-item">
+                <button type="button">청년정책</button>
+                <ul class="gnb-mobile__sub-menu">
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">청년정책통합검색</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">주요정책비교</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">쉬운정책풀이</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 모바일 메뉴 리스트 더 추가돼야함. -->
+            </ul>
+            <div class="gnb-mobile__info">
+              <div class="gnb-mobile__mark">
+                <img src="" alt="">
+              </div>
+              <a class="gnb-mobile__link-tel" href="tel:1811-9876">
+                전화상담
+                <img src="" alt="">
+                1811-9876
+              </a>
+              <p class="gnb-mobile__date">
+                평일 09:00~18:00 (공휴일 제외)
+              </p>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <div class="main-content">
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer"></footer>
+  </div>
+</body>
+</html>

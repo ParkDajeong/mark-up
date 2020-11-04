@@ -1,0 +1,155 @@
+/* Header */
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+}
+
+.header__btn-search {
+  background-image: url(../assets/icon/icon_search.jpg);
+  background-size: 20px;
+  padding: 12px 3%;
+  width: 20px;
+  height: 20px;
+}
+
+.header__btn-m-menu {
+  background-image: url(../assets/icon/icon_gnb.jpg);
+  background-size: 23px 14px;
+  padding: 15px 3%;
+  width: 23px;
+  height: 15px;
+}
+
+/* Header - Search */
+.header__search-wrap {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  padding: 23px 40px;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  width: 95%;
+  height: 100%;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 0 45px 0 10px;
+  border-bottom: 2px solid #0062b1;
+}
+
+.search-form__btn-search {
+  background-image: url(../assets/icon/icon_top_search_2.png);
+  background-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  width: 40px;
+  height: 100%;
+}
+
+.search-wrap__btn-close {
+  background-image: url(../assets/icon/icon_close.jpg);
+  background-size: 18px;
+  position: absolute;
+  top: 51%;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+}
+
+/* Header - Util */
+.header__util-list {
+  display: none;
+}
+
+/* Header - PC Nav */
+.header__gnb-pc {
+  display: none;
+}
+
+/* Header - Mobile Nav */
+.header__gnb-mobile {
+}
+
+.header__gnb-mobile-wrap {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gnb-mobile {
+  background-color: #fff;
+  min-width: 290px;
+  max-width: 370px;
+  height: 100%;
+  margin-left: auto;
+}
+
+.gnb-mobile__header {
+  background-color: #1e75d6;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 38px;
+  padding: 7px 35px 7px 13px;
+}
+
+.gnb-mobile__header a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.gnb-mobile__link-login {
+  background: url(../assets/icon/icon-top-login-m_2.png) no-repeat left 49%;
+  padding: 8px 0 8px 25px;
+  font-size: 16px;
+}
+
+.gnb-mobile__link-join {
+  align-self: center;
+  padding: 5px 8px;
+  margin-left: auto;
+  margin-right: 15px;
+  font-size: 13px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.gnb-mobile__btn-close {
+  background-image: url(../assets/icon/btn_job_cate_close.gif);
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  width: 22px;
+  height: 47px;
+  transform: translateY(-50%);
+}
