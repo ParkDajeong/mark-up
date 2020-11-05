@@ -40,23 +40,21 @@ $(function() {
   function openSubMenu() {
     $(this).addClass("on");
     $(".gnb-pc__menu-list").addClass("open");
-    $(".gnb-pc__sub-menu").slideDown();
+    $(".gnb-pc__sub-menu").stop().slideDown();
   }
 
   function closeSubMenu() {
     $(this).removeClass("on");
     if(!$(".gnb-pc__menu-list").hasClass("fixed")) {
       $(".gnb-pc__menu-list").removeClass("open");
-      $(".gnb-pc__sub-menu").slideUp();
+      $(".gnb-pc__sub-menu").stop().slideUp();
     }
   }
 
   $(".gnb-pc__menu-item").hover(openSubMenu, closeSubMenu);
 
-  // $(".gnb-pc__menu-item").mouseover(openSubMenu);
-  // $(".gnb-pc__menu-item").mouseleave(closeSubMenu);
-
   $(".gnb-pc__btn-menu").click(function() {
-    $(".gnb-pc__menu-list").toggleClass("open fixed");
+    $(".gnb-pc__menu-list").toggleClass("fixed");
+    !$(".gnb-pc__menu-list").hasClass("open") ? openSubMenu() : closeSubMenu();
   });
 });

@@ -398,10 +398,6 @@
     display: none;
   }
 
-  .gnb-pc__menu-list.open .gnb-pc__sub-menu {
-    /* display: block; */
-  }
-
   .gnb-pc__sub-menu {
     background-color: #fff;
     width: 100%;
