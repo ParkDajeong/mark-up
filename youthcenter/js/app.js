@@ -57,4 +57,24 @@ $(function() {
     $(".gnb-pc__menu-list").toggleClass("fixed");
     !$(".gnb-pc__menu-list").hasClass("open") ? openSubMenu() : closeSubMenu();
   });
+
+  // ============== 게시판 ==============
+  const noticeList = $(".main-content__board--notice ul li");
+  const newsList = $(".main-content__board--news ul li");
+  let notice_index = 0;
+  let news_index = 0;
+  noticeList.eq(notice_index++).addClass("on");
+  newsList.eq(news_index++).addClass("on");
+
+  setInterval(function() {
+    if(notice_index >= noticeList.length) notice_index = 0;
+    noticeList.removeClass("on");
+    noticeList.eq(notice_index++).addClass("on");
+  }, 2500);
+  
+  setInterval(function() {
+    if(news_index >= newsList.length) news_index = 0;
+    newsList.removeClass("on");
+    newsList.eq(news_index++).addClass("on");
+  }, 3000);
 });

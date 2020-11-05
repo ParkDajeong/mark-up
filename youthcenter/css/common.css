@@ -5,7 +5,6 @@
   text-indent: -9999px;
 }
 
-/* Logo */
 .logo__link {
   background: url(../assets/logo_m.jpg) no-repeat center;
   background-size: 100%;
@@ -13,6 +12,30 @@
   width: 116px;
   height: 45px;
   text-indent: -9999px;
+}
+
+.inner {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.new {
+  background: url(../assets/icon/icon_new.gif) no-repeat 0 0;
+  background-size: 100%;
+  display: inline-block;
+  width: 15px;
+  height: auto;
+  text-indent: -9999px;
+}
+
+.btn-more {
+  background: url(../assets/icon/more.png) no-repeat center;
+  background-size: contain;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  color: transparent;
 }
 
 /* =============== 반응형 =============== */
@@ -26,11 +49,40 @@
     width: 160px;
     height: 90px;
   }
+
+  .btn-more {
+    background: url(../assets/icon/more_plus.png) no-repeat right 12px bottom 50%;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #222;
+    border-radius: 30px;
+  }
+
+  .btn-more span {
+    display: block;
+    padding-left: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+  }
 }
 
 @media only screen and (min-width: 1070px) {
   .logo__link {
     width: 186px;
     height: 107px;
+  }
+
+  .btn-more {
+    width: 120px;
+    height: 38px;
+    border-radius: 40px;
+  }
+
+  .btn-more span {
+    padding-left: 17px;
+    font-size: 15px;
   }
 }
