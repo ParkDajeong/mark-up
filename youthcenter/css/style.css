@@ -250,6 +250,60 @@
   color: #333;
 }
 
+/* Main - Quick Menu */
+.main-content__quick-menu {
+  background-color: #fff;
+  width: 100%;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.main-content__quick-menu-list {
+  display: flex;
+  width: 100%;
+}
+
+.main-content__quick-menu-item {
+  display: block;
+  width: 33.33333%;
+  border-right: 1px solid #d2d5d8;
+  background-repeat: no-repeat;
+  background-position: center 8px;
+  background-size: 28px;
+}
+
+.main-content__quick-menu-item:last-child {
+  border-right: none;
+}
+
+.main-content__quick-menu-link {
+  display: block;
+  padding: 38px 0 5px;
+  text-align: center;
+}
+
+.main-content__quick-menu-item:nth-child(1) {
+  background-image: url(../assets/icon/icon_quick01_new_2.png);
+}
+
+.main-content__quick-menu-item:nth-child(2) {
+  background-image: url(../assets/icon/icon_quick02_new_2.png);
+}
+
+.main-content__quick-menu-item:nth-child(3) {
+  background-image: url(../assets/icon/icon_quick03_new_2.png);
+}
+
+.main-content__quick-menu-link span {
+  color: #0062b1;
+  font-weight: 500;
+}
+
+.main-content__quick-menu-link p {
+  display: none;
+}
+
 /* Main - Board */
 .main-content__board {
   max-width: 1280px;
@@ -375,6 +429,51 @@
     padding: 14px 20px;
   }
 
+  /* Main - Quick Menu */
+  .main-content__quick-menu {
+    background-color: rgba(0, 97, 180, 0.37);
+    padding: 12px 0;
+  }
+
+  .main-content__quick-menu-list {
+    width: 94%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .main-content__quick-menu-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-right: 20px;
+    border: 1px solid #d2d5d8;
+    border-radius: 10px;
+    background-position: 95% center;
+    background-size: auto;
+  }
+
+  .main-content__quick-menu-item:last-child {
+    margin-right: 0;
+  }
+
+  .main-content__quick-menu-link {
+    padding: 20px 60px 20px 25px;
+    text-align: left;
+  }
+
+  .main-content__quick-menu-link span {
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  .main-content__quick-menu-link p {
+    display: block;
+    margin-top: 8px;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #666;
+    font-weight: 500;
+    word-break: keep-all;
+  }
+
   /* Main - Board */
   .main-content__board {
     padding: 20px 3%;
@@ -386,7 +485,7 @@
   }
 
   .main-content__board-list {
-    width: calc(100% - 270px);
+    width: calc(100% - 320px);
     margin-top: 4px;
   }
 
@@ -400,7 +499,7 @@
 @media only screen and (min-width: 1070px) {
   /* Wrapper */
   .wrapper {
-    padding-top: 107px;
+    padding-top: 165px;
   }
 
   /* Header */
