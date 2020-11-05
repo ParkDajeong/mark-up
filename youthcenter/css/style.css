@@ -250,6 +250,43 @@
   color: #333;
 }
 
+/* Main */
+.main-content__section {
+  position: relative;
+}
+
+/* Main - Banner */
+.main-contnet__banner-item .t_content {
+  display: none;
+}
+
+.main-contnet__banner-item .pc_content {
+  display: none;
+}
+
+.main-content__banner .slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  text-indent: -9999px;
+  opacity: 0.5;
+  z-index: 1;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main-content__banner .slick-prev {
+  left: 3%;
+  background-image: url(../assets/banner/arrow_prev01.png);
+}
+
+.main-content__banner .slick-next {
+  right: 3%;
+  background-image: url(../assets/banner/arrow_next01.png);
+}
+
 /* Main - Quick Menu */
 .main-content__quick-menu {
   background-color: #fff;
@@ -429,10 +466,28 @@
     padding: 14px 20px;
   }
 
+  /* Main - Banner */
+  .main-contnet__banner-item .m_content {
+    display: none;
+  }
+
+  .main-contnet__banner-item .t_content {
+    display: block;
+  }
+
+  .main-content__banner .slick-arrow {
+    width: 50px;
+    height: 50px;
+  }
+
   /* Main - Quick Menu */
   .main-content__quick-menu {
     background-color: rgba(0, 97, 180, 0.37);
+    position: absolute;
+    bottom: 0;
+    left: 0;
     padding: 12px 0;
+    border: none;
   }
 
   .main-content__quick-menu-list {
@@ -686,6 +741,38 @@
 
   .gnb-pc__btn-menu .line:nth-of-type(3) {
     top: 41px;
+  }
+
+  /* Main - Banner */
+  .main-content__banner .main-contnet__banner-item.slick-slide {
+    position: relative;
+    height: 660px;
+    overflow: hidden;
+  }
+
+  .main-contnet__banner-item .t_content {
+    display: none;
+  }
+
+  .main-contnet__banner-item .pc_content {
+    position: relative;
+    left: 50%;
+    display: block;
+    width: auto;
+    transform: translateX(-50%);
+  }
+
+  .main-content__banner .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+
+  .main-content__banner .slick-prev {
+    left: 5%;
+  }
+
+  .main-content__banner .slick-next {
+    right: 5%;
   }
 
   /* Main - Board */
