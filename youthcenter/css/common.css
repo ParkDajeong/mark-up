@@ -6,9 +6,6 @@
 }
 
 /* Logo */
-.logo {
-}
-
 .logo__link {
   background: url(../assets/logo_m.jpg) no-repeat center;
   background-size: 100%;
@@ -16,4 +13,24 @@
   width: 116px;
   height: 45px;
   text-indent: -9999px;
+}
+
+/* =============== 반응형 =============== */
+@media only screen and (min-width: 768px) {
+  .logo {
+    padding-left: 3%;
+  }
+
+  .logo__link {
+    background-image: url(../assets/logo.jpg);
+    width: 160px;
+    height: 90px;
+  }
+}
+
+@media only screen and (min-width: 1070px) {
+  .logo__link {
+    width: 186px;
+    height: 107px;
+  }
 }

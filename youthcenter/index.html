@@ -10,6 +10,7 @@
   <link type="text/css" rel="stylesheet" href="./css/common.css">
   <link type="text/css" rel="stylesheet" href="./css/style.css">
   <!-- JS -->
+  <script  src="http://code.jquery.com/jquery-latest.min.js" defer></script>
   <script src="./js/app.js" defer></script>
   <title>온라인청년센터</title>
 </head>
@@ -22,7 +23,6 @@
         <h1 class="logo">
           <a class="logo__link" href="#">온라인 청년센터</a>
         </h1>
-        <button class="btn-icon header__btn-m-menu" type="button">메뉴 열기</button>
         <!-- Header - Search -->
         <div class="header__search-wrap">
           <form class="search-form" action="">
@@ -31,6 +31,7 @@
           </form>
           <button class="btn-icon search-wrap__btn-close" type="button">검색영역 닫기</button>
         </div>
+        <button class="btn-icon header__btn-m-menu" type="button">메뉴 열기</button>
         <!-- Header - Util -->
         <ul class="header__util-list">
           <li class="header__util">
@@ -60,10 +61,84 @@
                   </li>
                 </ul>
               </li>
-              <!-- PC 메뉴 리스트 나중에 더 추가해야함 -->
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년공간</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년공간검색</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">공간별 프로그램</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년상담실</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년상담실은?</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">카카오톡 상담</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">게시판 상담</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">자주묻는질문(FAQ)</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년소식</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">공지사항</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년정보PICK</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년꿀팁</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년핫뉴스</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년구직활동지원금</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년구직활동지원금이란?</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">예비교육</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">취업성공금</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">소개</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">온라인청년센터는?</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">업무별 담당자 안내</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
             <div class="gnb-pc__btn-menu-wrap">
-              <button class="gnb-pc__btn-menu" type="button">전체 메뉴 열기</button>
+              <button class="gnb-pc__btn-menu" type="button">
+                전체 메뉴 열기
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </button>
             </div>
           </nav>
         </div>
@@ -71,6 +146,7 @@
       <!-- Header - Mobile Nav -->
       <div class="header__gnb-mobile">
         <div class="header__gnb-mobile-wrap">
+          <div class="header__gnb-mobile-bg"></div>
           <nav class="gnb-mobile">
             <div class="gnb-mobile__header">
               <a class="gnb-mobile__link-login" href="#">로그인</a>
