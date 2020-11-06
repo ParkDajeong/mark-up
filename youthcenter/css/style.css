@@ -425,7 +425,7 @@
   margin: 0 2px;
 }
 
-.main-content__policy-nav .slick-dot {
+.main-content__policy-nav .nav-item {
   background-color: #fff;
   position: relative;
   display: block;
@@ -437,13 +437,13 @@
   border-radius: 4px;
 }
 
-.main-content__policy-nav .slick-active .slick-dot {
+.main-content__policy-nav .slick-active .nav-item {
   background-color: #0062b1;
   color: #fff;
   font-weight: 600;
 }
 
-.main-content__policy-nav .slick-active .slick-dot::after {
+.main-content__policy-nav .slick-active .nav-item::after {
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -567,6 +567,24 @@
 .main-content__policy-item a.active p {
   text-align: left;
   color: #666;
+}
+
+/* Main - AD Banner */
+.main-content__ad-banner-wrap {
+  position: relative;
+}
+
+.main-content__ad-banner-item a {
+  display: block;
+}
+
+.main-content__ad-banner-item .pc_content {
+  display: none;
+}
+
+.main-content__ad-banner-wrap .slider-dots-wrap {
+  bottom: 30px;
+  left: 30px;
 }
 
 /* =============== 반응형 =============== */
@@ -736,7 +754,7 @@
   }
 
   /* Main - Policy Nav */
-  .main-content__policy-nav .slick-dot {
+  .main-content__policy-nav .nav-item {
     padding: 8px 0;
     font-size: 15px;
   }
@@ -1012,12 +1030,12 @@
   }
 
   /* Main - Policy Nav */
-  .main-content__policy-nav .slick-dot {
+  .main-content__policy-nav .nav-item {
     padding: 12px 0;
     font-size: 21px;
   }
 
-  .main-content__policy-nav .slick-active .slick-dot::after {
+  .main-content__policy-nav .slick-active .nav-item::after {
     bottom: -10px;
     border-top: 10px solid #0062b1;
     border-left: 10px solid transparent;
@@ -1049,6 +1067,15 @@
 
   .main-content__policy-item a p {
     font-size: 15px;
+  }
+
+  /* Main - AD Banner */
+  .main-content__ad-banner-item .m_content {
+    display: none;
+  }
+
+  .main-content__ad-banner-item .pc_content {
+    display: block;
   }
 }
 

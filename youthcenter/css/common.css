@@ -19,6 +19,35 @@
   margin: 0 auto;
 }
 
+.new {
+  background: url(../assets/icon/icon_new.gif) no-repeat 0 0;
+  background-size: 100%;
+  display: inline-block;
+  width: 15px;
+  height: auto;
+  text-indent: -9999px;
+}
+
+.btn-more {
+  background: url(../assets/icon/more.png) no-repeat center;
+  background-size: contain;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  color: transparent;
+}
+
+.sr-only {
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* Slick Slider */
 .slick-arrow {
   position: absolute;
   top: 50%;
@@ -42,23 +71,47 @@
   background-image: url(../assets/banner/arrow_next01.png);
 }
 
-.new {
-  background: url(../assets/icon/icon_new.gif) no-repeat 0 0;
-  background-size: 100%;
+.slick-dots li {
   display: inline-block;
-  width: 15px;
-  height: auto;
-  text-indent: -9999px;
+  margin-right: 8px;
 }
 
-.btn-more {
-  background: url(../assets/icon/more.png) no-repeat center;
-  background-size: contain;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  font-size: 0;
-  color: transparent;
+.slick-dot {
+  background-color: #b7b7b7;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+}
+
+.slick-dots li.slick-active .slick-dot {
+  background-color: #222;
+  width: 28px;
+}
+
+/* Slider Custom Dots */
+.slider-dots-wrap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.slider-dot-list {
+  margin-right: 3px;
+}
+
+.btn-play {
+  background: url(../assets/icon/btn_play.png) no-repeat;
+  background-size: 100%;
+  width: 11px;
+  height: 12px;
+  margin-right: 9px;
+}
+
+.btn-pause {
+  background: url(../assets/icon/btn_stop.png) no-repeat;
+  background-size: 100%;
+  width: 10px;
+  height: 12px;
 }
 
 /* =============== 반응형 =============== */
@@ -71,11 +124,6 @@
     background-image: url(../assets/logo.jpg);
     width: 160px;
     height: 90px;
-  }
-
-  .slick-arrow {
-    width: 50px;
-    height: 50px;
   }
 
   .btn-more {
@@ -95,17 +143,18 @@
     font-weight: 500;
     color: #333;
   }
+
+  /* Slick Slider */
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media only screen and (min-width: 1070px) {
   .logo__link {
     width: 186px;
     height: 107px;
-  }
-
-  .slick-arrow {
-    width: 70px;
-    height: 70px;
   }
 
   .btn-more {
@@ -117,5 +166,11 @@
   .btn-more span {
     padding-left: 17px;
     font-size: 15px;
+  }
+
+  /* Slick Slider */
+  .slick-arrow {
+    width: 70px;
+    height: 70px;
   }
 }
