@@ -22,7 +22,8 @@ $(function() {
 
   $(".main-content__policy").slick({
     infinite: false,
-    arrows: true,
+    mobileFirst: true,
+    arrows: false,
     dots: true,
     appendDots: $(".main-content__policy-nav"),
     customPaging:  function(slider, i) {
@@ -32,7 +33,7 @@ $(function() {
       {
         breakpoint: 1070,
         settings: {
-          arrows: false,
+          arrows: true,
         }
       }
     ],
@@ -42,11 +43,20 @@ $(function() {
   $(".main-content__ad-banner").slick({
     autoplay: true,
     autoplaySpeed: 5000,
+    mobileFirst: true,
     arrows: false,
     dots: true,
     appendDots: $(".slider-dot-list"),
     customPaging: function(slider, i) {
       return "<button class='slick-dot' type='button'><span class='sr-only'>" + i + "번 슬라이드로 이동</span></button>"
-    }
+    },
+    responsive: [
+      {
+        breakpoint: 1070,
+        settings: {
+          arrows: true,
+        }
+      }
+    ],
   });
 });

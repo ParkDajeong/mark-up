@@ -18,8 +18,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1280px;
   width: 100%;
   height: 45px;
+  margin: 0 auto;
 }
 
 .header__btn-search {
@@ -173,9 +175,6 @@
   transform: translateY(-50%);
 }
 
-.gnb-mobile__menu-list {
-}
-
 .gnb-mobile__menu-item {
   color: #333;
   border-bottom: 1px solid #d9d9d9;
@@ -257,6 +256,7 @@
 
 .main-content__section-title {
   font-family: "BMDOHYEON", sans-serif;
+  width: 100%;
   padding: 20px 0 18px;
   text-align: center;
   color: #333;
@@ -572,6 +572,7 @@
 /* Main - AD Banner */
 .main-content__ad-banner-wrap {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .main-content__ad-banner-item a {
@@ -585,6 +586,104 @@
 .main-content__ad-banner-wrap .slider-dots-wrap {
   bottom: 30px;
   left: 30px;
+}
+
+/* Main - Policy Ranking */
+.main-content__ranking {
+  background-color: #fff;
+  position: relative;
+  border: 2px solid #0062b1;
+}
+
+.main-content__ranking-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 16px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-content__ranking-title {
+  font-size: 14px;
+  letter-spacing: -0.05em;
+}
+
+.main-content__ranking-title span {
+  color: #0d79c2;
+}
+
+.main-content__ranking-date {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.main-content__ranking-list {
+  padding: 9px 16px;
+}
+
+.main-content__ranking-list li {
+  position: relative;
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #666;
+}
+
+.main-content__ranking-list li:nth-child(1) {
+  color: #333;
+  font-weight: 700;
+}
+
+.main-content__ranking-list li:nth-child(1)::before {
+  content: "1";
+}
+
+.main-content__ranking-list li:nth-child(2)::before {
+  content: "2";
+}
+
+.main-content__ranking-list li:nth-child(3)::before {
+  content: "3";
+}
+
+.main-content__ranking-list li:nth-child(4)::before {
+  content: "4";
+}
+
+.main-content__ranking-list li:nth-child(5)::before {
+  content: "5";
+}
+
+.main-content__ranking-list li::after {
+  background-color: #8c8c8c;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 6px;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.main-content__ranking-list li.ranking-change::after {
+  background: none;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.main-content__ranking-list li.ranking-change.up::after {
+  border-bottom: 4px solid #ff0000;
+}
+
+.main-content__ranking-list li.ranking-change.down::after {
+  border-top: 4px solid #0062b1;
+}
+
+.main-content__ranking-list li a {
+  padding-left: 5px;
 }
 
 /* =============== 반응형 =============== */
@@ -734,7 +833,7 @@
 
   /* Main - Board */
   .main-content__board {
-    padding: 20px 3%;
+    padding: 20px 0;
   }
 
   .main-content__board-title {
@@ -780,6 +879,85 @@
   .main-content__policy-item a p {
     font-size: 13px;
     height: 2.4em;
+  }
+
+  /* Main - Policy Util Wrap */
+  .main-content__util-wrap {
+    display: flex;
+  }
+
+  .main-content__ad-banner-wrap {
+    width: 350px;
+    margin-right: 10px;
+  }
+
+  .main-content__ranking {
+    flex: 1;
+  }
+
+  /* Main - AD Banner */
+  .main-content__ad-banner-wrap {
+    margin-bottom: 0;
+  }
+
+  .main-content__ad-banner-wrap .slider-dots-wrap {
+    bottom: 15px;
+    left: 15px;
+  }
+
+  /* Main - Policy Ranking */
+  .main-content__ranking-header {
+    padding: 10px 20px;
+  }
+
+  .main-content__ranking-title {
+    font-size: 17px;
+  }
+
+  .main-content__ranking-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 43px);
+    padding: 15px 20px;
+  }
+
+  .main-content__ranking-list li {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  .main-content__ranking-list li::after {
+    width: 8px;
+  }
+
+  .main-content__ranking-list li.ranking-change::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+
+  .main-content__ranking-list li.ranking-change.up::after {
+    border-bottom: 5px solid #ff0000;
+  }
+
+  .main-content__ranking-list li.ranking-change.down::after {
+    border-top: 5px solid #0062b1;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* Main - Policy Ranking */
+  .main-content__ranking-header {
+    padding: 14px 20px;
+  }
+
+  .main-content__ad-banner-wrap {
+    width: 408px;
+  }
+
+  .main-content__ranking-list {
+    height: calc(100% - 51px);
+    padding: 20px;
   }
 }
 
@@ -851,7 +1029,9 @@
 
   .gnb-pc {
     display: flex;
+    max-width: 1280px;
     height: 59px;
+    margin: 0 auto;
   }
 
   .gnb-pc__menu-list {
@@ -1029,6 +1209,17 @@
     font-size: 17px;
   }
 
+  /* Main - Policy */
+  .main-content__section--policy .inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-content__policy-wrap {
+    width: calc(100% - 360px);
+    margin-right: 20px;
+  }
+
   /* Main - Policy Nav */
   .main-content__policy-nav .nav-item {
     padding: 12px 0;
@@ -1051,6 +1242,10 @@
     right: 1%;
   }
 
+  .main-content__policy-list {
+    margin-bottom: -7px;
+  }
+
   .main-content__policy-item {
     height: 175px;
   }
@@ -1069,7 +1264,25 @@
     font-size: 15px;
   }
 
+  /* Main - Policy Util Wrap */
+  .main-content__util-wrap {
+    flex-direction: column;
+    width: 340px;
+  }
+
   /* Main - AD Banner */
+  .main-content__ad-banner-wrap {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .main-content__ad-banner .slick-arrow {
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+  }
+
   .main-content__ad-banner-item .m_content {
     display: none;
   }
@@ -1077,21 +1290,28 @@
   .main-content__ad-banner-item .pc_content {
     display: block;
   }
+
+  .main-content__ad-banner-wrap .slider-dots-wrap {
+    bottom: 24px;
+    left: 32px;
+  }
+
+  /* Main - Policy Ranking */
+  .main-content__ranking-title {
+    font-size: 24px;
+  }
+
+  .main-content__ranking-date {
+    font-size: 17px;
+  }
+
+  .main-content__ranking-list {
+    height: calc(100% - 60px);
+    padding: 26px 29px;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
-  /* Header */
-  .header__inner {
-    width: 1280px;
-    margin: 0 auto;
-  }
-
-  /* Header - PC Nav */
-  .gnb-pc {
-    width: 1280px;
-    margin: 0 auto;
-  }
-
   /* Main - Board */
   .main-content__board-list {
     width: 880px;
