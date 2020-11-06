@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "BMDOHYEON";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: "Noto Sans KR", sans-serif;
   box-sizing: border-box;
   margin: 0;
-  /* outline: none; */
+  outline: none;
 }
 
 html,
@@ -43,4 +50,12 @@ input {
 img {
   display: block;
   width: 100%;
+}
+
+span,
+strong,
+p {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }

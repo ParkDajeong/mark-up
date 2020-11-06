@@ -255,6 +255,22 @@
   position: relative;
 }
 
+.main-content__section-title {
+  font-family: "BMDOHYEON", sans-serif;
+  padding: 20px 0 18px;
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.main-content__section-title strong {
+  color: #0062b1;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 /* Main - Banner */
 .main-contnet__banner-item .t_content {
   display: none;
@@ -262,29 +278,6 @@
 
 .main-contnet__banner-item .pc_content {
   display: none;
-}
-
-.main-content__banner .slick-arrow {
-  position: absolute;
-  top: 50%;
-  width: 35px;
-  height: 35px;
-  text-indent: -9999px;
-  opacity: 0.5;
-  z-index: 1;
-  transform: translateY(-50%);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.main-content__banner .slick-prev {
-  left: 3%;
-  background-image: url(../assets/banner/arrow_prev01.png);
-}
-
-.main-content__banner .slick-next {
-  right: 3%;
-  background-image: url(../assets/banner/arrow_next01.png);
 }
 
 /* Main - Quick Menu */
@@ -314,12 +307,6 @@
   border-right: none;
 }
 
-.main-content__quick-menu-link {
-  display: block;
-  padding: 38px 0 5px;
-  text-align: center;
-}
-
 .main-content__quick-menu-item:nth-child(1) {
   background-image: url(../assets/icon/icon_quick01_new_2.png);
 }
@@ -330,6 +317,12 @@
 
 .main-content__quick-menu-item:nth-child(3) {
   background-image: url(../assets/icon/icon_quick03_new_2.png);
+}
+
+.main-content__quick-menu-link {
+  display: block;
+  padding: 38px 0 5px;
+  text-align: center;
 }
 
 .main-content__quick-menu-link span {
@@ -414,6 +407,115 @@
   border-top: 2px solid #eee;
 }
 
+/* Main - Policy */
+.main-content__section--policy {
+  background-color: #f2f4f7;
+  padding-bottom: 20px;
+}
+
+.main-content__policy-wrap {
+}
+
+.main-content__policy {
+}
+
+/* Main - Policy Nav */
+.main-content__policy-nav {
+}
+
+.main-content__policy-nav .slick-dots {
+  display: flex !important;
+  padding-bottom: 14px;
+  margin: 0 -2px;
+}
+
+.main-content__policy-nav .slick-dots li {
+  flex: 1;
+  margin: 0 2px;
+}
+
+.main-content__policy-nav .slick-dot {
+  background-color: #fff;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 6px 0;
+  color: #666;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.main-content__policy-nav .slick-active .slick-dot {
+  background-color: #0062b1;
+  color: #fff;
+  font-weight: 600;
+}
+
+.main-content__policy-nav .slick-active .slick-dot::after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  content: "";
+  border-top: 5px solid #0062b1;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  transform: translateX(-50%);
+}
+
+/* Main - Policy List */
+.main-content__policy-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -7px;
+}
+
+.main-content__policy-item {
+  background: #444 url(../assets/policy/icon_policy01_bg.png) no-repeat center;
+  background-size: 60px;
+  display: block;
+  width: calc(50% - 8px);
+  height: 106px;
+  margin: 0 8px 8px 0;
+  border-radius: 3px;
+}
+
+.main-content__policy-item:last-child {
+  display: none;
+}
+
+.main-content__policy-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.main-content__policy-item a strong,
+.main-content__policy-item a p {
+  display: -webkit-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.main-content__policy-item a strong {
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.main-content__policy-item a p {
+  text-align: center;
+  font-size: 11px;
+  height: 2.8em;
+}
+
 /* =============== 반응형 =============== */
 @media only screen and (min-width: 768px) {
   /* Wrapper */
@@ -466,6 +568,16 @@
     padding: 14px 20px;
   }
 
+  /* Main */
+  .main-content__section-title {
+    padding: 32px 0 28px;
+    font-size: 24px;
+  }
+
+  .main-content__section-title strong {
+    font-size: 27px;
+  }
+
   /* Main - Banner */
   .main-contnet__banner-item .m_content {
     display: none;
@@ -473,11 +585,6 @@
 
   .main-contnet__banner-item .t_content {
     display: block;
-  }
-
-  .main-content__banner .slick-arrow {
-    width: 50px;
-    height: 50px;
   }
 
   /* Main - Quick Menu */
@@ -509,6 +616,23 @@
     margin-right: 0;
   }
 
+  .main-content__quick-menu-item:hover {
+    background-color: #1670b8;
+    border-color: #125faa;
+  }
+
+  .main-content__quick-menu-item:hover:nth-child(1) {
+    background-image: url(../assets/icon/icon_quick01on_new_2.png);
+  }
+
+  .main-content__quick-menu-item:hover:nth-child(2) {
+    background-image: url(../assets/icon/icon_quick02on_new_2.png);
+  }
+
+  .main-content__quick-menu-item:hover:nth-child(3) {
+    background-image: url(../assets/icon/icon_quick03on_new_2.png);
+  }
+
   .main-content__quick-menu-link {
     padding: 20px 60px 20px 25px;
     text-align: left;
@@ -519,6 +643,10 @@
     font-weight: 600;
   }
 
+  .main-content__quick-menu-item:hover .main-content__quick-menu-link span {
+    color: #fff;
+  }
+
   .main-content__quick-menu-link p {
     display: block;
     margin-top: 8px;
@@ -527,6 +655,10 @@
     color: #666;
     font-weight: 500;
     word-break: keep-all;
+  }
+
+  .main-content__quick-menu-item:hover .main-content__quick-menu-link p {
+    color: #fff;
   }
 
   /* Main - Board */
@@ -548,6 +680,31 @@
     max-width: 90%;
     height: 1em;
     font-size: 15px;
+  }
+
+  /* Main - Policy Nav */
+  .main-content__policy-nav .slick-dot {
+    padding: 8px 0;
+    font-size: 15px;
+  }
+
+  /* Main - Policy List */
+  .main-content__policy-item {
+    width: calc(33.333333% - 8px);
+    height: 115px;
+  }
+
+  .main-content__policy-item:last-child {
+    display: block;
+  }
+
+  .main-content__policy-item a strong {
+    font-size: 16px;
+  }
+
+  .main-content__policy-item a p {
+    font-size: 13px;
+    height: 2.4em;
   }
 }
 
@@ -743,6 +900,16 @@
     top: 41px;
   }
 
+  /* Main */
+  .main-content__section-title {
+    padding: 73px 0 42px;
+    font-size: 35px;
+  }
+
+  .main-content__section-title strong {
+    font-size: 40px;
+  }
+
   /* Main - Banner */
   .main-content__banner .main-contnet__banner-item.slick-slide {
     position: relative;
@@ -760,11 +927,6 @@
     display: block;
     width: auto;
     transform: translateX(-50%);
-  }
-
-  .main-content__banner .slick-arrow {
-    width: 70px;
-    height: 70px;
   }
 
   .main-content__banner .slick-prev {
@@ -790,6 +952,40 @@
     max-width: 93%;
     height: 1em;
     font-size: 17px;
+  }
+
+  /* Main - Policy Nav */
+  .main-content__policy-nav .slick-dot {
+    padding: 12px 0;
+    font-size: 21px;
+  }
+
+  .main-content__policy-nav .slick-active .slick-dot::after {
+    bottom: -10px;
+    border-top: 10px solid #0062b1;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  /* Main - Policy List */
+  .main-content__policy .slick-prev {
+    left: 1%;
+  }
+
+  .main-content__policy .slick-next {
+    right: 1%;
+  }
+
+  .main-content__policy-item {
+    height: 175px;
+  }
+
+  .main-content__policy-item a strong {
+    font-size: 20px;
+  }
+
+  .main-content__policy-item a p {
+    font-size: 15px;
   }
 }
 

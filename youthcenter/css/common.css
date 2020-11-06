@@ -19,6 +19,29 @@
   margin: 0 auto;
 }
 
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  text-indent: -9999px;
+  opacity: 0.5;
+  z-index: 1;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.slick-prev {
+  left: 3%;
+  background-image: url(../assets/banner/arrow_prev01.png);
+}
+
+.slick-next {
+  right: 3%;
+  background-image: url(../assets/banner/arrow_next01.png);
+}
+
 .new {
   background: url(../assets/icon/icon_new.gif) no-repeat 0 0;
   background-size: 100%;
@@ -50,6 +73,11 @@
     height: 90px;
   }
 
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+  }
+
   .btn-more {
     background: url(../assets/icon/more_plus.png) no-repeat right 12px bottom 50%;
     display: flex;
@@ -73,6 +101,11 @@
   .logo__link {
     width: 186px;
     height: 107px;
+  }
+
+  .slick-arrow {
+    width: 70px;
+    height: 70px;
   }
 
   .btn-more {
