@@ -413,16 +413,7 @@
   padding-bottom: 20px;
 }
 
-.main-content__policy-wrap {
-}
-
-.main-content__policy {
-}
-
 /* Main - Policy Nav */
-.main-content__policy-nav {
-}
-
 .main-content__policy-nav .slick-dots {
   display: flex !important;
   padding-bottom: 14px;
@@ -471,17 +462,39 @@
 }
 
 .main-content__policy-item {
-  background: #444 url(../assets/policy/icon_policy01_bg.png) no-repeat center;
-  background-size: 60px;
   display: block;
   width: calc(50% - 8px);
   height: 106px;
   margin: 0 8px 8px 0;
   border-radius: 3px;
+  background-color: #444;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
 }
 
 .main-content__policy-item:last-child {
   display: none;
+}
+
+.main-content__policy-cont01 .main-content__policy-item {
+  background-image: url(../assets/policy/icon_policy01_bg.png);
+}
+
+.main-content__policy-cont02 .main-content__policy-item {
+  background-image: url(../assets/policy/icon_policy02_bg.png);
+}
+
+.main-content__policy-cont03 .main-content__policy-item {
+  background-image: url(../assets/policy/icon_policy03_bg.png);
+}
+
+.main-content__policy-cont04 .main-content__policy-item {
+  background-image: url(../assets/policy/icon_policy04_bg.png);
+}
+
+.main-content__policy-cont05 .main-content__policy-item {
+  background-image: url(../assets/policy/icon_policy05_bg.png);
 }
 
 .main-content__policy-item a {
@@ -493,6 +506,37 @@
   height: 100%;
   padding: 0 15px;
   color: #fff;
+}
+
+.main-content__policy-item a.active {
+  padding: 0 10px 0 65px;
+  border: 2px dashed #0062b1;
+  background: #fff url(../assets/policy/icon_policy01.png) no-repeat 16px center;
+  align-items: flex-start;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 40px;
+}
+
+.main-content__policy-cont01 .main-content__policy-item a.active {
+  background-image: url(../assets/policy/icon_policy01.png);
+}
+
+.main-content__policy-cont02 .main-content__policy-item a.active {
+  background-image: url(../assets/policy/icon_policy02.png);
+}
+
+.main-content__policy-cont03 .main-content__policy-item a.active {
+  background-image: url(../assets/policy/icon_policy03.png);
+}
+
+.main-content__policy-cont04 .main-content__policy-item a.active {
+  background-image: url(../assets/policy/icon_policy04.png);
+}
+
+.main-content__policy-cont05 .main-content__policy-item a.active {
+  background-image: url(../assets/policy/icon_policy05.png);
 }
 
 .main-content__policy-item a strong,
@@ -510,10 +554,19 @@
   text-align: center;
 }
 
+.main-content__policy-item a.active strong {
+  color: #333;
+}
+
 .main-content__policy-item a p {
   text-align: center;
   font-size: 11px;
   height: 2.8em;
+}
+
+.main-content__policy-item a.active p {
+  text-align: left;
+  color: #666;
 }
 
 /* =============== 반응형 =============== */
@@ -696,6 +749,10 @@
 
   .main-content__policy-item:last-child {
     display: block;
+  }
+
+  .main-content__policy-item a.active {
+    padding: 0 15px 0 75px;
   }
 
   .main-content__policy-item a strong {
@@ -978,6 +1035,12 @@
 
   .main-content__policy-item {
     height: 175px;
+  }
+
+  .main-content__policy-item a.active {
+    padding: 0 20px 0 127px;
+    background-position: 27px center;
+    background-size: auto;
   }
 
   .main-content__policy-item a strong {

@@ -77,4 +77,11 @@ $(function() {
     newsList.removeClass("on");
     newsList.eq(news_index++).addClass("on");
   }, 3000);
+
+  // ============== 청년정책 ==============
+  $(".main-content__policy-item a").hover(function() {
+    $(this).addClass("active");
+  }, function() {
+    $(this).removeClass("active");
+  });
 });
