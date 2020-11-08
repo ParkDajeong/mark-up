@@ -257,10 +257,10 @@
 .main-content__section-title {
   font-family: "BMDOHYEON", sans-serif;
   width: 100%;
-  padding: 20px 0 18px;
+  padding: 22px 0 18px;
   text-align: center;
   color: #333;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.05em;
 }
@@ -686,6 +686,179 @@
   padding-left: 5px;
 }
 
+/* Main - Space */
+
+/* Main - Consulting */
+.main-content__section-consulting {
+  /* background-color: #f2f4f7; */
+}
+
+.main-content__consulting-info-wrap {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main-content__consulting {
+  background-color: #fff;
+  flex: 1;
+  height: 130px;
+  margin-right: 2%;
+  border: 1px solid #ccc;
+}
+
+.main-content__consulting:last-child {
+  margin-right: 0;
+}
+
+.main-content__consulting-title {
+  display: block;
+  padding: 8px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-content__consulting-desc {
+  /* padding-bottom: 9px; */
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.main-content__consulting-desc a {
+  display: block;
+}
+
+.main-content__consulting--board .main-content__consulting-desc a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.main-content__consulting--board .main-content__consulting-desc a::after {
+  background: url(../assets/icon/icon_link.png) no-repeat 0 0;
+  background-size: 30px 6px;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 6px;
+  margin-left: 4px;
+}
+
+.main-content__consulting-desc strong {
+  display: block;
+  color: #333;
+}
+
+/* Main - FAQ */
+.main-content__board-faq-wrap {
+}
+
+.main-content__faq {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.main-content__faq-title {
+  padding: 8px 0 8px 15px;
+  color: #333;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-content__faq-list {
+  padding: 14px 20px;
+}
+
+.main-content__faq-list li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.main-content__faq-list li::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "·";
+  transform: translateY(-50%);
+}
+
+.main-content__faq-list li a {
+  display: block;
+  max-width: 93%;
+  margin: 5px 0 5px 10px;
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.main-content__faq-list li:last-child a {
+  margin-bottom: 0;
+}
+
+.main-content__post-date {
+  display: none;
+}
+
+.main-content__faq .btn-more {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+
+/* =============== 반응형 =============== */
+@media only screen and (min-width: 401px) {
+  /* Main */
+  .main-content__section-title {
+    font-size: 16px;
+  }
+
+  .main-content__section-title strong {
+    font-size: 19px;
+  }
+
+  /* Main - Consulting */
+  .main-content__consulting {
+    height: 195px;
+  }
+
+  .main-content__consulting::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .main-content__consulting--kakao::after {
+    background-image: url(../assets/consulting/talk_coun1.png);
+  }
+
+  .main-content__consulting--call::after {
+    background-image: url(../assets/consulting/call_coun1.png);
+  }
+
+  .main-content__consulting--board::after {
+    background-image: url(../assets/consulting/img_coun02.png);
+  }
+
+  .main-content__consulting--board .main-content__consulting-desc a::after {
+    background-size: 43px 6px;
+    width: 43px;
+  }
+}
+
 /* =============== 반응형 =============== */
 @media only screen and (min-width: 768px) {
   /* Wrapper */
@@ -943,6 +1116,60 @@
   .main-content__ranking-list li.ranking-change.down::after {
     border-top: 5px solid #0062b1;
   }
+
+  /* Main - Consulting */
+  .main-content__consulting-info-wrap {
+    margin-bottom: 12px;
+  }
+
+  .main-content__consulting {
+    height: 285px;
+  }
+
+  .main-content__consulting::after {
+    width: 85px;
+    height: 85px;
+  }
+
+  .main-content__consulting-title {
+    padding: 13px 0;
+    margin-bottom: 20px;
+    font-size: 19px;
+  }
+
+  .main-content__consulting-desc {
+    padding-bottom: 13px;
+    font-size: 16px;
+  }
+
+  /* Main - FAQ */
+  .main-content__faq-title {
+    padding: 13px 0 13px 20px;
+    font-size: 19px;
+  }
+
+  .main-content__faq-list {
+    padding: 26px 22px 26px 26px;
+  }
+
+  .main-content__faq-list li {
+    margin-bottom: 8px;
+  }
+
+  .main-content__faq-list li a {
+    max-width: 93%;
+    font-size: 15px;
+  }
+
+  .main-content__post-date {
+    display: block;
+    font-size: 15px;
+  }
+
+  .main-content__faq .btn-more {
+    top: 10px;
+    right: 15px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1157,7 +1384,7 @@
 
   /* Main */
   .main-content__section-title {
-    padding: 73px 0 42px;
+    padding: 70px 0 45px;
     font-size: 35px;
   }
 
@@ -1308,6 +1535,67 @@
   .main-content__ranking-list {
     height: calc(100% - 60px);
     padding: 26px 29px;
+  }
+
+  /* Main - Consulting */
+  .main-content__section-consulting .inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-content__consulting-info-wrap {
+    width: 723px;
+  }
+
+  .main-content__consulting {
+    margin-right: 3%;
+  }
+
+  .main-content__consulting:last-child {
+    margin-right: 3%;
+  }
+
+  .main-content__consulting::after {
+    width: 82px;
+    height: 82px;
+  }
+
+  .main-content__consulting-title {
+    padding: 19px 0;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .main-content__consulting-desc {
+    padding-bottom: 0;
+  }
+
+  /* Main -FAQ */
+  .main-content__board-faq-wrap {
+    width: calc(100% - 723px);
+  }
+
+  .main-content__faq-title {
+    padding: 19px 0 19px 22px;
+    font-size: 25px;
+  }
+
+  .main-content__faq-list li {
+    margin-bottom: 7px;
+  }
+
+  .main-content__faq-list li a {
+    max-width: 75%;
+    font-size: 16px;
+  }
+
+  .main-content__post-date {
+    font-size: 16px;
+  }
+
+  .main-content__faq .btn-more {
+    top: 15px;
+    right: 17px;
   }
 }
 

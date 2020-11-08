@@ -14,7 +14,15 @@ $(function() {
   $(".main-content__banner").slick({
     autoplay: true,
     autoplaySpeed: 5000,
-    draggable: false,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 1070,
+        settings: {
+          swipe: false,
+        }
+      }
+    ],
   });
 
   // ============= 정책 리스트 =============
@@ -34,6 +42,7 @@ $(function() {
         breakpoint: 1070,
         settings: {
           arrows: true,
+          swipe: false,
         }
       }
     ],
@@ -55,6 +64,7 @@ $(function() {
         breakpoint: 1070,
         settings: {
           arrows: true,
+          swipe: false,
         }
       }
     ],
