@@ -830,6 +830,96 @@
   transform: translate(-220%, -50%);
 }
 
+/* Main - Space Slider */
+.main-content__space-list li {
+  background-color: #f2f4f7;
+  height: 134px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.main-content__space-list li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content__space-thumbnail {
+  flex-shrink: 0;
+  position: relative;
+  width: 137px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-content__space-thumbnail img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  max-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.main-content__space-thumbnail span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-content__space-name {
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
+  padding: 0 5px;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.main-content__space-addr {
+  background-color: #0a6648;
+  top: 28px;
+  right: 0;
+  display: -webkit-box;
+  width: 40px;
+  height: 38px;
+  padding: 3px 2px 0;
+  font-size: 13px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.main-content__space-desc {
+  padding: 12px 10px 0 16px;
+}
+
+.main-content__space-desc span {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #333;
+  font-weight: 700;
+}
+
+.main-content__space-desc p {
+  display: -webkit-box;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
 /* Main - Consulting */
 .main-content__section-consulting {
   background-color: #f2f4f7;
@@ -1315,7 +1405,18 @@
   }
 
   /* Main - Space */
+  .main-content__section--space {
+    padding-bottom: 40px;
+  }
+
+  .main-content__section--space .inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .main-content__space-info {
+    flex: 1;
+    order: 2;
     padding-top: 55px;
     margin-bottom: 0;
   }
@@ -1333,6 +1434,51 @@
   .main-content__space-search select,
   .main-content__space-search input {
     font-size: 14px;
+  }
+
+  /* Main - Space Slider */
+  .main-content__space-result {
+    order: 1;
+    width: 65%;
+    margin-right: 10px;
+  }
+
+  .main-content__space-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+  }
+
+  .main-content__space-list li {
+    width: calc(50% - 10px);
+    height: 123px;
+    margin-right: 10px;
+  }
+
+  .main-content__space-thumbnail {
+    width: 110px;
+  }
+
+  .main-content__space-name {
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .main-content__space-addr {
+    top: 32px;
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .main-content__space-desc span {
+    margin-bottom: 9px;
+    font-size: 16px;
+  }
+
+  .main-content__space-desc p {
+    font-size: 14px;
+    -webkit-line-clamp: 3;
   }
 
   /* Main - Consulting */
@@ -1838,6 +1984,40 @@
     transform: translate(-190%, -50%);
   }
 
+  /* Main - Space Slider */
+  .main-content__space-result {
+    width: calc(100% - 410px);
+  }
+
+  .main-content__space-list li {
+    height: 193px;
+  }
+
+  .main-content__space-thumbnail {
+    width: 150px;
+  }
+
+  .main-content__space-name {
+    height: 40px;
+  }
+
+  .main-content__space-addr {
+    top: 40px;
+    width: 62px;
+    height: 60px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .main-content__space-desc span {
+    font-size: 18px;
+  }
+
+  .main-content__space-desc p {
+    -webkit-line-clamp: 5;
+    line-height: 1.8;
+  }
+
   /* Main - Consulting */
   .main-content__section-consulting .inner {
     display: flex;
@@ -1960,6 +2140,11 @@
   /* Main - Board */
   .main-content__board-list {
     width: 880px;
+  }
+
+  /* Main - Space Slider */
+  .main-content__space-thumbnail {
+    width: 180px;
   }
 
   /* Footer */
