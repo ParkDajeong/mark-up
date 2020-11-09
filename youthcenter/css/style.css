@@ -687,10 +687,152 @@
 }
 
 /* Main - Space */
+.main-content__space-info {
+  position: relative;
+  padding-top: 38px;
+  margin-bottom: 27px;
+}
+
+.main-content__btn-tab {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  width: calc(50% - 5px);
+  padding: 4px 0;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.main-content__space-tab.active .main-content__btn-tab {
+  background-color: #2d7c62;
+  color: #fff;
+  font-weight: 500;
+  border-color: #2d7c62;
+}
+
+.main-content__space-tab.active .main-content__btn-tab::before {
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  left: 50%;
+  border-top: 6px solid #2d7c62;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  transform: translateX(-50%);
+}
+
+.main-content__sapce-tab--map .main-content__btn-tab {
+  left: 0;
+}
+
+.main-content__sapce-tab--search .main-content__btn-tab {
+  right: 0;
+}
+
+.main-content__tab-content {
+  display: none;
+  background-color: #f8f8f8;
+  padding: 18px 23px;
+  color: #333;
+  border: 2px dashed #33856a;
+}
+
+.main-content__space-tab.active .main-content__tab-content {
+  display: block;
+}
+
+.main-content__desc {
+  position: relative;
+  padding-left: 9px;
+  margin-bottom: 8px;
+  letter-spacing: -0.05em;
+}
+
+.main-content__desc::before {
+  content: "*";
+  position: absolute;
+  top: 12%;
+  left: 0;
+}
+
+.main-content__map-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content__map-list-item {
+  display: block;
+  width: 50%;
+}
+
+.main-content__map-list-item a {
+  position: relative;
+  display: block;
+  padding: 4px 0 4px 6px;
+  font-size: 13px;
+}
+
+.main-content__map-list-item a::before {
+  background-color: #333;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.main-content__space-search {
+}
+
+.main-content__space-search div {
+  margin-bottom: 15px;
+}
+
+.main-content__space-search div:first-child {
+  display: flex;
+  margin-right: -8px;
+}
+
+.main-content__space-search div:first-child select {
+  margin-right: 8px;
+}
+
+.main-content__space-search select,
+.main-content__space-search input {
+  width: 100%;
+  height: 28px;
+  color: #333;
+}
+
+.main-content__btn-space-search {
+  background-color: #333;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.main-content__btn-space-search::before {
+  background: url(../assets/space/icon_search.png) no-repeat;
+  background-size: 100%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-220%, -50%);
+}
 
 /* Main - Consulting */
 .main-content__section-consulting {
-  /* background-color: #f2f4f7; */
+  background-color: #f2f4f7;
   padding-bottom: 21px;
 }
 
@@ -1172,6 +1314,27 @@
     border-top: 5px solid #0062b1;
   }
 
+  /* Main - Space */
+  .main-content__space-info {
+    padding-top: 55px;
+    margin-bottom: 0;
+  }
+
+  .main-content__btn-tab {
+    padding: 7px 0;
+    font-size: 15px;
+  }
+
+  .main-content__tab-content,
+  .main-content__map-list-item a {
+    font-size: 14px;
+  }
+
+  .main-content__space-search select,
+  .main-content__space-search input {
+    font-size: 14px;
+  }
+
   /* Main - Consulting */
   .main-content__consulting-info-wrap {
     margin-bottom: 12px;
@@ -1637,6 +1800,42 @@
   .main-content__ranking-list {
     height: calc(100% - 60px);
     padding: 26px 29px;
+  }
+
+  /* Main - Space */
+  .main-content__space-info {
+    padding-top: 66px;
+  }
+
+  .main-content__btn-tab {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  .main-content__tab-content {
+    padding: 40px 32px 39px;
+  }
+
+  .main-content__map-list-item a {
+    font-size: 15px;
+  }
+
+  .main-content__space-search select,
+  .main-content__space-search input {
+    height: 32px;
+    font-size: 15px;
+  }
+
+  .main-content__btn-space-search {
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .main-content__btn-space-search::before {
+    width: 38px;
+    height: 38px;
+    transform: translate(-190%, -50%);
   }
 
   /* Main - Consulting */

@@ -85,6 +85,14 @@ $(function() {
     $(this).removeClass("active");
   });
 
+  // ============== 청년정책 ==============
+  $(".main-content__space-tab").click(function() {
+    $(".main-content__space-tab").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $(".main-content__space-tab").first().addClass("active");
+
   // ============== footer - 관련사이트 ==============
   $(".select-box__default-option").click(function() {
     $(".select-box").toggleClass("open");

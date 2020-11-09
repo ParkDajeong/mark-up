@@ -42,10 +42,12 @@ button {
   cursor: pointer;
 }
 
-input {
-  border: none;
+input,
+select {
+  padding: 0 10px;
   color: #666;
-  font-size: 14px;
+  font-size: 13px;
+  border: 1px solid #b8b8b8;
 }
 
 img {
