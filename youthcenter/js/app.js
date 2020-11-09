@@ -84,4 +84,10 @@ $(function() {
   }, function() {
     $(this).removeClass("active");
   });
+
+  // ============== footer - 관련사이트 ==============
+  $(".select-box__default-option").click(function() {
+    $(".select-box").toggleClass("open");
+    $(".select-box__option-list").slideToggle();
+  })
 });

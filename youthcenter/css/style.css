@@ -691,6 +691,7 @@
 /* Main - Consulting */
 .main-content__section-consulting {
   /* background-color: #f2f4f7; */
+  padding-bottom: 21px;
 }
 
 .main-content__consulting-info-wrap {
@@ -753,9 +754,6 @@
 }
 
 /* Main - FAQ */
-.main-content__board-faq-wrap {
-}
-
 .main-content__faq {
   position: relative;
   background-color: #fff;
@@ -812,6 +810,63 @@
   position: absolute;
   top: 7px;
   right: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #444;
+  padding: 16px 0 25px;
+  color: #fff;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__title {
+  padding-bottom: 11px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__contact-text {
+  color: #ccc;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.footer__sns {
+  display: none;
+}
+
+.footer__utill-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 19px 0;
+}
+
+.footer__utill-list li {
+  position: relative;
+  margin-top: 3px;
+}
+
+.footer__utill-list li::before {
+  background-color: #a2a2a2;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 1px;
+  height: 12px;
+  transform: translateY(-50%);
+}
+
+.footer__utill-list li a {
+  display: inline-block;
+  padding-right: 24px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 /* =============== 반응형 =============== */
@@ -1169,6 +1224,53 @@
   .main-content__faq .btn-more {
     top: 10px;
     right: 15px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer .inner {
+    display: flex;
+  }
+
+  .footer__title {
+    font-size: 19px;
+  }
+
+  .footer__contact {
+    width: 35%;
+    padding-right: 15px;
+  }
+
+  .footer__contact-text {
+    font-size: 15px;
+    word-break: keep-all;
+  }
+
+  .footer__utill {
+    width: 25%;
+  }
+
+  .footer__utill-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer__utill-list li::before {
+    display: none;
+  }
+
+  .footer__utill-list li a {
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .footer__family-site {
+    flex: 1;
   }
 }
 
@@ -1597,11 +1699,87 @@
     top: 15px;
     right: 17px;
   }
+
+  /* Footer */
+  .footer {
+    padding: 36px 0 42px;
+  }
+
+  .footer__title {
+    font-size: 25px;
+  }
+
+  .footer__contact {
+    width: 25%;
+  }
+
+  .footer__contact-text {
+    font-size: 14px;
+  }
+
+  .footer__sns {
+    display: block;
+    width: 20%;
+    margin-right: 15px;
+  }
+
+  .footer__sns-list {
+    display: flex;
+  }
+
+  .footer__sns-list li {
+    margin-right: 9px;
+  }
+
+  .footer__sns-list li a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .footer__sns-list li:nth-child(1) a {
+    background-image: url(../assets/sns/sns01.png);
+  }
+
+  .footer__sns-list li:nth-child(2) a {
+    background-image: url(../assets/sns/sns02.png);
+  }
+
+  .footer__sns-list li:nth-child(3) a {
+    background-image: url(../assets/sns/sns03.png);
+  }
+
+  .footer__sns-list li:nth-child(4) a {
+    background-image: url(../assets/sns/sns04.png);
+  }
 }
 
 @media only screen and (min-width: 1300px) {
   /* Main - Board */
   .main-content__board-list {
     width: 880px;
+  }
+
+  /* Footer */
+  .footer__logo {
+    display: block;
+    width: 220px;
+    margin-top: 5px;
+  }
+
+  .footer__logo img {
+    width: 188px;
+  }
+
+  .footer__contact,
+  .footer__utill {
+    width: 20%;
+  }
+
+  .footer__sns {
+    width: 18%;
   }
 }
