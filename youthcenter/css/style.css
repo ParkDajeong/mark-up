@@ -1982,11 +1982,12 @@
 
   .main-content__map-area {
     height: 307px;
-    padding-left: 155px;
+    padding-left: 76px;
+    text-align: center;
   }
 
   .main-content__map-area img {
-    display: inline-block;
+    display: inline;
     width: auto;
     height: 100%;
   }
