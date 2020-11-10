@@ -51,7 +51,6 @@
   width: 100%;
   height: 88px;
   padding: 23px 40px;
-  box-sizing: content-box;
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -65,6 +64,7 @@
 .search-form input {
   width: 100%;
   padding: 0 45px 0 10px;
+  border: none;
   border-bottom: 2px solid #0062b1;
 }
 
@@ -188,6 +188,7 @@
   text-align: left;
   font-size: 16px;
   font-weight: 500;
+  outline: none;
 }
 
 .gnb-mobile__menu-item > button::after {
@@ -200,6 +201,10 @@
   width: 14px;
   height: 14px;
   transform: translateY(-50%);
+}
+
+.gnb-mobile__menu-item.open > button::after {
+  background: url(../assets/icon/arrow_dep1_on_2.png) no-repeat;
 }
 
 .gnb-mobile__sub-menu {
@@ -266,7 +271,6 @@
 }
 
 .main-content__section-title strong {
-  color: #0062b1;
   font-size: 20px;
   font-weight: 500;
 }
@@ -413,6 +417,10 @@
   padding-bottom: 20px;
 }
 
+.main-content__section--policy .main-content__section-title strong {
+  color: #0062b1;
+}
+
 /* Main - Policy Nav */
 .main-content__policy-nav .slick-dots {
   display: flex !important;
@@ -441,6 +449,7 @@
   background-color: #0062b1;
   color: #fff;
   font-weight: 600;
+  outline: none;
 }
 
 .main-content__policy-nav .slick-active .nav-item::after {
@@ -691,6 +700,10 @@
   padding-bottom: 40px;
 }
 
+.main-content__section--space .main-content__section-title strong {
+  color: #33856a;
+}
+
 .main-content__space-info {
   position: relative;
   padding-top: 38px;
@@ -713,6 +726,7 @@
   color: #fff;
   font-weight: 500;
   border-color: #2d7c62;
+  outline: none;
 }
 
 .main-content__space-tab.active .main-content__btn-tab::before {
@@ -936,6 +950,10 @@
   padding-bottom: 21px;
 }
 
+.main-content__section-consulting .main-content__section-title strong {
+  color: #1a2865;
+}
+
 .main-content__consulting-info-wrap {
   display: flex;
   margin-bottom: 10px;
@@ -998,6 +1016,7 @@
 /* Main - FAQ */
 .main-content__faq {
   position: relative;
+  height: 100%;
   background-color: #fff;
   border: 1px solid #ccc;
 }
@@ -1855,6 +1874,10 @@
   }
 
   /* Main - Policy */
+  .main-content__section--policy {
+    padding-bottom: 105px;
+  }
+
   .main-content__section--policy .inner {
     display: flex;
     flex-wrap: wrap;
@@ -1956,6 +1979,10 @@
   }
 
   /* Main - Space */
+  .main-content__section--space {
+    padding-bottom: 90px;
+  }
+
   .main-content__space-info {
     padding-top: 66px;
   }
@@ -2303,21 +2330,27 @@
   }
 
   /* Main - Consulting */
+  .main-content__section-consulting {
+    padding-bottom: 80px;
+  }
+
   .main-content__section-consulting .inner {
     display: flex;
     flex-wrap: wrap;
   }
 
   .main-content__consulting-info-wrap {
-    width: 723px;
+    width: 675px;
+    margin-bottom: 0;
   }
 
   .main-content__consulting {
-    margin-right: 3%;
+    width: auto;
+    margin-right: 15px;
   }
 
   .main-content__consulting:last-child {
-    margin-right: 3%;
+    margin-right: 15px;
   }
 
   .main-content__consulting::after {
@@ -2326,9 +2359,9 @@
   }
 
   .main-content__consulting-title {
-    padding: 19px 0;
-    font-size: 25px;
-    margin-bottom: 30px;
+    padding: 21px 0;
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 
   .main-content__consulting-desc {
@@ -2337,12 +2370,12 @@
 
   /* Main -FAQ */
   .main-content__board-faq-wrap {
-    width: calc(100% - 723px);
+    width: calc(100% - 675px);
   }
 
   .main-content__faq-title {
-    padding: 19px 0 19px 22px;
-    font-size: 25px;
+    padding: 22px 0 22px 22px;
+    font-size: 20px;
   }
 
   .main-content__faq-list li {
@@ -2359,6 +2392,7 @@
   }
 
   .main-content__faq .btn-more {
+    width: 90px;
     top: 15px;
     right: 17px;
   }
@@ -2433,6 +2467,47 @@
 
   .main-content__space-thumbnail {
     width: 180px;
+  }
+
+  /* Main - Consulting */
+  .main-content__consulting-info-wrap {
+    width: 723px;
+  }
+
+  .main-content__consulting {
+    height: 303px;
+    margin-right: 3%;
+  }
+
+  .main-content__consulting:last-child {
+    margin-right: 3%;
+  }
+
+  .main-content__consulting-title {
+    padding: 19px 0;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  /* Main -FAQ */
+  .main-content__board-faq-wrap {
+    width: calc(100% - 723px);
+  }
+
+  .main-content__faq-title {
+    padding: 19px 22px;
+    font-size: 25px;
+  }
+
+  .main-content__faq-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 71px);
+  }
+
+  .main-content__faq .btn-more {
+    width: 120px;
   }
 
   /* Footer */

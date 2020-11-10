@@ -36,6 +36,18 @@ $(function() {
     }
   });
 
+  $(".gnb-mobile__menu-item").click(function() {
+    if($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(this).find(".gnb-mobile__sub-menu").slideUp();
+    } else {
+      $(".gnb-mobile__menu-item").removeClass("open");
+      $(".gnb-mobile__sub-menu").slideUp();
+      $(this).addClass("open");
+      $(this).find(".gnb-mobile__sub-menu").slideDown();
+    }
+  });
+
   // ============== PC 메뉴 ==============
   function openSubMenu() {
     $(this).addClass("on");

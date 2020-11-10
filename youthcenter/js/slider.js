@@ -17,7 +17,7 @@ $(function() {
     mobileFirst: true,
     responsive: [
       {
-        breakpoint: 1070,
+        breakpoint: 1069,
         settings: {
           swipe: false,
         }
@@ -39,7 +39,7 @@ $(function() {
     },
     responsive: [
       {
-        breakpoint: 1070,
+        breakpoint: 1069,
         settings: {
           arrows: true,
           swipe: false,
@@ -51,7 +51,7 @@ $(function() {
   // ============= AD 배너 =============
   $(".main-content__ad-banner").slick({
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     mobileFirst: true,
     arrows: false,
     dots: true,
@@ -61,7 +61,7 @@ $(function() {
     },
     responsive: [
       {
-        breakpoint: 1070,
+        breakpoint: 1069,
         settings: {
           arrows: true,
           swipe: false,
@@ -73,7 +73,7 @@ $(function() {
     // ============= 청년공간 =============
   $(".main-content__space-slider").slick({
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 6000,
     mobileFirst: true,
     arrows: false,
     dots: true,
@@ -83,7 +83,7 @@ $(function() {
     },
     responsive: [
       {
-        breakpoint: 1070,
+        breakpoint: 1069,
         settings: {
           arrows: true,
         }
