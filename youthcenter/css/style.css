@@ -687,6 +687,10 @@
 }
 
 /* Main - Space */
+.main-content__section--space {
+  padding-bottom: 40px;
+}
+
 .main-content__space-info {
   position: relative;
   padding-top: 38px;
@@ -731,6 +735,7 @@
 }
 
 .main-content__tab-content {
+  position: relative;
   display: none;
   background-color: #f8f8f8;
   padding: 18px 23px;
@@ -754,6 +759,10 @@
   position: absolute;
   top: 12%;
   left: 0;
+}
+
+.main-content__map-area img {
+  display: none;
 }
 
 .main-content__map-list {
@@ -782,9 +791,6 @@
   width: 2px;
   height: 2px;
   transform: translateY(-50%);
-}
-
-.main-content__space-search {
 }
 
 .main-content__space-search div {
@@ -863,8 +869,6 @@
 
 .main-content__space-thumbnail span {
   position: absolute;
-  display: flex;
-  align-items: center;
   text-align: center;
   color: #fff;
   font-weight: 500;
@@ -918,6 +922,12 @@
   word-break: break-all;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+.main-content__space-result .slider-dots-wrap {
+  position: relative;
+  justify-content: center;
+  margin-top: 24px;
 }
 
 /* Main - Consulting */
@@ -1405,10 +1415,6 @@
   }
 
   /* Main - Space */
-  .main-content__section--space {
-    padding-bottom: 40px;
-  }
-
   .main-content__section--space .inner {
     display: flex;
     flex-wrap: wrap;
@@ -1444,7 +1450,7 @@
   }
 
   .main-content__space-list {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     margin-right: -10px;
   }
@@ -1462,6 +1468,7 @@
   .main-content__space-name {
     height: 32px;
     font-size: 16px;
+    line-height: 32px;
   }
 
   .main-content__space-addr {
@@ -1958,12 +1965,271 @@
     font-size: 22px;
   }
 
-  .main-content__tab-content {
+  .main-content__sapce-tab--map .main-content__tab-content {
+    padding: 10px 0;
+  }
+
+  .main-content__sapce-tab--search .main-content__tab-content {
     padding: 40px 32px 39px;
   }
 
+  .main-content__desc {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 0;
+  }
+
+  .main-content__map-area {
+    height: 307px;
+    padding-left: 155px;
+  }
+
+  .main-content__map-area img {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+  }
+
   .main-content__map-list-item a {
+    position: absolute;
+    padding: 0;
     font-size: 15px;
+  }
+
+  .main-content__map-list-item a::before {
+    display: none;
+  }
+
+  .main-content__map-list-item a span {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    padding: 0 15px;
+    line-height: 29px;
+    overflow: hidden;
+    border: 1px dashed #333;
+    border-radius: 30px;
+    word-break: keep-all;
+  }
+
+  .main-content__map-list-item a:hover span {
+    width: auto;
+    height: 30px;
+    overflow: visible;
+  }
+
+  .map_seoul {
+    top: 63px;
+    left: 221px;
+    width: 22px;
+    height: 18px;
+    z-index: 2;
+  }
+
+  .map_seoul:hover span {
+    top: 5px;
+    left: -101px;
+  }
+
+  .map_busan {
+    top: 215px;
+    left: 325px;
+    width: 25px;
+    height: 20px;
+    z-index: 2;
+  }
+
+  .map_busan:hover span {
+    top: 11px;
+    left: 23px;
+  }
+
+  .map_daegu {
+    top: 170px;
+    left: 290px;
+    width: 24px;
+    height: 26px;
+    z-index: 2;
+  }
+
+  .map_daegu:hover span {
+    top: -24px;
+    left: 24px;
+  }
+
+  .map_incheon {
+    top: 47px;
+    left: 189px;
+    width: 30px;
+    height: 36px;
+    z-index: 2;
+  }
+
+  .map_incheon:hover span {
+    top: 20px;
+    left: -89px;
+  }
+
+  .map_gwangju {
+    top: 224px;
+    left: 203px;
+    width: 21px;
+    height: 13px;
+    z-index: 2;
+  }
+
+  .map_gwangju:hover span {
+    top: -27px;
+    left: -102px;
+  }
+
+  .map_daejeon {
+    top: 140px;
+    left: 234px;
+    width: 17px;
+    height: 22px;
+    z-index: 2;
+  }
+
+  .map_daejeon:hover span {
+    top: -5px;
+    left: -102px;
+  }
+
+  .map_ulsan {
+    top: 183px;
+    left: 329px;
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+  }
+
+  .map_ulsan:hover span {
+    top: 0px;
+    left: 32px;
+  }
+
+  .map_sejong {
+    top: 122px;
+    left: 231px;
+    width: 15px;
+    height: 18px;
+    z-index: 2;
+  }
+
+  .map_sejong:hover span {
+    top: -14px;
+    left: -129px;
+  }
+
+  .map_gyeonggido {
+    top: 32px;
+    left: 203px;
+    width: 65px;
+    height: 75px;
+  }
+
+  .map_gyeonggido:hover span {
+    top: -6px;
+    left: -26px;
+  }
+
+  .map_gangwondo {
+    top: 12px;
+    left: 265px;
+    width: 84px;
+    height: 91px;
+  }
+
+  .map_gangwondo:hover span {
+    top: 36px;
+    left: 25px;
+  }
+
+  .map_chungcheongbukdo {
+    top: 99px;
+    left: 252px;
+    width: 46px;
+    height: 62px;
+  }
+
+  .map_chungcheongbukdo:hover span {
+    top: 0px;
+    left: 13px;
+  }
+
+  .map_chungcheongnamdo {
+    top: 107px;
+    left: 184px;
+    width: 66px;
+    height: 60px;
+  }
+
+  .map_chungcheongnamdo:hover span {
+    top: 16px;
+    left: -52px;
+  }
+
+  .map_Jeollabukdo {
+    top: 167px;
+    left: 195px;
+    width: 65px;
+    height: 48px;
+  }
+
+  .map_Jeollabukdo:hover span {
+    top: 6px;
+    left: -65px;
+  }
+
+  .map_Jeollanamdo {
+    top: 213px;
+    left: 170px;
+    width: 89px;
+    height: 66px;
+  }
+
+  .map_Jeollanamdo:hover span {
+    top: 21px;
+    left: -56px;
+  }
+
+  .map_gyeongsangbukdo {
+    top: 118px;
+    left: 285px;
+    width: 73px;
+    height: 80px;
+  }
+
+  .map_gyeongsangbukdo:hover span {
+    top: 30px;
+    left: 38px;
+  }
+
+  .map_gyeongsangnamdo {
+    top: 192px;
+    left: 259px;
+    width: 84px;
+    height: 60px;
+  }
+
+  .map_gyeongsangnamdo:hover span {
+    top: 6px;
+    left: 19px;
+  }
+
+  .map_jeju {
+    top: 297px;
+    left: 155px;
+    width: 38px;
+    height: 20px;
+  }
+
+  .map_jeju:hover span {
+    top: -19px;
+    left: -124px;
   }
 
   .main-content__space-search select,
@@ -1984,7 +2250,23 @@
     transform: translate(-190%, -50%);
   }
 
+  /* Main - Space */
+  .main-content__space-tab.active .main-content__btn-tab::before {
+    bottom: -10px;
+    border-top: 10px solid #2d7c62;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+  }
+
   /* Main - Space Slider */
+  .main-content__space-slider .slick-prev {
+    left: 1%;
+  }
+
+  .main-content__space-slider .slick-next {
+    right: 1%;
+  }
+
   .main-content__space-result {
     width: calc(100% - 410px);
   }
@@ -1999,6 +2281,7 @@
 
   .main-content__space-name {
     height: 40px;
+    line-height: 40px;
   }
 
   .main-content__space-addr {
@@ -2143,6 +2426,10 @@
   }
 
   /* Main - Space Slider */
+  .main-content__space-result {
+    width: calc(100% - 510px);
+  }
+
   .main-content__space-thumbnail {
     width: 180px;
   }

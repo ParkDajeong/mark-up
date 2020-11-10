@@ -9,7 +9,7 @@
   font-family: "Noto Sans KR", dotum, "돋움", arial, sans-serif;
   box-sizing: border-box;
   margin: 0;
-  outline: none;
+  /* outline: none; */
 }
 
 html,

@@ -48,6 +48,10 @@
   opacity: 0;
 }
 
+.pc-only {
+  display: none;
+}
+
 /* Slick Slider */
 .slick-arrow {
   position: absolute;
@@ -273,6 +277,10 @@
   .btn-more span {
     padding-left: 17px;
     font-size: 15px;
+  }
+
+  .pc-only {
+    display: inline-block;
   }
 
   /* Slick Slider */

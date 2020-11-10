@@ -55,7 +55,7 @@ $(function() {
     mobileFirst: true,
     arrows: false,
     dots: true,
-    appendDots: $(".slider-dot-list"),
+    appendDots: $(".main-content__ad-banner-wrap .slider-dot-list"),
     customPaging: function(slider, i) {
       return "<button class='slick-dot' type='button'><span class='sr-only'>" + i + "번 슬라이드로 이동</span></button>"
     },
@@ -65,6 +65,27 @@ $(function() {
         settings: {
           arrows: true,
           swipe: false,
+        }
+      }
+    ],
+  });
+  
+    // ============= 청년공간 =============
+  $(".main-content__space-slider").slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    mobileFirst: true,
+    arrows: false,
+    dots: true,
+    appendDots: $(".main-content__space-result .slider-dot-list"),
+    customPaging: function(slider, i) {
+      return "<button class='slick-dot' type='button'><span class='sr-only'>" + i + "번 슬라이드로 이동</span></button>"
+    },
+    responsive: [
+      {
+        breakpoint: 1070,
+        settings: {
+          arrows: true,
         }
       }
     ],

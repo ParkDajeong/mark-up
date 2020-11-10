@@ -85,11 +85,16 @@ $(function() {
     $(this).removeClass("active");
   });
 
-  // ============== 청년정책 ==============
+  // ============== 청년공간 ==============
   $(".main-content__space-tab").click(function() {
     $(".main-content__space-tab").removeClass("active");
     $(this).addClass("active");
   });
+
+  $(".main-content__map-list-item a").mouseover(function() {
+    const mapName = $(this).attr("class");
+    $(".main-content__map-area img").attr("src", "./assets/space/" + mapName + ".png");
+  })
 
   $(".main-content__space-tab").first().addClass("active");
 
