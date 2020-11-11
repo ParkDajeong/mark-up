@@ -13,7 +13,7 @@ $(function() {
     swipe: true,
     fade: true,
     customPaging:  function(slider, i) {
-      return "<span class='slider-dot'></span>"
+      return "<span class='slider-dot'><span class='sr-only'>" + i + "번 슬라이드로 이동</span></span>"
     },
     responsive: [
       {
@@ -25,16 +25,29 @@ $(function() {
     ]
   });
 
-  // Content - Video, News
-  $(".content-video .content__slider, .content-news .content__slider").slick({
+  // Content - Video
+  $(".content-video .content__slider").slick({
     slide: "div",
     infinite: true,
     slidesToShow: 1, 
     slidesToScroll: 1,
     speed: 500,
     arrows: true,
-    prevArrow: "<button class='btn-icon btn-icon--prev slider__btn-arrow'>Previous</button>",
-    nextArrow: "<button class='btn-icon btn-icon--next slider__btn-arrow'>Next</button>",
+    prevArrow: "<button class='btn-icon btn-icon--prev slider__btn-arrow'>Video 이전 슬라이드로 이동</button>",
+    nextArrow: "<button class='btn-icon btn-icon--next slider__btn-arrow'>Video 다음 슬라이드로 이동</button>",
+    swipe: true,
+  });
+
+  // Content - News
+  $(".content-news .content__slider").slick({
+    slide: "div",
+    infinite: true,
+    slidesToShow: 1, 
+    slidesToScroll: 1,
+    speed: 500,
+    arrows: true,
+    prevArrow: "<button class='btn-icon btn-icon--prev slider__btn-arrow'>News 이전 슬라이드로 이동</button>",
+    nextArrow: "<button class='btn-icon btn-icon--next slider__btn-arrow'>News 다음 슬라이드로 이동</button>",
     swipe: true,
   });
 
@@ -75,10 +88,10 @@ $(function() {
 
   // Content - SNS Arrow Button
   $(".btn-icon--prev").click(function() {
-    snsSwiper.animate({scrollLeft: "-=350"}, 650);
+    snsSwiper.animate({scrollLeft: "-=350"}, 600);
   });
   
   $(".btn-icon--next").click(function() {
-    snsSwiper.animate({scrollLeft: "+=350"}, 650);
+    snsSwiper.animate({scrollLeft: "+=350"}, 600);
   });
 });

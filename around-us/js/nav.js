@@ -1,116 +1,82 @@
-const header = document.querySelector(".header");
-const headerInner = document.querySelector(".header__inner");
+const header = $(".header");
+const headerInner = $(".header__inner");
 
-// ============== header fix ==============
-const headerHeight = headerInner.offsetHeight;
-const delta = 5;
+// ============== Header Fix ==============
+const headerHeight = headerInner.outerHeight();
+const delta = 10;
 let didScroll = false;
 let lastScrollTop = 0;
 
 function hasScrolled() {
-  const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
+  const currentScrollTop = $(document).scrollTop();
   if(Math.abs(lastScrollTop - currentScrollTop) <= delta) return;
 
   if(currentScrollTop < headerHeight) {
-    header.classList.remove("fixed");
-    header.classList.remove("scroll");
+    header.removeClass("fixed");
+    header.removeClass("scroll");
   } else if(currentScrollTop > lastScrollTop && currentScrollTop > headerHeight) {
-    header.classList.add("fixed");
-    header.classList.remove("scroll");
+    header.addClass("fixed");
+    header.removeClass("scroll");
   } else if(currentScrollTop + window.innerHeight < document.body.offsetHeight) {
-    header.classList.add("scroll");
+    header.addClass("scroll");
   }
-
   lastScrollTop = currentScrollTop;
 }
 
-function onScroll() {
-  didScroll = true;
-}
+$(window).scroll(hasScrolled);
 
-setInterval(function() {
-  if(didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-}, 250);
+// ============== PC Nav ==============
+const submenuBg = $(".header__submenu-bg");
 
-window.addEventListener("scroll", onScroll);
-
-// ============== pc navigation ==============
-const gnb = document.querySelector(".global-nav__menu-list");
-const gnbItems = document.querySelectorAll(".global-nav__menu-item");
-const submenuBg = document.querySelector(".header__submenu-bg");
-
-function onGnbMouseOver(e) {
-  if(!e.target.classList.contains("global-nav__menu-link")) return;
-  const current_gnbItem = e.target.parentNode;
-
-  for(let i=0; i<gnbItems.length; i++) {
-    gnbItems[i].classList.remove("on");
-  }
-  current_gnbItem.classList.add("on");
-  headerInner.style.backgroundColor = "#fff";
-  submenuBg.style.visibility = "visible";
-  submenuBg.style.height = "60px";
+function openSubMenu() {
+  $(".global-nav__menu-item").removeClass("on");
+  $(this).closest(".global-nav__menu-item").addClass("on");
+  headerInner.css("background-color", "#fff");
+  submenuBg.css("visibility", "visible");
+  submenuBg.css("height", "60px");
 }
 
 function onGnbMouseLeave() {
-  for(let i=0; i<gnbItems.length; i++) {
-    gnbItems[i].classList.remove("on");
-  }
-  headerInner.style.backgroundColor = null;
-  submenuBg.style.visibility = "hidden";
-  submenuBg.style.height = "0";
+  $(".global-nav__menu-item").removeClass("on");
+  headerInner.css("background-color", "");
+  submenuBg.css("visibility", "hidden");
+  submenuBg.css("height", "0");
 }
 
-gnb.addEventListener("mouseover", onGnbMouseOver);
-gnb.addEventListener("mouseleave", onGnbMouseLeave);
+$(".global-nav__menu-item").hover(openSubMenu, onGnbMouseLeave);
 
-// ============== mobile navigation ==============
-const m_nav = document.querySelector(".mobile-nav");
-const m_navList = document.querySelector(".mobile-nav__menu-list");
-const m_navItems = document.querySelectorAll(".mobile-nav__menu-link");
-const m_submenu = document.querySelectorAll(".mobile-nav__submenu");
-const m_btnMenu = document.querySelector(".header__btn-mobile-menu button");
-const m_btnClose = document.querySelector(".mobile-nav__top .btn-close button");
+// ============== Mobile Nav ==============
+const m_nav = $(".mobile-nav");
 
-function toggleMobileNavList(e) {
-  if(!e.target.classList.contains("mobile-nav__menu-link")) return;
-
-  const current_navItem = e.target.parentNode;
-  current_navItem.classList.toggle("active");
+function toggleMobileNavList() {
+  $(this).toggleClass("active");
 }
 
 function openMobileNav() {
-  document.body.style.overflow = "hidden";
-  m_nav.style.left = "0";
-  m_nav.style.opacity = "1";
+  $("body").css("overflow", "hidden");
+  m_nav.css("left", "0");
+  m_nav.css("opacity", "1");
 }
 
 function closeMobileNav() {
-  document.body.style.overflow = "auto";
-  m_nav.style.left = "-100%";
-  m_nav.style.opacity = "0";
+  $("body").css("overflow", "auto");
+  m_nav.css("left", "-100%");
+  m_nav.css("opacity", "0");
 }
 
-m_navList.addEventListener("click", toggleMobileNavList);
-m_btnMenu.addEventListener("click", openMobileNav);
-m_btnClose.addEventListener("click", closeMobileNav);
+$(".mobile-nav__menu-item").click(toggleMobileNavList);
+$(".header__btn-mobile-menu button").click(openMobileNav);
+$(".mobile-nav__top .btn-close button").click(closeMobileNav);
 
-// ============== search ==============
-const btnSearch = document.querySelector(".header__btn-search button");
-const btnSearchClose = document.querySelector(".header__search-wrap .btn-close button");
-const inputSearch = document.querySelector(".header__search-box .search-input input");
-
+// ============== Search ==============
 function openSearchForm() {
-  headerInner.classList.add("search--active");
-  inputSearch.focus();
+  headerInner.addClass("search--active");
+  $(".header__search-box .search-input input").focus();
 }
 
 function closeSearchForm() {
-  headerInner.classList.remove("search--active");
+  headerInner.removeClass("search--active");
 }
 
-btnSearch.addEventListener("click", openSearchForm);
-btnSearchClose.addEventListener("click", closeSearchForm);
+$(".header__btn-search button").click(openSearchForm);
+$(".header__search-wrap .btn-close button").click(closeSearchForm);

@@ -683,7 +683,7 @@ body {
     width: 100%;
   }
 
-  .global-nav__menu-item:hover .global-nav__submenu {
+  .global-nav__menu-item.on .global-nav__submenu {
     display: block;
   }
 
