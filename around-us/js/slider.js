@@ -73,17 +73,12 @@ $(function() {
     isMouseDown = false;
   })
 
-  // Swiper Arrow Button
-
-
-  // $(".content__slider-link").mouseover(function(e) {
-  //   console.log($(e.target));
-  //   const sliderItem = $(e.target).parent();
-  //   sliderItem.css("background-size", "110%");
-  // });
-
-  // $(".content__slider-link").mouseout(function(e) {
-  //   const sliderItem = $(e.target).parent();
-  //   sliderItem.css("background-size", "100%");
-  // });
+  // Content - SNS Arrow Button
+  $(".btn-icon--prev").click(function() {
+    snsSwiper.animate({scrollLeft: "-=350"}, 650);
+  });
+  
+  $(".btn-icon--next").click(function() {
+    snsSwiper.animate({scrollLeft: "+=350"}, 650);
+  });
 });

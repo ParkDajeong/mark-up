@@ -4,19 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- JQuery -->
-  <script src="http://code.jquery.com/jquery-latest.min.js" defer></script>
-  <!-- Slick -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;900&family=Raleway:wght@500;800&display=swap" rel="stylesheet">
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- Default -->
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/common.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <script src="./js/nav.js" defer></script>
-  <script src="./js/slider.js" defer></script>
   <title>Around US ENTERTAINMENT</title>
 </head>
 <body>
@@ -30,6 +28,7 @@
           </a>
         </h1>
         <div class="header__submenu-bg"></div>
+        <!-- Header - Global Nav -->
         <nav class="global-nav">
           <ul class="global-nav__menu-list">
             <li class="global-nav__menu-item">
@@ -130,6 +129,7 @@
             </li>
           </ul>
         </nav>
+        <!-- Header - Search -->
         <div class="header__search-wrap">
           <div class="header__btn-search">
             <button type="button">Search</button>
@@ -151,7 +151,7 @@
         </div>
       </div>
     </header>
-    <!-- Mobile Navigation -->
+    <!-- Mobile Nav -->
     <nav class="mobile-nav">
       <div class="mobile-nav__container">
         <div class="mobile-nav__top">
@@ -162,6 +162,7 @@
             <button class="btn-icon btn-icon--close" type="button">닫기</button>
           </div>
         </div>
+        <!-- Mobile - Search -->
         <div class="mobile-nav__search-box">
           <form class="search-form" action="">
             <div class="search-input">
@@ -169,6 +170,7 @@
             </div>
           </form>
         </div>
+        <!-- Mobile - Menu -->
         <div class="mobile-nav__menu">
           <ul class="mobile-nav__menu-list">
             <li class="mobile-nav__menu-item">
@@ -242,6 +244,7 @@
     <!-- Main -->
     <main class="main">
       <div class="main__container">
+        <!-- Main - Slider -->
         <div class="slider">
           <div class="slider__item slider__item01">
             <div class="slider__left-text">
@@ -694,5 +697,8 @@
       </p>
     </footer>
   </div>
+  <!-- JS -->
+  <script type="text/javascript" src="./js/nav.js"></script>
+  <script type="text/javascript" src="./js/slider.js"></script>
 </body>
 </html>
