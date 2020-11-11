@@ -61,7 +61,7 @@
   -ms-grid-column-span: 2;
 }
 
-/* ========== IE만 적용 ========== */
+/* ============ IE만 적용 ============ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .main__grid-item {
     margin: 3px 2px;
@@ -72,7 +72,7 @@
   }
 }
 
-/* ========== 반 응 형 ========== */
+/* ============ 반 응 형 ============ */
 @media screen and (min-width: 481px) {
   /* Main - Grid */
   .main__grid-top {

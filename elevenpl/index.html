@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/common.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/ie11.css">
-  <script src="./js/app.js" defer></script>
   <title>Elevenplus | Official Site</title>
 </head>
 <body>
@@ -17,17 +18,21 @@
     <header class="header">
       <div class="header__top">
         <h1 class="logo">
-          <a class="logo__link" href="#" title="ElevenPlus">
+          <a class="logo__link" href="/" title="ElevenPlus">
             <img class="logo__img" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/pin.png" alt="ElevenPlus">
           </a>
         </h1>
         <div class="mobile-menu">
-          <a class="link-icon link-icon--circle mobile-menu__item--cart" href="#" aria-label="장바구니">0</a>
-          <a class="link-icon mobile-menu__item--store" href="#" aria-label="스토어">
+          <a class="link-icon link-icon--circle mobile-menu__item--cart" href="#">
+            <span class="sr-only">장바구니</span>
+            <span class="cart-number">0</span>
+            <span class="sr-only">개</span>
+          </a>
+          <a class="link-icon mobile-menu__item--store" href="#">
             <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/btn/mobile_shop.png" alt="스토어">
           </a>
-          <button class="link-icon mobile-menu__item--menu" aria-label="메뉴">
-            <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/btn/mobile_menu.png" alt="메뉴">
+          <button class="link-icon mobile-menu__item--menu">
+            <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/btn/mobile_menu.png" alt="모바일 메뉴">
           </button>
         </div>
       </div>
@@ -51,7 +56,7 @@
               </a>
             </li>
             <li class="global-nav__category-item">
-              <a class="link-text link-text--large" href="#" aria-label="전체 보기">
+              <a class="link-text link-text--large" href="#" aria-label="전체 상품 보기">
                 <span class="hidden-text">lacces</span>all
               </a>
             </li>
@@ -59,29 +64,29 @@
           <a class="link-icon--circle" href="#" aria-label="자세히 알아보기">about</a>
         </div>
       </nav>
-      <!-- Header - Mobile Dropdown Menu -->
-      <div class="mobile-dropdown-menu">
-        <ul class="mobile-dropdown-menu__list">
-          <li class="mobile-dropdown-menu__item">
-            <a class="link-text link-text--medium" href="#" aria-label="현 위치">Destination</a>
-          </li>
-          <li class="mobile-dropdown-menu__item">
-            <a class="link-text link-text--medium" href="#" aria-label="가게 위치">Store Location</a>
-          </li>
-          <li class="mobile-dropdown-menu__item">
-            <a class="link-text link-text--medium" href="#" aria-label="공지">News</a>
-          </li>
-          <li class="mobile-dropdown-menu__item">
-            <a class="link-text link-text--medium" href="#" aria-label="도움말">Help</a>
-          </li>
-        </ul>
-        <div class="mobile-dropdown-menu__button--close">
-          <button class="link-icon" type="button" aria-label="메뉴 닫기">
-            <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/btn/mobile_menu_close.png" alt="">
-          </button>
-        </div>
-      </div>
     </header>
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-dropdown-menu">
+      <ul class="mobile-dropdown-menu__list">
+        <li class="mobile-dropdown-menu__item">
+          <a class="link-text link-text--medium" href="#" aria-label="고객님의 현 위치">Destination</a>
+        </li>
+        <li class="mobile-dropdown-menu__item">
+          <a class="link-text link-text--medium" href="#" aria-label="가게 위치">Store Location</a>
+        </li>
+        <li class="mobile-dropdown-menu__item">
+          <a class="link-text link-text--medium" href="#" aria-label="뉴스">News</a>
+        </li>
+        <li class="mobile-dropdown-menu__item">
+          <a class="link-text link-text--medium" href="#" aria-label="도움말">Help</a>
+        </li>
+      </ul>
+      <div class="mobile-dropdown-menu__button--close">
+        <button class="link-icon" type="button" aria-label="메뉴 닫기">
+          <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/btn/mobile_menu_close.png" alt="">
+        </button>
+      </div>
+    </div>
     <!-- Main -->
     <main class="main">
       <div class="main__slider-wrap">
@@ -141,31 +146,49 @@
         <!-- Main - Slider Pagination -->
         <ul class="slider-pagination">
           <li class="slider-pagination__bullet">
-            <button class="link-icon--circle active" type="button" data-index="0" aria-label="슬라이드 이미지 1로 이동"></button>
+            <button class="link-icon--circle active" type="button" data-index="0">
+              <span class="sr-only">슬라이드 이미지 1로 이동</span>
+            </button>
           </li>
           <li class="slider-pagination__bullet">
-            <button class="link-icon--circle" type="button" data-index="1" aria-label="슬라이드 이미지 2로 이동"></button>
+            <button class="link-icon--circle" type="button" data-index="1">
+              <span class="sr-only">슬라이드 이미지 2로 이동</span>
+            </button>
           </li>
           <li class="slider-pagination__bullet">
-            <button class="link-icon--circle" type="button" data-index="2" aria-label="슬라이드 이미지 3로 이동"></button>
+            <button class="link-icon--circle" type="button" data-index="2">
+              <span class="sr-only">슬라이드 이미지 3로 이동</span>
+            </button>
           </li>
           <li class="slider-pagination__bullet">
-            <button class="link-icon--circle" type="button" data-index="3" aria-label="슬라이드 이미지 4로 이동"></button>
+            <button class="link-icon--circle" type="button" data-index="3">
+              <span class="sr-only">슬라이드 이미지 4로 이동</span>
+            </button>
           </li>
           <li class="slider-pagination__bullet">
-            <button class="link-icon--circle" type="button" data-index="4" aria-label="슬라이드 이미지 5로 이동"></button>
+            <button class="link-icon--circle" type="button" data-index="4">
+              <span class="sr-only">슬라이드 이미지 5로 이동</span>
+            </button>
           </li>
           <li class="slider-pagination__bullet">
-            <button class="link-icon--circle" type="button" data-index="5" aria-label="슬라이드 이미지 6로 이동"></button>
+            <button class="link-icon--circle" type="button" data-index="5">
+              <span class="sr-only">슬라이드 이미지 6로 이동</span>
+            </button>
           </li>
           <li class="slider-pagination__bullet">
-            <button class="link-icon--circle" type="button" data-index="6" aria-label="슬라이드 이미지 7로 이동"></button>
+            <button class="link-icon--circle" type="button" data-index="6">
+              <span class="sr-only">슬라이드 이미지 7로 이동</span>
+            </button>
           </li>
           <li class="slider-pagination__bullet">
-            <button class="link-icon--circle" type="button" data-index="7" aria-label="슬라이드 이미지 8로 이동"></button>
+            <button class="link-icon--circle" type="button" data-index="7">
+              <span class="sr-only">슬라이드 이미지 8로 이동</span>
+            </button>
           </li>
           <li class="slider-pagination__bullet">
-            <button class="link-icon--circle" type="button" data-index="8" aria-label="슬라이드 이미지 9로 이동"></button>
+            <button class="link-icon--circle" type="button" data-index="8">
+              <span class="sr-only">슬라이드 이미지 9로 이동</span>
+            </button>
           </li>
         </ul>
       </div>
@@ -184,7 +207,7 @@
             </a>
           </div>
           <div class="main__grid-item">
-            <a class="main__grid-link" href="#">
+            <a class="main__grid-link info" href="#">
               <img src="./assets/grid/grid_021.png" alt="새로운 상품">
             </a>
           </div>
@@ -207,7 +230,7 @@
         <!-- Main - Grid Bottom -->
         <div class="main__grid main__grid-bottom">
           <div class="main__grid-item">
-            <a class="main__grid-link" href="#" aria-label="ElevenPlus SNS로 이동">
+            <a class="main__grid-link info" href="#" aria-label="ElevenPlus SNS로 이동">
               <img src="./assets/grid/grid_071.png" alt="">
             </a>
           </div>
@@ -242,7 +265,7 @@
           Cart<span class="link-icon--circle">0</span>
         </a>
         <a class="link-text link-text--small" href="#" aria-label="스토어">Store</a>
-        <a class="link-text link-text--small" href="#" aria-label="공지">News</a>
+        <a class="link-text link-text--small" href="#" aria-label="뉴스">News</a>
         <a class="link-text link-text--small" href="#" aria-label="도움말">Help</a>
       </div>
       <div class="footer__section-right">
@@ -251,17 +274,17 @@
           (c) Arro Co., Ltd. All rights reserved.
         </p>
         <div class="sns-wrap">
-          <a class="sns-wrap__link-sns" href="#">
-            <img src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/sns_facebook.png" alt="FACEBOOK" class="icon">
+          <a class="sns-wrap__link-sns" href="#" aria-label="Facebook 계정으로 이동">
+            <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/sns_facebook.png" alt="FACEBOOK" >
           </a>
-          <a class="sns-wrap__link-sns" href="#">
-            <img src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/sns_twitter.png" alt="TWITTER" class="icon">
+          <a class="sns-wrap__link-sns" href="#" aria-label="Twitter 계정으로 이동">
+            <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/sns_twitter.png" alt="TWITTER">
           </a>
-          <a class="sns-wrap__link-sns" href="#">
-            <img src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/sns_vimeo.png" alt="VIMEO" class="icon">
+          <a class="sns-wrap__link-sns" href="#" aria-label="Vimeo 계정으로 이동">
+            <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/sns_vimeo.png" alt="VIMEO">
           </a>
-          <a class="sns-wrap__link-sns" href="#">
-            <img src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/sns_instagram.png" alt="INSTAGRAM" class="icon">
+          <a class="sns-wrap__link-sns" href="#" aria-label="Instagram 계정으로 이동">
+            <img class="icon" src="http://elevenpl.us/ko/wp-content/themes/elevenplus/img/icon/sns_instagram.png" alt="INSTAGRAM">
           </a>
         </div>
         <a class="footer__logo" href="/">elevenplus</a>
@@ -269,5 +292,6 @@
     </footer>
   </div>
   <!-- Script -->
+  <script src="./js/app.js"></script>
 </body>
 </html>

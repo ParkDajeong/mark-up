@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
 .link-icon {
   display: block;
   width: 24px;
@@ -67,7 +75,7 @@ button.link-icon {
   opacity: 0;
 }
 
-/* ========== 반 응 형 ========== */
+/* ============ 반 응 형 ============ */
 @media screen and (min-width: 769px) {
   .link-icon {
     width: 28px;

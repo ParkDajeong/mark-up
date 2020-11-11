@@ -1,7 +1,20 @@
+// Mobile Dropdown Menu
 const btnMenu = document.querySelector(".mobile-menu__item--menu");
 const btnClose = document.querySelector(".mobile-dropdown-menu__button--close");
 const mobileDropdownMenu = document.querySelector(".mobile-dropdown-menu");
-// Slider Image
+
+function openDropdownMenu() {
+  mobileDropdownMenu.style.maxHeight = "500px";
+}
+
+function closeDropdownMenu() {
+  mobileDropdownMenu.style.maxHeight = "0";
+}
+
+btnMenu.addEventListener("click", openDropdownMenu);
+btnClose.addEventListener("click", closeDropdownMenu);
+
+// Slider
 const slider = document.querySelector(".slider");
 const sliderItems = document.querySelectorAll(".slider__item");
 const sliderLen = sliderItems.length;
@@ -12,16 +25,6 @@ let sliderWidth = slider.offsetWidth;
 const sliderPagination = document.querySelector(".slider-pagination");
 const sliderBullets = document.querySelectorAll(".slider-pagination__bullet button");
 
-// Mobile Dropdown Menu
-function openDropdownMenu() {
-  mobileDropdownMenu.style.maxHeight = "500px";
-}
-
-function closeDropdownMenu() {
-  mobileDropdownMenu.style.maxHeight = "0";
-}
-
-// Slider
 function moveSliderImages(speed) {
   slider.style.transition = speed + "ms";
   slider.style.transform = "translateX(" + (-(sliderWidth * currentIdx++)) + "px)";
@@ -66,9 +69,6 @@ window.addEventListener("resize", function() {
   sliderWidth = slider.offsetWidth;
 });
 window.addEventListener("load", roopSlider);
-
-btnMenu.addEventListener("click", openDropdownMenu);
-btnClose.addEventListener("click", closeDropdownMenu);
 
 sliderPagination.addEventListener("click", clickSliderPagination);
 
