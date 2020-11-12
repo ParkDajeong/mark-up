@@ -56,7 +56,7 @@ $(function() {
   }
 
   function closeSubMenu() {
-    $(this).removeClass("on");
+    $(".gnb-pc__menu-item").removeClass("on");
     if(!$(".gnb-pc__menu-list").hasClass("fixed")) {
       $(".gnb-pc__menu-list").removeClass("open");
       $(".gnb-pc__sub-menu").stop().slideUp();
@@ -64,6 +64,7 @@ $(function() {
   }
 
   $(".gnb-pc__menu-item").hover(openSubMenu, closeSubMenu);
+  $(".gnb-pc__menu-item").focusin(openSubMenu).focusout(closeSubMenu);
 
   $(".gnb-pc__btn-menu").click(function() {
     $(this).toggleClass("open");
