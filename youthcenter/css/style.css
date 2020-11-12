@@ -516,7 +516,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   padding: 0 15px;
@@ -557,6 +556,7 @@
 .main-content__policy-item a strong,
 .main-content__policy-item a p {
   display: -webkit-box;
+  width: 100%;
   overflow: hidden;
   word-wrap: break-word;
   -webkit-line-clamp: 2;
@@ -934,6 +934,7 @@
 
 .main-content__space-desc p {
   display: -webkit-box;
+  height: 9em;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
@@ -1057,7 +1058,7 @@
 .main-content__faq-list li a {
   display: block;
   max-width: 93%;
-  margin: 5px 0 5px 10px;
+  margin: 5px auto 5px 10px;
   font-size: 13px;
   line-height: 1;
   white-space: nowrap;
@@ -1373,7 +1374,7 @@
 
   .main-content__policy-item a p {
     font-size: 13px;
-    height: 2.4em;
+    height: 2.5em;
   }
 
   /* Main - Policy Util Wrap */
@@ -1509,6 +1510,7 @@
   }
 
   .main-content__space-desc p {
+    height: 4.8em;
     font-size: 14px;
     -webkit-line-clamp: 3;
   }
