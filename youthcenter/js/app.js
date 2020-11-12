@@ -66,6 +66,7 @@ $(function() {
   $(".gnb-pc__menu-item").hover(openSubMenu, closeSubMenu);
 
   $(".gnb-pc__btn-menu").click(function() {
+    $(this).toggleClass("open");
     $(".gnb-pc__menu-list").toggleClass("fixed");
     !$(".gnb-pc__menu-list").hasClass("open") ? openSubMenu() : closeSubMenu();
   });
@@ -82,16 +83,17 @@ $(function() {
     if(notice_index >= noticeList.length) notice_index = 0;
     noticeList.removeClass("on");
     noticeList.eq(notice_index++).addClass("on");
-  }, 2500);
+  }, 3000);
   
   setInterval(function() {
     if(news_index >= newsList.length) news_index = 0;
     newsList.removeClass("on");
     newsList.eq(news_index++).addClass("on");
-  }, 3000);
+  }, 3500);
 
   // ============== 청년정책 ==============
   $(".main-content__policy-item a").hover(function() {
+    $(".main-content__policy-item a").removeClass("active");
     $(this).addClass("active");
   }, function() {
     $(this).removeClass("active");

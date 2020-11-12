@@ -47,6 +47,11 @@ $(function() {
       }
     ],
   });
+
+  $(".main-content__policy").on("afterChange", function(event, slick, currentIdx){
+    const cur_slide = $(".main-content__policy").find(".slick-current.slick-active");
+    cur_slide.find(".main-content__policy-item:first-child a").addClass("active");
+  });
   
   // ============= AD 배너 =============
   $(".main-content__ad-banner").slick({
