@@ -934,7 +934,7 @@
 
 .main-content__space-desc p {
   display: -webkit-box;
-  height: 9em;
+  height: 6.2em;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
@@ -2356,6 +2356,7 @@
   }
 
   .main-content__space-desc p {
+    height: 8.8em;
     -webkit-line-clamp: 5;
     line-height: 1.8;
   }
