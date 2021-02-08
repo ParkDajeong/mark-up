@@ -30,7 +30,7 @@ const submenuBg = $(".header__submenu-bg");
 
 function openSubMenu() {
   $(".global-nav__menu-item").removeClass("on");
-  $(this).closest(".global-nav__menu-item").addClass("on");
+  $(this).addClass("on");
   headerInner.css("background-color", "#fff");
   submenuBg.css("visibility", "visible");
   submenuBg.css("height", "60px");

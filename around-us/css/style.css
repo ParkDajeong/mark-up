@@ -170,7 +170,6 @@ body {
 .main .slider {
   position: relative;
   margin-bottom: 0;
-  /* overflow: hidden; */
 }
 
 .slider__item {
@@ -178,6 +177,7 @@ body {
   height: 520px;
   background-size: cover;
   background-position: center;
+  outline: none;
 }
 
 .slider__item::after {

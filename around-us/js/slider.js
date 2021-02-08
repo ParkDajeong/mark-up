@@ -87,11 +87,11 @@ $(function() {
   })
 
   // Content - SNS Arrow Button
-  $(".btn-icon--prev").click(function() {
-    snsSwiper.animate({scrollLeft: "-=350"}, 600);
+  $(".content-sns .btn-icon--prev").click(function() {
+    snsSwiper.animate({scrollLeft: "-=350"}, 500);
   });
   
-  $(".btn-icon--next").click(function() {
-    snsSwiper.animate({scrollLeft: "+=350"}, 600);
+  $(".content-sns .btn-icon--next").click(function() {
+    snsSwiper.animate({scrollLeft: "+=350"}, 500);
   });
 });
