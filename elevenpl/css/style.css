@@ -53,6 +53,7 @@
 
 .global-nav__category-item .link-text {
   display: inline-block;
+  transition: 0.3s;
 }
 
 .global-nav__category-item .link-text:hover {
@@ -206,7 +207,7 @@
 }
 
 .main__grid-link:not(.info):hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Footer */
