@@ -51,6 +51,7 @@ body {
   height: 60px;
   padding: 0 10px;
   z-index: 100;
+  transition: 0.6s;
 }
 
 .main-header__btn-open {
