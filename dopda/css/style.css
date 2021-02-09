@@ -442,6 +442,26 @@ body {
   margin-bottom: 20px;
 }
 
+.service.animate__motion .service__link {
+  animation: to-top2 0.8s both;
+}
+
+.service.animate__motion .service__link:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+
+.service.animate__motion .service__link:nth-of-type(2) {
+  animation-delay: 0.7s;
+}
+
+.service.animate__motion .service__link:nth-of-type(3) {
+  animation-delay: 0.9s;
+}
+
+.service.animate__motion .service__link:nth-of-type(4) {
+  animation-delay: 1.1s;
+}
+
 .service__link:nth-of-type(odd) {
   margin-top: -50px;
 }
@@ -524,6 +544,10 @@ body {
   color: #fff;
 }
 
+.main-footer.animate__motion .main-footer__typo {
+  animation: to-top 0.8s 0.3s both;
+}
+
 
 /* 애니메이션 */
 @keyframes image-scale {
@@ -558,7 +582,18 @@ body {
 @keyframes to-top {
   0% {
     opacity: 0;
-    transform: translateY(70%);
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes to-top2 {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
   }
   100% {
     opacity: 1;
