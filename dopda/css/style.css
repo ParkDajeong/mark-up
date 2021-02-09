@@ -441,6 +441,54 @@ body {
   font-size: 10px;
 }
 
+/* Footer */
+.main-footer {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.main-footer__sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-footer__link-sns {
+  margin-right: 30px;
+}
+
+.main-footer__link-sns:last-child {
+  margin-right: 0;
+}
+
+.main-footer__link-sns img {
+  width: 80%;
+}
+
+.main-footer .logo {
+  margin: 20px 0;
+  font-size: 28px;
+}
+
+.main-footer__company-info {
+  font-size: 10px;
+}
+
+.main-footer__copyright {
+  display: block;
+  margin-top: 10px;
+  color: #888;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.main-footer__bottom {
+  background: url(../image/bottom_bg.jpg) no-repeat center/cover;
+  padding: 50px 0;
+  margin-top: 50px;
+  color: #fff;
+}
+
 
 /* 애니메이션 */
 @keyframes image-scale {
@@ -548,6 +596,20 @@ body {
 
   .service__desc {
     word-break: keep-all;
+  }
+
+  /* Footer */
+  .main-footer .logo {
+    margin: 40px 0;
+  }
+
+  .main-footer__company-info {
+    font-size: 13px;
+  }
+
+  .main-footer__bottom {
+    padding: 80px 0;
+    font-size: 17px;
   }
 }
 
@@ -726,6 +788,34 @@ body {
 
   .service__desc {
     font-size: 15px;
+  }
+
+  /* Footer */
+  .main-footer {
+    padding-top: 80px;
+  }
+
+  .main-footer__link-sns img {
+    width: 100%;
+  }
+
+  .main-footer .logo {
+    font-size: 40px;
+    letter-spacing: -6px;
+  }
+
+  .main-footer__company-info {
+    font-size: 17px;
+  }
+
+  .main-footer__copyright {
+    margin-top: 20px;
+  }
+  
+  .main-footer__bottom {
+    padding: 150px 0;
+    margin-top: 80px;
+    font-size: 22px;
   }
 }
 
