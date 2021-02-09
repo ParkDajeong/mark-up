@@ -26,4 +26,10 @@ $(function() {
     autoplay: true,
     autoplaySpeed: 4000,
   });
+
+  // Scroll Event
+  $(".animate").scrolla({
+    mobile: true,
+    once: false,
+  });
 });

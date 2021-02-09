@@ -202,10 +202,19 @@ body {
   margin-bottom: 30px;
   font-size: 22px;
   font-weight: bold;
+  /* opacity: 0; */
+}
+
+.slick-active .slide__title {
+  animation: to-top 1s 1s both;
 }
 
 .slide_desc {
   font-size: 11px;
+}
+
+.slick-active .slide__desc {
+  animation: to-top 1s 1.2s both;
 }
 
 /* slick-dots */
@@ -252,6 +261,10 @@ body {
   margin-bottom: 10px;
 }
 
+.about.animate__motion .section-title {
+  animation: to-top 0.8s 0.7s both;
+}
+
 .about__line-box {
   display: none;
 }
@@ -259,6 +272,22 @@ body {
 .about__text-item {
   padding: 0 18px;
   margin-top: 20px;
+}
+
+.about.animate__motion .about__text-item {
+  animation: to-top 1.2s both;
+}
+
+.about.animate__motion .about__text-item:nth-of-type(1) {
+  animation-delay: 2.4s;
+}
+
+.about.animate__motion .about__text-item:nth-of-type(2) {
+  animation-delay: 2.6s;
+}
+
+.about.animate__motion .about__text-item:nth-of-type(3) {
+  animation-delay: 2.8s;
 }
 
 .about__item-heading {
@@ -526,6 +555,26 @@ body {
   }
 }
 
+@keyframes to-top {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes show {
+  0%, 30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* 반응형 */
 @media screen and (min-width: 320px) {
   /* Common */
@@ -670,11 +719,16 @@ body {
     width: 100%;
     height: 1px;
   }
+  
+  .about.animate__motion .about__line {
+    animation: show 0.8s 1s both;
+  }
 
   .about__dots {
     position: relative;
   }
 
+  
   .about__dot {
     background-color: #fff;
     position: absolute;
@@ -698,6 +752,10 @@ body {
     animation: scale-ani 1.6s infinite ;
   }
 
+  .about.animate__motion .about__dot {
+    animation: show 0.8s both;
+  }
+
   .about__dot:nth-of-type(1) {
     left: 0;
   }
@@ -708,6 +766,20 @@ body {
 
   .about__dot:nth-of-type(3) {
     left: 100%;
+  }
+
+  .about.animate__motion .about__dot:nth-of-type(1) {
+    animation-delay: 1.2s;
+  }
+  
+  .about.animate__motion .about__dot:nth-of-type(2) {
+    animation-delay: 1.4s;
+    
+  }
+  
+  .about.animate__motion .about__dot:nth-of-type(3) {
+    animation-delay: 1.6s;
+    
   }
 
   .about__text {
