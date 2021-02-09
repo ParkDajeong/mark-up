@@ -9,6 +9,15 @@ $(function() {
     }
   });
 
+  // Mobile Menu
+  $(".main-header__btn-open").on("click", function() {
+    $(".gnb").addClass("on");
+  });
+
+  $(".gnb__btn-close").on("click", function() {
+    $(".gnb").removeClass("on");
+  });
+
   // Visual Slide
   $(".visual .slide").slick({
     dots: true,

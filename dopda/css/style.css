@@ -72,10 +72,15 @@ body {
   background-color: #fff;
   position: absolute;
   top: 0;
-  right: -100%;
+  right: -80%;
   width: 80%;
+  max-width: 380px;
   height: 100vh;
-  transition: 0.5s;
+  transition: 0.8s;
+}
+
+.gnb.on {
+  right: 0;
 }
 
 .gnb__menu-list {
@@ -975,6 +980,7 @@ body {
     background-color: transparent;
     position: static;
     width: auto;
+    max-width: initial;
     height: 100%;
   }
 
