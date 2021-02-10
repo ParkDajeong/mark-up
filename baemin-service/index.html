@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- JS -->
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./js/jquery.scrolla.min.js" defer></script>
   <script src="./js/app.js" defer></script>
 </head>
 <body>
@@ -195,13 +197,15 @@
             <a href="#" class="btn btn-primary btn-large">온라인 계약 바로 시작하기</a>
           </div>
         </section>
-        <section class="main-content__bg-w">
+        <section class="main-content__bg-w animate" data-animate="motion">
           <div class="content-inner">
-            <h2 class="main-content__section-title">
-              많은 고객들이 배민에서<br>
-              사장님을 기다리고 있습니다
-            </h2>
-            <p class="main-content__title-desc">2020년 8월 기준</p>
+            <div class="main-content__section-top">
+              <h2 class="main-content__section-title">
+                많은 고객들이 배민에서<br>
+                사장님을 기다리고 있습니다
+              </h2>
+              <p class="main-content__title-desc">2020년 8월 기준</p>
+            </div>
             <div class="main-content__section-bottom">
               <div class="main-content__video">
                 <video src="./video/about_appmain_d_v3.mp4" autoplay muted loop></video>
@@ -232,7 +236,7 @@
             </div>
           </div>
         </section>
-        <section class="main-content__bg-g">
+        <section class="main-content__bg-g animate" data-animate="motion">
           <div class="content-inner">
             <h2 class="main-content__section-title">
               이미 19만 사장님이<br>
@@ -292,13 +296,13 @@
             </div>
           </div>
         </section>
-        <section class="main-content__bg-w">
+        <section class="main-content__bg-w animate" data-animate="motion">
             <h2 class="main-content__section-title">
               사장님도 우리 가게에 맞는<br>
               서비스를 선택해 보세요
             </h2>
             <ul class="main-content__service-list">
-              <li class="main-content__service-item main-content__open-list">
+              <li class="main-content__service-item main-content__open-list animate" data-animate="motion">
                 <div class="main-content__service-inner">
                   <div class="main-content__app-area"></div>
                   <div class="main-content__use-content">
@@ -323,7 +327,7 @@
                   </div>
                 </div>
               </li>
-              <li class="main-content__service-item main-content__ultra-call">
+              <li class="main-content__service-item main-content__ultra-call animate" data-animate="motion">
                 <div class="main-content__service-inner">
                   <div class="main-content__use-content">
                     <h3 class="main-content__content-title">
@@ -348,7 +352,7 @@
                   <div class="main-content__app-area"></div>
                 </div>
               </li>
-              <li class="main-content__service-item main-content__take-out">
+              <li class="main-content__service-item main-content__take-out animate" data-animate="motion">
                 <div class="main-content__service-inner">
                   <div class="main-content__app-area"></div>
                   <div class="main-content__use-content">
@@ -373,7 +377,7 @@
                   </div>
                 </div>
               </li>
-              <li class="main-content__service-item main-content__riders">
+              <li class="main-content__service-item main-content__riders animate" data-animate="motion">
                 <div class="main-content__service-inner">
                   <div class="main-content__use-content">
                     <h3 class="main-content__content-title">
@@ -400,7 +404,7 @@
               </li>
             </ul>
         </section>
-        <section class="main-content__bg-w">
+        <section class="main-content__bg-w animate" data-animate="motion">
           <div class="content-inner">
             <h2 class="main-content__section-title">
               결정하셨다면<br>
@@ -430,7 +434,7 @@
             </ul>
           </div>
         </section>
-        <section class="main-content__bg-g">
+        <section class="main-content__bg-g animate" data-animate="motion">
           <div class="content-inner">
             <h2 class="main-content__section-title">
               계약 이후에도<br>
@@ -480,7 +484,7 @@
             </ul>
           </div>
         </section>
-        <section class="main-content__footer">
+        <section class="main-content__footer animate" data-animate="motion">
           <div class="content-inner">
             <h2 class="main-content__section-title">
               더 많은 고객과 만나는 첫 걸음,<br>

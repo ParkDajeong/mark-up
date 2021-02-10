@@ -18,6 +18,7 @@ body {
 
 .btn-primary {
   background-color: #1a7cff;
+  display: inline-block;
   color: #f8f9fa;
   font-weight: 500;
   border: 1px solid #1a7cff;
@@ -375,7 +376,7 @@ body {
   width: 100%;
   min-height: 656px;
   height: calc(100vh - 116px);
-  margin-top: 116px;
+  margin-top: 125px;
 }
 
 .main-content__top-inner {
@@ -389,6 +390,7 @@ body {
   width: 218px;
   height: 32px;
   margin-bottom: 24px;
+  animation: to-top 1s ease-in-out 0.7s both;
 }
 
 .main-content__top-text {
@@ -396,13 +398,19 @@ body {
   color: #fff;
   font-size: 44px;
   line-height: 1.4;
+  animation: to-top 1.3s ease-in-out 1s both;
 }
 
 .main-content__top-inner .btn {
   padding: 14px 40px;
+  animation: to-top 1.6s ease-in-out 1.3s both;
 }
 
 /* App Info */
+.animate__motion .main-content__section-top {
+  animation: to-top 1s 0.5s both;
+}
+
 .main-content__title-desc {
   margin-top: 16px;
   color: #8e929f;
@@ -422,6 +430,10 @@ body {
   height: 520px;
 }
 
+.animate__motion .main-content__video {
+  animation: to-top 1s 0.8s both;
+}
+
 .main-content__video video {
   width: 100%;
 }
@@ -429,6 +441,10 @@ body {
 .main-content__app-info {
   flex: 1;
   margin-left: 136px;
+}
+
+.animate__motion .main-content__app-info {
+  animation: to-top 1s 1.1s both;
 }
 
 .main-content__info-title {
@@ -451,6 +467,10 @@ body {
 }
 
 /* CEO Stroy */
+.animate__motion .main-content__section-title {
+  animation: to-top 1s 0.5s both;
+}
+
 .main-content__interview-list {
   display: flex;
   justify-content: space-between;
@@ -462,6 +482,22 @@ body {
 .main-content__interview-card {
   width: 536px;
   margin-bottom: 40px;
+}
+
+.animate__motion .main-content__interview-card:nth-of-type(1) {
+  animation: to-top 1s linear 0.8s both;
+}
+
+.animate__motion .main-content__interview-card:nth-of-type(2) {
+  animation: to-top 1s linear 1s both;
+}
+
+.animate__motion .main-content__interview-card:nth-of-type(3) {
+  animation: to-top 1s linear 1.2s both;
+}
+
+.animate__motion .main-content__interview-card:nth-of-type(4) {
+  animation: to-top 1s linear 1.4s both;
 }
 
 .main-content__link-interview {
@@ -535,6 +571,14 @@ body {
 }
 
 /* Open List */
+.main-content__service-item.animate__motion .main-content__app-area {
+  animation: to-top 1s 0.7s both;
+}
+
+.main-content__service-item.animate__motion .main-content__use-content {
+  animation: to-top 1s 0.9s both;
+}
+
 .main-content__open-list .main-content__app-area {
   background-image: url(../image/prod_openlist_d_v2.gif);
 }
@@ -579,6 +623,14 @@ body {
 
 .main-content__apply-card {
   width: 536px;
+}
+
+.animate__motion .main-content__apply-card:nth-of-type(1) {
+  animation: to-top 1.5s 0.7s both;
+}
+
+.animate__motion .main-content__apply-card:nth-of-type(2) {
+  animation: to-top 1.5s 0.9s both;
 }
 
 .main-content__link-apply {
@@ -640,6 +692,22 @@ body {
 
 .main-content__other-item {
   width: 248px;
+}
+
+.animate__motion .main-content__other-item:nth-of-type(1) {
+  animation: to-top 1s ease-in-out 0.5s both;
+}
+
+.animate__motion .main-content__other-item:nth-of-type(2) {
+  animation: to-top 1s ease-in-out 0.8s both;
+}
+
+.animate__motion .main-content__other-item:nth-of-type(3) {
+  animation: to-top 1s ease-in-out 1.1s both;
+}
+
+.animate__motion .main-content__other-item:nth-of-type(4) {
+  animation: to-top 1s ease-in-out 1.4s both;
 }
 
 .main-content__link-other {
@@ -716,4 +784,23 @@ body {
 .main-content__footer .btn-primary {
   display: inline-block;
   padding: 12px 20px;
+}
+
+.main-content__footer.animate__motion .btn-primary {
+  animation: to-top 1s ease-in-out 0.7s both;
+}
+
+/* 애니메이션 */
+@keyframes to-top {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
