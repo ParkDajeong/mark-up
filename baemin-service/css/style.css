@@ -1,2 +1,264 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ============ Common ============ */
+.blind {
+  display: block;
+  width: 1px;
+  height: 1px;
+  text-indent: -9999px;
+}
+
+.btn-primary {
+  background-color: #1a7cff;
+  color: #f8f9fa;
+  font-weight: 500;
+  border: 1px solid #1a7cff;
+}
+
+.btn-primary--round {
+  border-radius: 30px;
+}
+
+.link-default {
+  color: #1a7cff;
+  font-weight: bold;
+}
+
+/* ============ Header ============ */
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 -1px 0 0 inset #eceef2;
+  z-index: 1000;
+}
+
+/* GNB */
+.gnb {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  width: 1112px;
+  margin: 18px auto 0;
+}
+
+.gnb .btn-primary {
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.gnb__users {
+  margin-left: 8px;
+}
+
+.gnb__users-item {
+  display: inline-block;
+  color: #8e929f;
+}
+
+.gnb__users-item::before {
+  content: "";
+  background-color: #d7dbe6;
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.gnb__users-item:first-of-type::before {
+  display: none;
+}
+
+.gnb__link {
+  margin: 0 8px 0 10px;
+  vertical-align: middle;
+}
+
+.header__inner {
+  width: 1112px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  width: 240px;
+  height: 24px;
+  margin: 0 0 16px;
+}
+
+.logo__link {
+  display: block;
+}
+
+.logo__img {
+  height: 100%;
+}
+
+.logo__img2 {
+  display: none;
+}
+
+/* Menu */
+.menu {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__link {
+  display: block;
+  margin-right: 24px;
+  padding: 5px 0px 8px;
+  font-size: 16px;
+  color: #666a75;
+  border-bottom: 3px solid transparent;
+}
+
+.menu__item:hover .menu__link {
+  color: #212329;
+  border-color: #212329;
+}
+
+.menu__logo {
+  display: block;
+  background: url(../image/sp-gnb-v2.png) no-repeat;
+  background-size: 200px auto;
+  color: transparent;
+}
+
+.menu__logo-mart {
+  width: 68px;
+  height: 15px;
+  background-position: 0 0;
+}
+
+.menu__item--img:hover .menu__logo-mart {
+  background-position: 0 -18.5px;
+}
+
+.menu__logo-academy {
+  width: 97px;
+  height: 24px;
+  margin-top: -7px;
+  background-position: 0 -55px;
+}
+
+.menu__item--img:hover .menu__logo-academy {
+  background-position: 0 -79px;
+}
+
+.menu__logo-note {
+  width: 66px;
+  height: 15px;
+  background-position: 0 -123px;
+}
+
+.menu__item--img:hover .menu__logo-note {
+  background-position: 0 -143px;
+}
+
+/* Menu Detail */
+.menu__detail {
+  background-color: #fff;
+  display: none;
+  position: fixed;
+  top: 123px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #eceef2;
+}
+
+.menu__item:hover .menu__detail {
+  display: block;
+}
+
+.menu__detail-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 1112px;
+  height: 261px;
+  padding: 30px 0 0 30px;
+  margin: 0 auto;
+  border-left: 1px solid #eceef2;
+}
+
+.menu__dropdown .menu__detail-inner {
+  padding: 0;
+}
+
+/* Menu Detail - Left */
+.menu__service-logo {
+  height: 95px;
+}
+
+.menu__service-desc {
+  margin-bottom: 15px;
+  color: #666a75;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.menu__sub-menu {
+  width: 171px;
+  min-height: 295px;
+  padding: 18px 0 14px 30px;
+  border-right: 1px solid #eceef2;
+}
+
+.menu__sub-menu-item {
+  padding: 5px 4px 8px 0;
+  margin-right: 24px;
+  font-weight: 300;
+  color: #8e929f;
+}
+
+.mune__link-sub:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Menu Detail - Right */
+.menu__detail-right {
+  width: 340px;
+  height: 100%;
+}
+
+.menu__detail-right a {
+  display: block;
+}
+
+.menu__detail-thumnail {
+  margin-bottom: 10px;
+}
+
+.menu__detail-thumnail img {
+  width: 100%;
+}
+
+.menu__detail-main-text {
+  margin-bottom: 2px;
+  color: #212329;
+  font-size: 17px;
+}
+
+.menu__detail-sub-text {
+  display: block;
+  color: #8e929f;
+  font-size: 12px;
+}
