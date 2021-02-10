@@ -20,15 +20,26 @@ body {
   color: #f8f9fa;
   font-weight: 500;
   border: 1px solid #1a7cff;
+  border-radius: 4px;
 }
 
 .btn-primary--round {
   border-radius: 30px;
 }
 
+.btn-large {
+  padding: 16px;
+  font-size: 18px;
+}
+
 .link-default {
   color: #1a7cff;
   font-weight: bold;
+}
+
+.content-inner {
+  width: 1112px;
+  margin: 0 auto;
 }
 
 /* ============ Header ============ */
@@ -80,11 +91,6 @@ body {
 .gnb__link {
   margin: 0 8px 0 10px;
   vertical-align: middle;
-}
-
-.header__inner {
-  width: 1112px;
-  margin: 0 auto;
 }
 
 /* Logo */
@@ -261,4 +267,46 @@ body {
   display: block;
   color: #8e929f;
   font-size: 12px;
+}
+
+/* ============ Main Content ============ */
+.main-content {
+
+}
+
+.main-content__wrap {
+
+}
+
+/* Main Content - Top */
+.main-content__top {
+  background: url(../image/200828_top_img.jpg) no-repeat center/cover;
+  width: 100%;
+  min-height: 656px;
+  height: calc(100vh - 116px);
+  margin-top: 116px;
+}
+
+.main-content__top-inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-content__logo {
+  background: url(../image/logo-ceo-white.svg) no-repeat 0 0/cover;
+  width: 218px;
+  height: 32px;
+  margin-bottom: 24px;
+}
+
+.main-content__top-text {
+  margin-bottom: 48px;
+  color: #fff;
+  font-size: 44px;
+  line-height: 1.4;
+}
+
+.main-content__top-inner .btn {
+  padding: 14px 40px;
 }
