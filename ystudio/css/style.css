@@ -22,7 +22,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 20px;
   z-index: 100;
   transition: 0.5s;
 }
@@ -612,6 +612,16 @@ body {
   .slide__main-text {
     font-size: 50px;
   }
+
+  /* 애니메이션 */
+  @keyframes image-right {
+    0% {
+      right: -40%;
+    }
+    100% {
+      right: -30%;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -685,6 +695,16 @@ body {
   .footer__box {
     width: 50%;
     height: 110px;
+  }
+
+  /* 애니메이션 */
+  @keyframes image-right {
+    0% {
+      right: -80%;
+    }
+    100% {
+      right: -68%;
+    }
   }
 }
 
@@ -830,5 +850,24 @@ body {
 
   .footer__btn-top {
     font-size: 34px;
+  }
+
+  /* 애니메이션 */
+  @keyframes text-left {
+    0% {
+      left: -100px;
+    }
+    100% {
+      left: 15px;
+    }
+  }
+
+  @keyframes image-right {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: -80%;
+    }
   }
 }
