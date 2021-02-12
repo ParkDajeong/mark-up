@@ -116,11 +116,11 @@ body {
 
 /* Visual */
 .visual {
-
+  overflow: hidden;
 }
 
 .slide {
-
+  
 }
 
 .slide__item {
@@ -132,7 +132,7 @@ body {
 
 .slide__img {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   width: 100%;
 }
@@ -237,6 +237,12 @@ body {
 
 @media screen and (max-width: 1024px) {
   /* Visual */
+  .slide__img {
+    right: -30%;
+    width: auto;
+    height: 100%;
+  }
+
   .slide__main-text {
     font-size: 50px;
   }
@@ -258,6 +264,10 @@ body {
   }
 
   /* Visual */
+  .slide__img {
+    right: -68%;
+  }
+
   .slide__main-text {
     font-size: 35px;
   }
@@ -306,6 +316,10 @@ body {
   }
 
   /* Visual */
+  .slide__img {
+    right: -80%;
+  }
+
   .slide__text-box {
     font-size: 16px;
   }
