@@ -226,12 +226,107 @@ body {
   font-size: 18px;
 }
 
+/* Contents - projects */
+.project {
+  color: #fff;
+}
+
+.project__top {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 90px;
+  margin: 130px auto 60px;
+}
+
+.project__title {
+  font-size: 35px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+.project__link-more {
+  font-size: 18px;
+}
+
+.project__link-more .lnr {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.project__list {
+  display: flex;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.project__list-item {
+  margin-right: 1%;
+  overflow: hidden;
+}
+
+.project__list-item:last-of-type {
+  margin-right: 0;
+}
+
+.project__link {
+  position: relative;
+  display: block;
+}
+
+.project__img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.project__link:hover .project__img {
+  transform: scale(1.1);
+}
+
+.project__info {
+  background-color: #1b1b1b;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 270px;
+  padding: 15px;
+  text-align: right;
+}
+
+.project__category {
+  display: block;
+}
+
+.project__name {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 
 /* 반응형 */
 @media screen and (max-width: 1200px) {
   /* Contents - introduce */
   .introduce__inner {
     width: 92%;
+  }
+
+  /* Contents - projects */
+  .project__top {
+    width: 92%;
+  }
+
+  .project__info {
+    position: relative;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .project__info::after {
+    content: "⟶";
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    font-size: 18px;
   }
 }
 
@@ -286,6 +381,22 @@ body {
 
   .introduce__main-text {
     margin-right: 10px;
+  }
+
+  /* Contents - projects */
+  .project__list {
+    flex-wrap: wrap;
+    width: 95%;
+  }
+
+  .project__list-item {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+  }
+
+  .project__list-item:nth-of-type(2n) {
+    margin-right: 0;
   }
 }
 
@@ -363,5 +474,39 @@ body {
     width: 100%;
     margin-top: 160px;
     font-size: 20px;
+  }
+
+  /* Contents - projects */
+  .project__top {
+    margin: 40px auto 20px;
+  }
+
+  .project__title {
+    font-size: 30px;
+  }
+
+  .project__link-more {
+    margin-top: 45px;
+    font-size: 16px;
+  }
+
+  .project__list {
+    flex-wrap: wrap;
+    width: 92%;
+  }
+
+  .project__list-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+
+  .project__list-item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .project__info {
+    text-align: left;
+    padding-bottom: 0;
   }
 }
