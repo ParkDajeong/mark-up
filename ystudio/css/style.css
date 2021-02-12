@@ -349,6 +349,28 @@ body {
   opacity: 1;
 }
 
+/* Contents - contact */
+.contact {
+  background: url(../image/contact.jpg) no-repeat left/90% fixed;
+  padding: 180px 0;
+}
+
+.contact__inner {
+  width: 1170px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.contact__sub-text {
+  font-size: 17px;
+}
+
+.contact__tel {
+  display: block;
+  margin: 40px 0;
+  font-size: 55px;
+}
+
 
 /* 반응형 */
 @media screen and (max-width: 1200px) {
@@ -378,6 +400,18 @@ body {
 
   /* Content - partner */
   .partner__inner {
+    width: 92%;
+  }
+
+  /* Contents - contact */
+  .contact {
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .contact__inner {
     width: 92%;
   }
 }
@@ -576,5 +610,15 @@ body {
 
   .partner__list-item:nth-of-type(4) img {
     height: 100%;
+  }
+
+  /* Contents - contact */
+  .contact__sub-text {
+    font-size: 15px;
+  }
+
+  .contact__tel {
+    margin: 30px 0;
+    font-size: 35px;
   }
 }
