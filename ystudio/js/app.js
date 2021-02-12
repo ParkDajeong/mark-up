@@ -11,5 +11,7 @@ $(function() {
   });
 
   // Button Menu Event
-  
+  $(".btn-menu-open, .btn-menu-close").on("click", function() {
+    $(".gnb").toggleClass("on");
+  });
 });

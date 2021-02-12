@@ -111,6 +111,10 @@ body {
   transition: 0.8s;
 }
 
+.gnb.on {
+  right: 0;
+}
+
 .gnb__menu {
   display: flex;
   flex-direction: column;
