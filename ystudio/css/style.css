@@ -171,6 +171,13 @@ body {
   
 }
 
+@media screen and (max-width: 1024px) {
+  /* Visual */
+  .slide__main-text {
+    font-size: 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* Header */
   .header__inner {
@@ -184,6 +191,11 @@ body {
 
   .header__intro-text {
     margin-left: 130px;
+  }
+
+  /* Visual */
+  .slide__main-text {
+    font-size: 35px;
   }
 }
 
@@ -211,5 +223,20 @@ body {
 
   .btn-menu-open .lnr-menu {
     font-size: 28px;
+  }
+
+  /* Visual */
+  .slide__text-box {
+    font-size: 16px;
+  }
+
+  .slide__main-text {
+    margin: 24px 0;
+    font-size: 30px;
+  }
+
+  .slide__scroll-down {
+    left: 15px;
+    font-size: 13px;
   }
 }
