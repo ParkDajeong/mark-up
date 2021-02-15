@@ -195,6 +195,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -2px;
+  line-height: 1;
 }
 
 /* Contents - Visual */
@@ -345,7 +346,7 @@ body {
 
 .service__name {
   margin-top: 15px;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1;
 }
 
@@ -372,6 +373,25 @@ body {
 
 .service__box:hover .service__box-bg {
   transform: scale(1.15);
+}
+
+/* Contents - Organization */
+.organization {
+  background-color: #1f2022;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 740px;
+}
+
+.organization .section-title {
+  color: #fff;
+}
+
+.organization__img-box {
+  margin-top: 115px;
 }
 
 
@@ -417,6 +437,24 @@ body {
   /* Header */
   .gnb__menu-item {
     margin-left: 30px;
+  }
+
+  /* Contents - Organization */
+  .organization {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .organization__img-box {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 15px;
+  }
+
+  .organization__img-box img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -603,7 +641,7 @@ body {
   
   /* Contents */
   .section-title {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   /* Contents - Information */
@@ -651,5 +689,10 @@ body {
 
   .service__name {
     font-size: 16px;
+  }
+
+  /* Contents - Organization */
+  .organization__img-box img {
+    width: 100%;
   }
 }
