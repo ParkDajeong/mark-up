@@ -16,6 +16,70 @@ body {
   overflow: hidden;
 }
 
+/* Quick Menu */
+.quick-menu {
+  position: fixed;
+  top: 98px;
+  right: 15px;
+  z-index: 100;
+}
+
+.quick-menu__link-menu {
+  background: #30363a url(../image/icon_quick1.gif) no-repeat center 15px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1px;
+  overflow: hidden;
+}
+
+.quick-menu__link-menu:hover {
+  background-image: url(../image/icon_quick1_on.png);
+}
+
+.quick-menu__link-menu:nth-of-type(2) {
+  position: relative;
+  background-image: url(../image/icon_quick2.gif);
+}
+
+.quick-menu__link-menu:nth-of-type(2) img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.quick-menu__link-menu:nth-of-type(3) {
+  background-image: url(../image/icon_quick3_off.png);
+}
+
+.quick-menu__link-menu:nth-of-type(3):hover {
+  background-image: url(../image/icon_quick3_on.png);
+}
+
+.quick-menu__link-menu:nth-of-type(4) {
+  background-image: url(../image/icon_quick4_off.png);
+}
+
+.quick-menu__link-menu:nth-of-type(4):hover {
+  background-image: url(../image/icon_quick4_on.png);
+}
+
+.quick-menu__link-menu:nth-of-type(5) {
+  background-image: url(../image/icon_quick3.gif);
+}
+
+.quick-menu__link-menu:nth-of-type(5):hover {
+  background-image: url(../image/icon_quick5_on.png);
+}
+
+.quick-menu__text {
+  display: block;
+  margin: 53px auto 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
 /* Header */
 .header {
   background-color: lightslategray;
@@ -115,6 +179,18 @@ body {
 }
 
 /* 반응형 */
+@media screen and (max-width: 1200px) {
+  /* Quick Menu */
+  .quick-menu {
+    display: none;
+  }
+
+  /* Header */
+  .gnb__menu-item {
+    margin-left: 30px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   /* Header */
   .header__inner {
