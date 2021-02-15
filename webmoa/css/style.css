@@ -188,6 +188,15 @@ body {
 
 }
 
+.section-title {
+  font-size: 40px;
+  color: #121213;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
 /* Contents - Visual */
 .visual {
   background: url(../image/subVisual12.jpg) no-repeat center/cover;
@@ -225,6 +234,55 @@ body {
   cursor: pointer;
   animation: up-down 0.8s infinite alternate;
 }
+
+/* Contents - Information */
+.information {
+
+}
+
+.information__inner {
+  width: 100%;
+  max-width: 1140px;
+  margin: 80px auto;
+}
+
+.information__list {
+  display: flex;
+  margin-top: 100px;
+}
+
+.information__list-item {
+  width: 25%;
+  text-align: center;
+}
+
+.information__list-item .fas {
+  color: #333;
+  font-size: 38px;
+}
+
+.information__conter {
+  margin-top: 15px;
+  color: #121213;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.information__title--en {
+  margin-top: 10px;
+  color: #7c7c7c;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.information__title {
+  color: #9c8579;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 
 /* 애니메이션 */
 @keyframes up-down {
@@ -314,6 +372,11 @@ body {
     letter-spacing: -1px;
   }
 
+  /* Contents */
+  .section-title {
+    font-size: 35px;
+  }
+
   /* Contents - Visual */
   .visual {
     height: 600px;
@@ -332,6 +395,34 @@ body {
     bottom: 40px;
     width: 70px;
     height: 70px;
+  }
+
+  /* Contents - Iinformation */
+  .information__inner {
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 15px;
+  }
+
+  .information__list {
+    margin-top: 50px;
+  }
+
+  .information__list-item .fas {
+    font-size: 30px;
+  }
+
+  .information__conter {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .information__title--en {
+    font-size: 16px;
+  }
+
+  .information__title {
+    font-size: 14px;
   }
 }
 
@@ -369,5 +460,33 @@ body {
     width: 50px;
     height: 50px;
     background-size: 20px;
+  }
+  
+  /* Contents */
+  .section-title {
+    font-size: 30px;
+  }
+
+  /* Contents - Information */
+  .information__inner {
+    margin-bottom: 20px;
+  }
+
+  .information__list {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .information__list-item {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
+  .information__conter {
+    font-size: 25px;
+  }
+
+  .information__title--en {
+    margin-top: 5px;
   }
 }
