@@ -2,6 +2,7 @@ $(function() {
   // Scrolla
   $(".animate__animated").scrolla({
     mobile: true,
+    once: false,
   });
 
   // Fix Header
