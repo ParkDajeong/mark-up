@@ -15,4 +15,9 @@ $(function() {
       $("header").removeClass("fix");
     }
   });
+
+  // Mobile Nav
+  $(".btn-toggle-menu").on("click", function() {
+    $(".mo-gnb").toggleClass("on");
+  }); 
 });

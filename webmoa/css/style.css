@@ -210,7 +210,7 @@ body {
 }
 
 .mo-gnb {
-  display: none;
+  visibility: hidden;
 }
 
 /* Contents */
@@ -857,12 +857,19 @@ body {
   }
 
   .mo-gnb {
-    background-color: rgba(31, 32, 34, 0.8);
+    background-color: rgba(31, 32, 34, 0.9);
     position: absolute;
-    /* display: block; */
-    top: 79px;
+    top: 65px;
     left: 0;
     width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .mo-gnb.on {
+    height: 415px;
+    visibility: visible;
   }
 
   .mo-gnb__menu {
