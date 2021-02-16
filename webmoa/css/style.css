@@ -110,6 +110,13 @@ body {
   height: 79px;
   border-bottom: 1px solid rgba(255,255,255,.2);
   z-index: 1000;
+  transition: 0.5s;
+}
+
+.header.fix {
+  background-color: #121213;
+  height: 65px;
+  border: none;
 }
 
 .header__inner {
@@ -151,6 +158,10 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
+}
+
+.header.fix .gnb__link-menu {
+  color: #aaa;
 }
 
 .gnb__btn-comInfo {
