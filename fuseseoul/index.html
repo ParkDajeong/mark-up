@@ -5,8 +5,143 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>퓨즈서울(FUSE SEOUL) - DNPN</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JS -->
+  <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+  <div class="wrap">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__top">
+          <h1 class="logo header__logo">
+            <a href="/index.html" class="logo__link">
+              <img src="./image/logo.png" class="logo__img" alt="퓨즈서울 로고">
+            </a>
+          </h1>
+          <form action="" class="search-form header__search-form">
+            <fieldset>
+              <legend>검색</legend>
+              <input type="text" placeholder="Search" class="search-form__input">
+              <button type="submit" class="search-form__btn-search">
+                <i class="fas fa-search"></i>
+              </button>
+            </fieldset>
+          </form>
+          <div class="member header__member">
+            <a href="#" class="member__link">마이페이지</a>
+            <a href="#" class="member__link">로그인</a>
+            <a href="#" class="member__link">회원가입</a>
+            <a href="#" class="member__link">주문내역</a>
+            <a href="#" class="member__link member__link-cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="member__cart-count">0</span>
+            </a>
+          </div>
+        </div>
+        <nav class="gnb">
+          <ul class="gnb__menu-list">
+            <li class="gnb__menu-item">
+              <a href="#" class="gnb__link-menu">회사소개</a>
+            </li>
+            <li class="gnb__menu-item gnb__dropdown">
+              <a href="#" class="gnb__link-menu">온라인샵</a>
+              <ul class="gnb__category-list">
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">가성비ZONE</a>
+                  <div class="gnb__sub-category">
+                    <a href="#" class="gnb__link-sub-category">상의</a>
+                    <a href="#" class="gnb__link-sub-category">하의</a>
+                    <a href="#" class="gnb__link-sub-category">아우터</a>
+                  </div>
+                </li>
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">홈웨어</a>
+                  <div class="gnb__sub-category">
+                    <a href="#" class="gnb__link-sub-category">파자마</a>
+                    <a href="#" class="gnb__link-sub-category">속옷</a>
+                  </div>
+                </li>
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">상의</a>
+                  <div class="gnb__sub-category">
+                    <a href="#" class="gnb__link-sub-category">티셔츠</a>
+                    <a href="#" class="gnb__link-sub-category">니트</a>
+                    <a href="#" class="gnb__link-sub-category">셔츠</a>
+                    <a href="#" class="gnb__link-sub-category">겨울용</a>
+                    <a href="#" class="gnb__link-sub-category">여름용</a>
+                    <a href="#" class="gnb__link-sub-category">환절기용</a>
+                  </div>
+                </li>
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">하의</a>
+                  <div class="gnb__sub-category">
+                    <a href="#" class="gnb__link-sub-category">팬츠</a>
+                    <a href="#" class="gnb__link-sub-category">반바지</a>
+                    <a href="#" class="gnb__link-sub-category">데님</a>
+                    <a href="#" class="gnb__link-sub-category">슬랙스</a>
+                    <a href="#" class="gnb__link-sub-category">겨울용</a>
+                    <a href="#" class="gnb__link-sub-category">여름용</a>
+                    <a href="#" class="gnb__link-sub-category">환절기용</a>
+                  </div>
+                </li>
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">수트</a>
+                  <div class="gnb__sub-category">
+                    <a href="#" class="gnb__link-sub-category">자켓</a>
+                    <a href="#" class="gnb__link-sub-category">팬츠</a>
+                    <a href="#" class="gnb__link-sub-category">셔츠</a>
+                    <a href="#" class="gnb__link-sub-category">기타</a>
+                  </div>
+                </li>
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">수트</a>
+                  <div class="gnb__sub-category">
+                    <a href="#" class="gnb__link-sub-category">자켓</a>
+                    <a href="#" class="gnb__link-sub-category">코트</a>
+                    <a href="#" class="gnb__link-sub-category">가디건</a>
+                    <a href="#" class="gnb__link-sub-category">점퍼</a>
+                  </div>
+                </li>
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">악세사리</a>
+                  <div class="gnb__sub-category">
+                    <a href="#" class="gnb__link-sub-category">모자</a>
+                    <a href="#" class="gnb__link-sub-category">가방</a>
+                    <a href="#" class="gnb__link-sub-category">벨트</a>
+                    <a href="#" class="gnb__link-sub-category">기타</a>
+                    <a href="#" class="gnb__link-sub-category">신발</a>
+                  </div>
+                </li>
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">콜라보레이션</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb__menu-item">
+              <a href="#" class="gnb__link-menu">프로젝트</a>
+            </li>
+            <li class="gnb__menu-item gnb__dropdown">
+              <a href="#" class="gnb__link-menu">커뮤니티</a>
+              <ul class="gnb__category-list">
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">공지사항</a>
+                </li>
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">Q&A 문의게시판</a>
+                </li>
+                <li class="gnb__category-item">
+                  <a href="#" class="gnb__link-category">REVIEW</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
 </body>
 </html>
