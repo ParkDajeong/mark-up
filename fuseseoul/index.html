@@ -7,9 +7,13 @@
   <title>퓨즈서울(FUSE SEOUL) - DNPN</title>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- JS -->
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/app.js"></script>
 </head>
 <body>
   <div class="wrap">
@@ -98,7 +102,7 @@
                   </div>
                 </li>
                 <li class="gnb__category-item">
-                  <a href="#" class="gnb__link-category">수트</a>
+                  <a href="#" class="gnb__link-category">아우터</a>
                   <div class="gnb__sub-category">
                     <a href="#" class="gnb__link-sub-category">자켓</a>
                     <a href="#" class="gnb__link-sub-category">코트</a>
@@ -142,6 +146,42 @@
         </nav>
       </div>
     </header>
+    <!-- Contents -->
+    <main class="contents">
+      <!-- Contents - Visual -->
+      <section class="visual contents__visual">
+        <div class="visual__inner">
+          <div class="visual__img-area">
+            <ul class="slide visual__slide">
+              <li class="slide__item">
+                <img src="./image/slide01.jpg" class="slide__img" alt="슬라이드01">
+              </li>
+              <li class="slide__item">
+                <img src="./image/slide02.jpg" class="slide__img" alt="슬라이드02">
+              </li>
+              <li class="slide__item">
+                <img src="./image/slide03.jpg" class="slide__img" alt="슬라이드03">
+              </li>
+              <li class="slide__item">
+                <img src="./image/slide04.jpg" class="slide__img" alt="슬라이드04">
+              </li>
+            </ul>
+          </div>
+          <div class="visual__text-area">
+            <div class="visual__text-box">
+              <strong class="visual__title">21S/S season</strong>
+              <p class="visual__sub-text">
+                Your anger lights the <em>fuse</em> of revolution <br>
+                that encourages everyone.<br>
+                Do not be afraid to be alone. <br>
+                You are already the world to us.  
+              </p>
+              <a href="#" class="visual__link-more">View More Story</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 </html>
