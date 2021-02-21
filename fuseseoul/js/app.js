@@ -15,8 +15,8 @@ $(function() {
 
   $(".slide--multiple").slick({
     speed: 800,
-    autoplay: false,
-    autoplaySpeed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
     slidesToShow : 3,
     slidesToScroll: 1,
     centerMode: true,
